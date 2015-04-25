@@ -1,0 +1,97 @@
+{
+      "information" :{
+            "personal details" : [{
+                  "id"              : 1,
+                  "title"           : "Enrique",
+                  "subtitle"        : "Enrique Choynowski Melgarejo",
+                  "image"		: "ImageProfile",
+                  "about"		: "Sou legal e tenho muito texto pra colocar aqui",
+                  "type"		: "detail",
+                  "info"		: [{
+                        "type": "title",
+                        "info": {
+                              "title"     : "Nome",
+                              "subtitle"  : "Enrique Choynowski Melgarejo",
+                              "image"     : ""
+                              }
+                        },
+                        {
+                        "type": "adjustable-text",
+                        "info": {
+                              "title"     : "Resumo",
+                              "text"      : "Esse é um pequeno resumo"
+                              }
+                        },
+                        {
+                        "type": "link",
+                        "info": {
+                              "title"     : "Linkedin",
+                              "link"      : "https://www.linkedin.com/in/enriquec;lm;lml;m"
+                              }
+                        },
+                        {
+                        "type": "link",
+                        "info": {
+                              "title"     : "GitHub",
+                              "link"      : "https://github.com/Enriquecm"
+                              }
+                        }]
+                  }],
+            "education"       : [{
+                  "id"              : 1,
+                  "title"           : "ULBRA",
+                  "subtitle"        : "Universidade Luterana do Brasil",
+                  "image"           : "ULBRA-logo.png",
+                  "about"           : "Sou legal",
+                  "type"            : "detail",
+                  "info"            : [{
+                        "type": "title",
+                        "info": { 
+                              "title"     : "Nome",
+                              "subtitle"  : "Universidade Luterana do Brasil e do Mundo",
+                              "image"     : "ULBRA-logo-landscape.png"
+                              }
+                        },
+                        {
+                        "type": "adjustable-text",
+                        "info": {
+                              "title"     : "Resumo",
+                              "text"      : "Esse é um pequeno resumo, mas ele pode se tornar grande se eu começar a escrever. Mas tu sabe, eu ainda não cheguei na quarta linha, entendeu?"
+                              }
+                        },
+                        {
+                        "type": "link",
+                        "info": {
+                              "title"     : "Link",
+                              "link"      : "http://www.google.com.br"
+                              }
+                        },
+                        {
+                        "type": "honor",
+                        "info": {
+                              "title"     : "HONORS",
+                              "items"      : [{
+                                    "id"        : 1,
+                                    "name"      : "Minha Foto1",
+                                    "image"     : "Foto1.jpg"
+                                    }, 
+                                    {
+                                    "id"        : 2,
+                                    "name"      : "Minha Foto2",
+                                    "image"     : "Foto2.jpg"
+                                    },
+                                    {
+                                    "id"        : 3,
+                                    "name"      : "Minha Foto1",
+                                    "image"     : "Foto1.jpg"
+                                    }, 
+                                    {
+                                    "id"        : 4,
+                                    "name"      : "Minha Foto2",
+                                    "image"     : "Foto2.jpg"
+                                    }]      
+                              }
+                        }]
+                  }] 
+    }
+}
