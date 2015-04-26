@@ -9,8 +9,8 @@
 import Foundation
 import UIKit
 
-extension UITableViewCell {
-    
+extension UITableViewCell{
+
     func initWithDictionary(dictionary : NSDictionary) {
         // Override this method
     }

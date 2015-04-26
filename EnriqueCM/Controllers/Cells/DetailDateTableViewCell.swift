@@ -19,11 +19,6 @@ class DetailDateTableViewCell: UITableViewCell {
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var dateLabel: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-    
     override func initWithDictionary(dictionary : NSDictionary) {
         var info : NSDictionary = dictionary["info"] as! NSDictionary
         
@@ -34,6 +29,5 @@ class DetailDateTableViewCell: UITableViewCell {
         
         titleLabel.text = title
         dateLabel.text  = date
-        
     }
 }

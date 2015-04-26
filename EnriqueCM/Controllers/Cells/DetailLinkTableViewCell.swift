@@ -19,11 +19,6 @@ class DetailLinkTableViewCell: UITableViewCell {
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var linkButton: UIButton!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-    
     override func initWithDictionary(dictionary : NSDictionary) {
         var info : NSDictionary = dictionary["info"] as! NSDictionary
         

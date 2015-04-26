@@ -15,6 +15,10 @@ class CardsManager {
     internal var arrayInfo = [[String : AnyObject]]()
     internal var arrayEducation = [[String : String]]()
     
+    ///
+    /// Load all cards from json file
+    /// This method
+    ///
     class func loadCards() -> [String : [Card]]
     {
         var cards = [String : [Card]]()
@@ -27,15 +31,36 @@ class CardsManager {
         var educCards = transformArrayInCards(DatabaseManager.education())
         if !educCards.isEmpty {
             cards["Education"] = educCards
-                        cards["Education2"] = educCards
-                        cards["Education3"] = educCards
-                        cards["Education4"] = educCards
-                        cards["Education5"] = educCards
         }
         
         var xpCards = transformArrayInCards(DatabaseManager.experience())
         if !xpCards.isEmpty {
             cards["Experience"] = xpCards
+        }
+        
+        var projectCards = transformArrayInCards(DatabaseManager.projects())
+        if !projectCards.isEmpty {
+            cards["Projects"] = projectCards
+        }
+        
+        var skillsCards = transformArrayInCards(DatabaseManager.skills())
+        if !skillsCards.isEmpty {
+            cards["Skills"] = skillsCards
+        }
+        
+        var qualitiesCards = transformArrayInCards(DatabaseManager.qualities())
+        if !qualitiesCards.isEmpty {
+            cards["qualities"] = qualitiesCards
+        }
+        
+        var volunteeringCards = transformArrayInCards(DatabaseManager.volunteering())
+        if !volunteeringCards.isEmpty {
+            cards["Volunteering"] = volunteeringCards
+        }
+        
+        var honorCards = transformArrayInCards(DatabaseManager.honor())
+        if !honorCards.isEmpty {
+            cards["Honor and awards"] = honorCards
         }
         
         return cards

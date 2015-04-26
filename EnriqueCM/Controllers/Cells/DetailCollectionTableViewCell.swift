@@ -16,8 +16,9 @@ class DetailCollectionTableViewCell: UITableViewCell, UICollectionViewDataSource
     
     var id          : Int?
     var title       : String?
-    var collection  = [AnyObject]()
     var delegate    : DetailCollectionTableViewCellDelegate?
+    var collection  = [AnyObject]()
+    
     private let kTypeMedia : String      = "media"
     private let kTypeProject : String    = "project"
     private let kTypeHonor : String      = "honor"
@@ -62,7 +63,6 @@ class DetailCollectionTableViewCell: UITableViewCell, UICollectionViewDataSource
     }
     
     
-    
     //MARK: UICollectionViewDataSource
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
@@ -98,7 +98,7 @@ class DetailCollectionTableViewCell: UITableViewCell, UICollectionViewDataSource
         case kTypeProject, kTypeHonor:
             if var image = (item["image"]) as? String {
                 imageView.image = UIImage(named: image)
-            }
+            }   
             if var text = (item["name"]) as? String {
                 label.text = text;
             }
@@ -115,6 +115,6 @@ class DetailCollectionTableViewCell: UITableViewCell, UICollectionViewDataSource
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        delegate?.didSelectDetailCollectionTableViewCell(collectionView, didSelectItemAtIndexPath: indexPath, type: m_type!)
+        delegate!.didSelectDetailCollectionTableViewCell(collectionView, didSelectItemAtIndexPath: indexPath, type: m_type!)
     }
 }

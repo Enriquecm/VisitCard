@@ -20,11 +20,6 @@ class DetailAdjustableTextTableViewCell: UITableViewCell {
     
     @IBOutlet var mainTextLabel : UILabel! //TODO: Create adjustable label
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-    
     override func initWithDictionary(dictionary : NSDictionary) {
         var info : NSDictionary = dictionary["info"] as! NSDictionary
         

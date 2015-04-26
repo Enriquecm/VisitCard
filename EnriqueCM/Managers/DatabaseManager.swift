@@ -8,15 +8,20 @@
 
 import UIKit
 
-private var dictInfo = [NSDictionary]()
-private var arrayEducation = [NSDictionary]()
-private var arrayExperience = [NSDictionary]()
+private var dictInfo            = [NSDictionary]()
+private var arrayEducation      = [NSDictionary]()
+private var arrayExperience     = [NSDictionary]()
+private var arrayProjects       = [NSDictionary]()
+private var arraySkills         = [NSDictionary]()
+private var arrayQualities      = [NSDictionary]()
+private var arrayVolunteering   = [NSDictionary]()
+private var arrayHonor          = [NSDictionary]()
 
 class DatabaseManager {
     
-    /**
-    Return the number of sections
-    **/
+    ///
+    /// Return the number of sections
+    ///
     class func numberOfSectionsInInformation() -> Int {
         if let allKeys = loadJsonInformation().allKeys {
             return allKeys.count
@@ -24,9 +29,9 @@ class DatabaseManager {
         return 0
     }
     
-    /**
-    Return personal details
-    **/
+    ///
+    /// Return personal details
+    ///
     class func personalDetails () -> [NSDictionary]
     {
         if dictInfo.isEmpty  {
@@ -37,9 +42,9 @@ class DatabaseManager {
         }
     }
     
-    /**
-    Return education
-    **/
+    ///
+    /// Return education
+    ///
     class func education () -> [NSDictionary]
     {
         if arrayEducation.isEmpty  {
@@ -50,9 +55,9 @@ class DatabaseManager {
         }
     }
     
-    /**
-    Return experience
-    **/
+    ///
+    /// Return experience
+    ///
     class func experience () -> [NSDictionary]
     {
         if arrayExperience.isEmpty  {
@@ -60,6 +65,71 @@ class DatabaseManager {
             return arrayExperience
         }else {
             return arrayExperience
+        }
+    }
+    
+    ///
+    /// Return projects
+    ///
+    class func projects () -> [NSDictionary]
+    {
+        if arrayProjects.isEmpty  {
+            arrayProjects = loadJsonInformationWithName("projects") as! [NSDictionary]
+            return arrayProjects
+        }else {
+            return arrayProjects
+        }
+    }
+    
+    ///
+    /// Return skills
+    ///
+    class func skills () -> [NSDictionary]
+    {
+        if arraySkills.isEmpty  {
+            arraySkills = loadJsonInformationWithName("skills") as! [NSDictionary]
+            return arraySkills
+        }else {
+            return arraySkills
+        }
+    }
+    
+    ///
+    /// Return qualities
+    ///
+    class func qualities () -> [NSDictionary]
+    {
+        if arrayQualities.isEmpty  {
+            arrayQualities = loadJsonInformationWithName("qualities") as! [NSDictionary]
+            return arrayQualities
+        }else {
+            return arrayQualities
+        }
+    }
+    
+    ///
+    /// Return volunteering
+    ///
+    class func volunteering () -> [NSDictionary]
+    {
+        if arrayVolunteering.isEmpty  {
+            arrayVolunteering = loadJsonInformationWithName("volunteering") as! [NSDictionary]
+            return arrayVolunteering
+        }else {
+            return arrayVolunteering
+        }
+    }
+    
+    ///
+    /// Return honor and awards
+    ///
+    class func honor () -> [NSDictionary]
+    {
+        if arrayHonor.isEmpty  {
+            arrayHonor = loadJsonInformationWithName("honororawards") as! [NSDictionary]
+            return arrayHonor
+        }else {
+            return arrayHonor
         }
     }
     

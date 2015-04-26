@@ -11,6 +11,7 @@ import UIKit
 class CardTableViewCell: UITableViewCell {
 
     var card: Card? = nil
+    var m_type: String? = ""
     
     @IBOutlet var mainView: UIView!
     @IBOutlet var cardImageView: UIImageView!
@@ -34,6 +35,7 @@ class CardTableViewCell: UITableViewCell {
         titleLabel.text         = _card.title
         subtitleLabel.text      = _card.subtitle
         aboutSummaryLabel.text  = _card.about
+        m_type                  = _card.type
         
         if let photoName = _card.imageName {
             if (!photoName.isEmpty) {

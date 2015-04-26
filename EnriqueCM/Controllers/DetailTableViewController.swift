@@ -12,7 +12,7 @@ private let kTableHeaderHeight  : CGFloat = 400.0
 private let kTableHeaderCut     : CGFloat = 80.0
 
 
-class DetailTableViewController: UITableViewController, UIScrollViewDelegate {
+class DetailTableViewController: UITableViewController, UIScrollViewDelegate, DetailCollectionTableViewCellDelegate {
     
     private var isLoading = true
     private var headerView      : UIView!
@@ -155,6 +155,12 @@ class DetailTableViewController: UITableViewController, UIScrollViewDelegate {
                 cell.initWithDictionary(info)
             }
             
+            // Custom property on Detail Collection Table View Cell
+            if cell.isKindOfClass(DetailCollectionTableViewCell) {
+                var cellCollection = cell as! DetailCollectionTableViewCell
+                cellCollection.delegate = self;
+            }
+            
             return cell
             
         } else {
@@ -163,15 +169,6 @@ class DetailTableViewController: UITableViewController, UIScrollViewDelegate {
         }
     }
     
-//    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-//        if isLoading {
-//            return 80.0
-//        } else {
-//            let info = arrayOfCardInfo![indexPath.row]
-//            return getPropertiesFromType(info["type"] as! String)["height"] as! CGFloat
-//        }
-//    }
-//    
     
     //MARK: - Methods
     
@@ -189,6 +186,20 @@ class DetailTableViewController: UITableViewController, UIScrollViewDelegate {
             return ["identifier": "cellCollection", "height": 155.0]
         default:
             return ["identifier": "cellLoading", "height": 80]
+        }
+    }
+    
+    
+    //MARK: - DetailCollectionTableViewCellDelegate
+    
+    func didSelectDetailCollectionTableViewCell(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath, type: String) {
+        
+        
+        //TODO Go To Projects
+        if type == "project" {
+//            let projectViewController = self.storyboard?.instantiateViewControllerWithIdentifier("projectViewController") as! ProjectViewController
+//            projectViewController.card = card
+//            presentViewController(projectViewController, animated: true, completion: nil)
         }
     }
 }
