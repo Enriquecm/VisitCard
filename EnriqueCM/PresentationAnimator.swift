@@ -12,7 +12,7 @@ class PresentationAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     
     var openingFrame: CGRect?
     
-    func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
+    func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
         return 0.5
     }
     
@@ -21,27 +21,27 @@ class PresentationAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         let toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)!
         let containerView = transitionContext.containerView()
         
-        let animationDuration = self.transitionDuration(transitionContext)
+//        let animationDuration = self.transitionDuration(transitionContext)
         
         let fromViewFrame = fromViewController.view.frame
         
         UIGraphicsBeginImageContext(fromViewFrame.size)
         fromViewController.view.drawViewHierarchyInRect(fromViewFrame, afterScreenUpdates: true)
-        let snapshotImage = UIGraphicsGetImageFromCurrentImageContext()
+        _ = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
         let snapshotView = toViewController.view.resizableSnapshotViewFromRect(toViewController.view.frame, afterScreenUpdates: true, withCapInsets: UIEdgeInsetsZero)
         snapshotView.frame = openingFrame!
-        containerView.addSubview(snapshotView)
+        containerView?.addSubview(snapshotView)
         
         toViewController.view.alpha = 0.0
-        containerView.addSubview(toViewController.view)
+        containerView?.addSubview(toViewController.view)
         
         UIView.animateWithDuration(0.5,
             delay: 0.0,
             usingSpringWithDamping: 0.8,
             initialSpringVelocity: 20.0,
-            options: nil,
+            options: .TransitionNone,
             animations: { () -> Void in
                 snapshotView.frame = fromViewController.view.frame
             }, completion: { (finished) -> Void in

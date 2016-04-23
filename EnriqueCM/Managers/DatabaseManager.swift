@@ -144,10 +144,10 @@ class DatabaseManager {
     private class func loadJsonInformation() -> AnyObject
     {
         let path = NSBundle.mainBundle().pathForResource("Information", ofType: "json")
-        var error:NSError? = nil
-        if let data = NSData(contentsOfFile: path!, options:nil, error:&error),
-            json = NSJSONSerialization.JSONObjectWithData(data, options: nil, error:&error) as? NSDictionary,
-            team = json["information"] as? NSDictionary {
+        
+        if let data = try? NSData(contentsOfFile: path!, options: []),
+            let json = try? NSJSONSerialization.JSONObjectWithData(data, options: []) as? NSDictionary,
+            let team = json?["information"] as? NSDictionary {
                 return team
         }
         return []
@@ -155,7 +155,7 @@ class DatabaseManager {
     
     private class func loadPlistInformationWithName(name: String) -> AnyObject
     {
-        if var value: AnyObject = loadPlistInformation()[name] {
+        if let value: AnyObject = loadPlistInformation()[name] {
             return value
         }
         return []

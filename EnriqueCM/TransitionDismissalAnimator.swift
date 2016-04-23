@@ -10,7 +10,7 @@ import UIKit
 
 class TransitionDismissalAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     
-    func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
+    func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
         return 0.5
     }
     
@@ -23,12 +23,12 @@ class TransitionDismissalAnimator: NSObject, UIViewControllerAnimatedTransitioni
         
         let snapshotView = fromViewController.view.resizableSnapshotViewFromRect(fromViewController.view.frame, afterScreenUpdates: true, withCapInsets: UIEdgeInsetsZero)
         snapshotView.center = toViewController.view.center
-        containerView.addSubview(snapshotView)
+        containerView?.addSubview(snapshotView)
         
         fromViewController.view.alpha = 0.0
         
         let toViewControllerSnapshotView = toViewController.view.resizableSnapshotViewFromRect(toViewController.view.frame, afterScreenUpdates: true, withCapInsets: UIEdgeInsetsZero)
-        containerView.insertSubview(toViewControllerSnapshotView, belowSubview: snapshotView)
+        containerView?.insertSubview(toViewControllerSnapshotView, belowSubview: snapshotView)
         
         UIView.animateWithDuration(animationDuration, animations: { () -> Void in
             snapshotView.transform = CGAffineTransformMakeScale(0.1, 0.1)

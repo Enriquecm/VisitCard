@@ -12,7 +12,7 @@ private let kTableHeaderHeight  : CGFloat = 400.0
 private let kTableHeaderCut     : CGFloat = 80.0
 
 
-class DetailTableViewController: UITableViewController, UIScrollViewDelegate, DetailCollectionTableViewCellDelegate {
+class DetailTableViewController: UITableViewController, DetailCollectionTableViewCellDelegate {
     
     private var isLoading = true
     private var headerView      : UIView!
@@ -37,7 +37,7 @@ class DetailTableViewController: UITableViewController, UIScrollViewDelegate, De
         
         
         //TODO: Remove Timer
-        var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("loadCardInfo"), userInfo: nil, repeats: false)
+        NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(loadCardInfo), userInfo: nil, repeats: false)
     }
     
     func loadCardInfo() {
@@ -93,7 +93,7 @@ class DetailTableViewController: UITableViewController, UIScrollViewDelegate, De
     
     
     // MARK: Segue unwind
-    override func segueForUnwindingToViewController(toViewController: UIViewController, fromViewController: UIViewController, identifier: String?) -> UIStoryboardSegue {
+    override func segueForUnwindingToViewController(toViewController: UIViewController, fromViewController: UIViewController, identifier: String?) -> UIStoryboardSegue? {
         if let id = identifier {
             if id == "segueToDetailUnwind" {
                 let unwindSegue = UnwindBottonToUpCustomSegue(identifier: id,
@@ -105,6 +105,7 @@ class DetailTableViewController: UITableViewController, UIScrollViewDelegate, De
                 return unwindSegue
             }
         }
+        
         return super.segueForUnwindingToViewController(toViewController, fromViewController: fromViewController, identifier: identifier)
     }
     
@@ -149,7 +150,7 @@ class DetailTableViewController: UITableViewController, UIScrollViewDelegate, De
         var info = arrayOfCardInfo![indexPath.row]
         if info["type"] is String {
             
-            var identifier = getPropertiesFromType(info["type"] as! String)["identifier"] as! String
+            let identifier = getPropertiesFromType(info["type"] as! String)["identifier"] as! String
             cell = tableView.dequeueReusableCellWithIdentifier(identifier, forIndexPath: indexPath) as! UITableViewCell
             if cell.respondsToSelector("initWithDictionary:") {
                 cell.initWithDictionary(info)
@@ -157,7 +158,7 @@ class DetailTableViewController: UITableViewController, UIScrollViewDelegate, De
             
             // Custom property on Detail Collection Table View Cell
             if cell.isKindOfClass(DetailCollectionTableViewCell) {
-                var cellCollection = cell as! DetailCollectionTableViewCell
+                let cellCollection = cell as! DetailCollectionTableViewCell
                 cellCollection.delegate = self;
             }
             

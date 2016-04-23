@@ -20,7 +20,7 @@ class DetailDateTableViewCell: UITableViewCell {
     @IBOutlet var dateLabel: UILabel!
     
     override func initWithDictionary(dictionary : NSDictionary) {
-        var info : NSDictionary = dictionary["info"] as! NSDictionary
+        guard let info = dictionary["info"] as? NSDictionary else { return }
         
         m_type      = dictionary["type"]as? String
         id          = info["id"]        as? Int

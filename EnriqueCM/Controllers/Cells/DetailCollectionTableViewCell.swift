@@ -30,7 +30,7 @@ class DetailCollectionTableViewCell: UITableViewCell, UICollectionViewDataSource
     @IBOutlet var collectionView: UICollectionView!
     
     override func initWithDictionary(dictionary : NSDictionary) {
-        var info : NSDictionary = dictionary["info"] as! NSDictionary
+        guard let info = dictionary["info"] as? NSDictionary else { return }
         
         m_type      = dictionary["type"]as? String
         id          = info["id"]        as? Int
@@ -82,24 +82,23 @@ class DetailCollectionTableViewCell: UITableViewCell, UICollectionViewDataSource
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cellCollectionDetail", forIndexPath: indexPath) as! UICollectionViewCell
-        var view =  cell.viewWithTag(1000)
-        var imageView = cell.viewWithTag(1001) as! UIImageView
-        var label = cell.viewWithTag(1002) as! UILabel
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cellCollectionDetail", forIndexPath: indexPath)
+        let imageView = cell.viewWithTag(1001) as UIImageView?
+        let label = cell.viewWithTag(1002) as UILabel?
         
-        var item: AnyObject = collection[indexPath.row]
+        let item: AnyObject = collection[indexPath.row]
         
         switch (m_type!) {
         case kTypeMedia:
-            if var image = item as? String {
+            if let image = item as? String {
                 imageView.image = UIImage(named: image)
             }
         
         case kTypeProject, kTypeHonor:
-            if var image = (item["image"]) as? String {
+            if let image = (item["image"]) as? String {
                 imageView.image = UIImage(named: image)
             }   
-            if var text = (item["name"]) as? String {
+            if let text = (item["name"]) as? String {
                 label.text = text;
             }
         

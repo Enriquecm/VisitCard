@@ -10,7 +10,7 @@ import UIKit
 
 class TransitionPresentationAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     
-    func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
+    func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
         return 0.5
     }
     
@@ -25,13 +25,13 @@ class TransitionPresentationAnimator: NSObject, UIViewControllerAnimatedTransiti
         let snapshotView = toViewController.view.resizableSnapshotViewFromRect(toViewController.view.frame, afterScreenUpdates: true, withCapInsets: UIEdgeInsetsZero)
         snapshotView.transform = CGAffineTransformMakeScale(0.1, 0.1)
         snapshotView.center = fromViewController.view.center
-        containerView.addSubview(snapshotView)
+        containerView?.addSubview(snapshotView)
         
         // Hide the detail view until the snapshot is being animated
         toViewController.view.alpha = 0.0
-        containerView.addSubview(toViewController.view)
+        containerView?.addSubview(toViewController.view)
         
-        UIView.animateWithDuration(animationDuration, delay: 0.0, usingSpringWithDamping: 0.8, initialSpringVelocity: 20.0, options: nil,
+        UIView.animateWithDuration(animationDuration, delay: 0.0, usingSpringWithDamping: 0.8, initialSpringVelocity: 20.0, options: .TransitionNone,
             animations: { () -> Void in
                 snapshotView.transform = CGAffineTransformIdentity
             }, completion: { (finished) -> Void in

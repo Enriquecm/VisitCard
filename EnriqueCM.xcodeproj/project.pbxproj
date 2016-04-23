@@ -26,6 +26,13 @@
 		AD2FEC3E1AE1DCC300EF8B65 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2FEC3D1AE1DCC300EF8B65 /* MainTableViewController.swift */; };
 		AD2FEC431AE2B1DE00EF8B65 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD2FEC421AE2B1DE00EF8B65 /* Data.plist */; };
 		AD2FEC451AE2B7E200EF8B65 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2FEC441AE2B7E200EF8B65 /* DatabaseManager.swift */; };
+		AD37EF951CCB1A200016F946 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37EF941CCB1A200016F946 /* AppDelegate.swift */; };
+		AD37EF971CCB1A200016F946 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37EF961CCB1A200016F946 /* FirstViewController.swift */; };
+		AD37EF991CCB1A200016F946 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37EF981CCB1A200016F946 /* SecondViewController.swift */; };
+		AD37EF9C1CCB1A200016F946 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD37EF9A1CCB1A200016F946 /* Main.storyboard */; };
+		AD37EF9E1CCB1A200016F946 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD37EF9D1CCB1A200016F946 /* Assets.xcassets */; };
+		AD37EFA91CCB1A200016F946 /* EnriqueCM_tvTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37EFA81CCB1A200016F946 /* EnriqueCM_tvTests.swift */; };
+		AD37EFB41CCB1A200016F946 /* EnriqueCM_tvUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37EFB31CCB1A200016F946 /* EnriqueCM_tvUITests.swift */; };
 		AD4405951AEB47E000BADC06 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4405941AEB47E000BADC06 /* Utils.swift */; };
 		AD4405971AEC23E500BADC06 /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4405961AEC23E500BADC06 /* ProjectViewController.swift */; };
 		AD4405991AEC534500BADC06 /* ProjectCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4405981AEC534500BADC06 /* ProjectCollectionTableViewCell.swift */; };
@@ -119,6 +126,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		AD37EFA51CCB1A200016F946 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADDB24801ADFEA2A00FDFBE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD37EF911CCB1A200016F946;
+			remoteInfo = "EnriqueCM-tv";
+		};
+		AD37EFB01CCB1A200016F946 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADDB24801ADFEA2A00FDFBE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD37EF911CCB1A200016F946;
+			remoteInfo = "EnriqueCM-tv";
+		};
 		ADDB249E1ADFEA2A00FDFBE1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ADDB24801ADFEA2A00FDFBE1 /* Project object */;
@@ -147,6 +168,19 @@
 		AD2FEC3D1AE1DCC300EF8B65 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTableViewController.swift; path = Controllers/MainTableViewController.swift; sourceTree = "<group>"; };
 		AD2FEC421AE2B1DE00EF8B65 /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
 		AD2FEC441AE2B7E200EF8B65 /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DatabaseManager.swift; path = Managers/DatabaseManager.swift; sourceTree = "<group>"; };
+		AD37EF921CCB1A200016F946 /* EnriqueCM-tv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EnriqueCM-tv.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD37EF941CCB1A200016F946 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AD37EF961CCB1A200016F946 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		AD37EF981CCB1A200016F946 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		AD37EF9B1CCB1A200016F946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD37EF9D1CCB1A200016F946 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD37EF9F1CCB1A200016F946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD37EFA41CCB1A200016F946 /* EnriqueCM-tvTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EnriqueCM-tvTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD37EFA81CCB1A200016F946 /* EnriqueCM_tvTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnriqueCM_tvTests.swift; sourceTree = "<group>"; };
+		AD37EFAA1CCB1A200016F946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD37EFAF1CCB1A200016F946 /* EnriqueCM-tvUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EnriqueCM-tvUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD37EFB31CCB1A200016F946 /* EnriqueCM_tvUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnriqueCM_tvUITests.swift; sourceTree = "<group>"; };
+		AD37EFB51CCB1A200016F946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD4405941AEB47E000BADC06 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Managers/Utils.swift; sourceTree = "<group>"; };
 		AD4405961AEC23E500BADC06 /* ProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectViewController.swift; path = Controllers/ProjectViewController.swift; sourceTree = "<group>"; };
 		AD4405981AEC534500BADC06 /* ProjectCollectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectCollectionTableViewCell.swift; path = Controllers/Cells/ProjectCollectionTableViewCell.swift; sourceTree = "<group>"; };
@@ -244,6 +278,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AD37EF8F1CCB1A200016F946 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD37EFA11CCB1A200016F946 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD37EFAC1CCB1A200016F946 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ADDB24851ADFEA2A00FDFBE1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -319,6 +374,37 @@
 				AD2FEC371AE14BDA00EF8B65 /* CustomSequeUnwind.swift */,
 			);
 			name = CustomSegue;
+			sourceTree = "<group>";
+		};
+		AD37EF931CCB1A200016F946 /* EnriqueCM-tv */ = {
+			isa = PBXGroup;
+			children = (
+				AD37EF941CCB1A200016F946 /* AppDelegate.swift */,
+				AD37EF961CCB1A200016F946 /* FirstViewController.swift */,
+				AD37EF981CCB1A200016F946 /* SecondViewController.swift */,
+				AD37EF9A1CCB1A200016F946 /* Main.storyboard */,
+				AD37EF9D1CCB1A200016F946 /* Assets.xcassets */,
+				AD37EF9F1CCB1A200016F946 /* Info.plist */,
+			);
+			path = "EnriqueCM-tv";
+			sourceTree = "<group>";
+		};
+		AD37EFA71CCB1A200016F946 /* EnriqueCM-tvTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD37EFA81CCB1A200016F946 /* EnriqueCM_tvTests.swift */,
+				AD37EFAA1CCB1A200016F946 /* Info.plist */,
+			);
+			path = "EnriqueCM-tvTests";
+			sourceTree = "<group>";
+		};
+		AD37EFB21CCB1A200016F946 /* EnriqueCM-tvUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AD37EFB31CCB1A200016F946 /* EnriqueCM_tvUITests.swift */,
+				AD37EFB51CCB1A200016F946 /* Info.plist */,
+			);
+			path = "EnriqueCM-tvUITests";
 			sourceTree = "<group>";
 		};
 		AD44059A1AED43BF00BADC06 /* Experience */ = {
@@ -494,6 +580,9 @@
 			children = (
 				ADDB248A1ADFEA2A00FDFBE1 /* EnriqueCM */,
 				ADDB24A01ADFEA2A00FDFBE1 /* EnriqueCMTests */,
+				AD37EF931CCB1A200016F946 /* EnriqueCM-tv */,
+				AD37EFA71CCB1A200016F946 /* EnriqueCM-tvTests */,
+				AD37EFB21CCB1A200016F946 /* EnriqueCM-tvUITests */,
 				ADDB24891ADFEA2A00FDFBE1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -503,6 +592,9 @@
 			children = (
 				ADDB24881ADFEA2A00FDFBE1 /* EnriqueCM.app */,
 				ADDB249D1ADFEA2A00FDFBE1 /* EnriqueCMTests.xctest */,
+				AD37EF921CCB1A200016F946 /* EnriqueCM-tv.app */,
+				AD37EFA41CCB1A200016F946 /* EnriqueCM-tvTests.xctest */,
+				AD37EFAF1CCB1A200016F946 /* EnriqueCM-tvUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -558,6 +650,59 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AD37EF911CCB1A200016F946 /* EnriqueCM-tv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD37EFB61CCB1A200016F946 /* Build configuration list for PBXNativeTarget "EnriqueCM-tv" */;
+			buildPhases = (
+				AD37EF8E1CCB1A200016F946 /* Sources */,
+				AD37EF8F1CCB1A200016F946 /* Frameworks */,
+				AD37EF901CCB1A200016F946 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EnriqueCM-tv";
+			productName = "EnriqueCM-tv";
+			productReference = AD37EF921CCB1A200016F946 /* EnriqueCM-tv.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD37EFA31CCB1A200016F946 /* EnriqueCM-tvTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD37EFB91CCB1A200016F946 /* Build configuration list for PBXNativeTarget "EnriqueCM-tvTests" */;
+			buildPhases = (
+				AD37EFA01CCB1A200016F946 /* Sources */,
+				AD37EFA11CCB1A200016F946 /* Frameworks */,
+				AD37EFA21CCB1A200016F946 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD37EFA61CCB1A200016F946 /* PBXTargetDependency */,
+			);
+			name = "EnriqueCM-tvTests";
+			productName = "EnriqueCM-tvTests";
+			productReference = AD37EFA41CCB1A200016F946 /* EnriqueCM-tvTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AD37EFAE1CCB1A200016F946 /* EnriqueCM-tvUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD37EFBC1CCB1A200016F946 /* Build configuration list for PBXNativeTarget "EnriqueCM-tvUITests" */;
+			buildPhases = (
+				AD37EFAB1CCB1A200016F946 /* Sources */,
+				AD37EFAC1CCB1A200016F946 /* Frameworks */,
+				AD37EFAD1CCB1A200016F946 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD37EFB11CCB1A200016F946 /* PBXTargetDependency */,
+			);
+			name = "EnriqueCM-tvUITests";
+			productName = "EnriqueCM-tvUITests";
+			productReference = AD37EFAF1CCB1A200016F946 /* EnriqueCM-tvUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		ADDB24871ADFEA2A00FDFBE1 /* EnriqueCM */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADDB24A71ADFEA2A00FDFBE1 /* Build configuration list for PBXNativeTarget "EnriqueCM" */;
@@ -599,9 +744,21 @@
 		ADDB24801ADFEA2A00FDFBE1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Enrique Choynowski Melgarejo";
 				TargetAttributes = {
+					AD37EF911CCB1A200016F946 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					AD37EFA31CCB1A200016F946 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = AD37EF911CCB1A200016F946;
+					};
+					AD37EFAE1CCB1A200016F946 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = AD37EF911CCB1A200016F946;
+					};
 					ADDB24871ADFEA2A00FDFBE1 = {
 						CreatedOnToolsVersion = 6.3;
 						DevelopmentTeam = 38HUSCHT3G;
@@ -627,11 +784,37 @@
 			targets = (
 				ADDB24871ADFEA2A00FDFBE1 /* EnriqueCM */,
 				ADDB249C1ADFEA2A00FDFBE1 /* EnriqueCMTests */,
+				AD37EF911CCB1A200016F946 /* EnriqueCM-tv */,
+				AD37EFA31CCB1A200016F946 /* EnriqueCM-tvTests */,
+				AD37EFAE1CCB1A200016F946 /* EnriqueCM-tvUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AD37EF901CCB1A200016F946 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD37EF9E1CCB1A200016F946 /* Assets.xcassets in Resources */,
+				AD37EF9C1CCB1A200016F946 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD37EFA21CCB1A200016F946 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD37EFAD1CCB1A200016F946 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ADDB24861ADFEA2A00FDFBE1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -730,6 +913,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AD37EF8E1CCB1A200016F946 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD37EF991CCB1A200016F946 /* SecondViewController.swift in Sources */,
+				AD37EF951CCB1A200016F946 /* AppDelegate.swift in Sources */,
+				AD37EF971CCB1A200016F946 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD37EFA01CCB1A200016F946 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD37EFA91CCB1A200016F946 /* EnriqueCM_tvTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD37EFAB1CCB1A200016F946 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD37EFB41CCB1A200016F946 /* EnriqueCM_tvUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ADDB24841ADFEA2A00FDFBE1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -775,6 +984,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		AD37EFA61CCB1A200016F946 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD37EF911CCB1A200016F946 /* EnriqueCM-tv */;
+			targetProxy = AD37EFA51CCB1A200016F946 /* PBXContainerItemProxy */;
+		};
+		AD37EFB11CCB1A200016F946 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD37EF911CCB1A200016F946 /* EnriqueCM-tv */;
+			targetProxy = AD37EFB01CCB1A200016F946 /* PBXContainerItemProxy */;
+		};
 		ADDB249F1ADFEA2A00FDFBE1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = ADDB24871ADFEA2A00FDFBE1 /* EnriqueCM */;
@@ -783,6 +1002,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		AD37EF9A1CCB1A200016F946 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD37EF9B1CCB1A200016F946 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		ADDB24911ADFEA2A00FDFBE1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -802,6 +1029,99 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		AD37EFB71CCB1A200016F946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "EnriqueCM-tv/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.choynowski.EnriqueCM-tv";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		AD37EFB81CCB1A200016F946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = "EnriqueCM-tv/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.choynowski.EnriqueCM-tv";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Release;
+		};
+		AD37EFBA1CCB1A200016F946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "EnriqueCM-tvTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.choynowski.EnriqueCM-tvTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnriqueCM-tv.app/EnriqueCM-tv";
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		AD37EFBB1CCB1A200016F946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = "EnriqueCM-tvTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.choynowski.EnriqueCM-tvTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnriqueCM-tv.app/EnriqueCM-tv";
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Release;
+		};
+		AD37EFBD1CCB1A200016F946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "EnriqueCM-tvUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.choynowski.EnriqueCM-tvUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_TARGET_NAME = "EnriqueCM-tv";
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		AD37EFBE1CCB1A200016F946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = "EnriqueCM-tvUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.choynowski.EnriqueCM-tvUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_TARGET_NAME = "EnriqueCM-tv";
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Release;
+		};
 		ADDB24A51ADFEA2A00FDFBE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -823,6 +1143,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -893,6 +1214,7 @@
 				INFOPLIST_FILE = EnriqueCM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.choynowski.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -906,6 +1228,7 @@
 				INFOPLIST_FILE = EnriqueCM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.choynowski.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -925,6 +1248,7 @@
 				);
 				INFOPLIST_FILE = EnriqueCMTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.choynowski.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnriqueCM.app/EnriqueCM";
 			};
@@ -940,6 +1264,7 @@
 				);
 				INFOPLIST_FILE = EnriqueCMTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.choynowski.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnriqueCM.app/EnriqueCM";
 			};
@@ -948,6 +1273,30 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AD37EFB61CCB1A200016F946 /* Build configuration list for PBXNativeTarget "EnriqueCM-tv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD37EFB71CCB1A200016F946 /* Debug */,
+				AD37EFB81CCB1A200016F946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AD37EFB91CCB1A200016F946 /* Build configuration list for PBXNativeTarget "EnriqueCM-tvTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD37EFBA1CCB1A200016F946 /* Debug */,
+				AD37EFBB1CCB1A200016F946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AD37EFBC1CCB1A200016F946 /* Build configuration list for PBXNativeTarget "EnriqueCM-tvUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD37EFBD1CCB1A200016F946 /* Debug */,
+				AD37EFBE1CCB1A200016F946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		ADDB24831ADFEA2A00FDFBE1 /* Build configuration list for PBXProject "EnriqueCM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

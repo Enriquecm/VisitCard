@@ -21,19 +21,19 @@ class ProjectViewController: UIViewController, UITableViewDataSource, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if var imageName = card?.imageName {
+        if let imageName = card?.imageName {
             imageView.image = UIImage(named: imageName)
         }
-        if var appName = card?.title {
+        if let appName = card?.title {
             titleLabel.text = appName
         }
         if var info = card?.info as? [[String : AnyObject]]{
-            if var appCompany = info[0]["subtitle"] as? String{
+            if let appCompany = info[0]["subtitle"] as? String{
                 subtitleLabel.text = appCompany
             }
         }
         if var info = card?.info as? [[String : AnyObject]]{
-            if var actionName = info[0]["action"] as? String{
+            if let actionName = info[0]["action"] as? String{
                 actionButton.setTitle(actionName, forState: .Normal)
             }
         }
@@ -51,7 +51,7 @@ class ProjectViewController: UIViewController, UITableViewDataSource, UITableVie
     @IBAction func actionButtonClicked(sender: UIButton) {
         
         if var info = card?.info as? [[String : AnyObject]]{
-            if var link = info[0]["link"] as? String{
+            if let link = info[0]["link"] as? String{
                 let application = UIApplication.sharedApplication()
                 let url = NSURL(string: link)
                 if application.canOpenURL(url!) {
@@ -74,11 +74,11 @@ class ProjectViewController: UIViewController, UITableViewDataSource, UITableVie
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
-            var cell = tableView.dequeueReusableCellWithIdentifier("cellCollection", forIndexPath: indexPath) as! ProjectCollectionTableViewCell
+            let cell = tableView.dequeueReusableCellWithIdentifier("cellCollection", forIndexPath: indexPath) as! ProjectCollectionTableViewCell
             cell.delegate = self;
 
             if var info = card?.info as? [[String : AnyObject]]{
-                var dict = info[0] as NSDictionary
+                let dict = info[0] as NSDictionary
                 cell.initWithDictionary(dict)
 //                if var medias = info[0]["media"] as? [String]{
 //                
@@ -91,10 +91,10 @@ class ProjectViewController: UIViewController, UITableViewDataSource, UITableVie
             return cell
             
         } else {
-            var cell = tableView.dequeueReusableCellWithIdentifier("cellDescription", forIndexPath: indexPath) as! UITableViewCell
+            let cell = tableView.dequeueReusableCellWithIdentifier("cellDescription", forIndexPath: indexPath) as! UITableViewCell
             if var info = card?.info as? [[String : AnyObject]]{
-                if var appDescription = info[0]["text"] as? String{
-                    if var label = cell.viewWithTag(1000) as? UILabel {
+                if let appDescription = info[0]["text"] as? String{
+                    if let label = cell.viewWithTag(1000) as? UILabel {
                         label.text = appDescription
                     }
                 }
@@ -106,7 +106,7 @@ class ProjectViewController: UIViewController, UITableViewDataSource, UITableVie
     
     
     func didSelectProjectCollectionTableViewCell(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        println("Cliquei em: %d", indexPath.row)
+        print("Cliquei em: %d", indexPath.row)
     }
     
 }

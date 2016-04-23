@@ -25,19 +25,19 @@ class CardHeaderTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
 
-        var rightColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.15)
-        var leftColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 0.20)
-        var rotation:Float = -0.25/2 // 135º
+        let rightColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.15)
+        let leftColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 0.20)
+        let rotation:Float = -0.25/2 // 135º
         
         // Degrades added with 45 degrees
         let layer: CAGradientLayer = CAGradientLayer()
         layer.frame = _backgroundView.frame
         layer.colors = [leftColor.CGColor, rightColor.CGColor]
         
-        var a = CGFloat(powf(sinf((2*Float(M_PI)*((rotation+0.75)/2))),2))
-        var b = CGFloat(powf(sinf((2*Float(M_PI)*((rotation+0.0)/2))),2))
-        var c = CGFloat(powf(sinf((2*Float(M_PI)*((rotation+0.25)/2))),2))
-        var d = CGFloat(powf(sinf((2*Float(M_PI)*((rotation+0.5)/2))),2))
+        let a = CGFloat(powf(sinf((2*Float(M_PI)*((rotation+0.75)/2))),2))
+        let b = CGFloat(powf(sinf((2*Float(M_PI)*((rotation+0.0)/2))),2))
+        let c = CGFloat(powf(sinf((2*Float(M_PI)*((rotation+0.25)/2))),2))
+        let d = CGFloat(powf(sinf((2*Float(M_PI)*((rotation+0.5)/2))),2))
         
         layer.startPoint = CGPointMake(a, b)
         layer.endPoint = CGPointMake(c, d)
@@ -45,7 +45,7 @@ class CardHeaderTableViewCell: UITableViewCell {
         
         
         // Selected Header
-        let tapRecognizer = UITapGestureRecognizer(target: self, action: "selectedHeader:")
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(selectedHeader(_:)))
         self.addGestureRecognizer(tapRecognizer)
     }
     

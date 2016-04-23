@@ -23,9 +23,9 @@ class MainTableViewController: UITableViewController, UIViewControllerTransition
     
     private var isLoading = true
     
-    private var cards : [String : [Card]] = [:]
+    private var cards: [String : [Card]] = [:]
     private let transitionDelegate: TransitionDelegate = TransitionDelegate()
-    private var sectionOpened :Int = -1
+    private var sectionOpened = -1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +37,7 @@ class MainTableViewController: UITableViewController, UIViewControllerTransition
         
         
         //Simulating asynchronous model
-        var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("loadCards"), userInfo: nil, repeats: false)
+        NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(loadCards), userInfo: nil, repeats: false)
     }
     
     func setNavigationBar() {
@@ -65,7 +65,7 @@ class MainTableViewController: UITableViewController, UIViewControllerTransition
         if isLoading {
             return 1
         } else {
-            return cards.keys.array.count
+            return cards.keys.count
         }
     }
     
@@ -82,7 +82,7 @@ class MainTableViewController: UITableViewController, UIViewControllerTransition
             return nil
         }
         
-        var header = tableView.dequeueReusableCellWithIdentifier("cellHeader") as! CardHeaderTableViewCell
+        let header = tableView.dequeueReusableCellWithIdentifier("cellHeader") as! CardHeaderTableViewCell
         header.delegate = self
         header.section = section
         
@@ -90,7 +90,7 @@ class MainTableViewController: UITableViewController, UIViewControllerTransition
             header.imageSectionIndicator.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_2))
         }
         
-        var text = cards.keys.array[section].lowercaseString
+        let text = Array(cards.keys)[section].lowercaseString
         header.labelSection.text = text
 
         return header
@@ -102,7 +102,7 @@ class MainTableViewController: UITableViewController, UIViewControllerTransition
         } else if (section != sectionOpened) {
             return 0
         } else {
-            var cardsIn = cards.keys.array[section]
+            let cardsIn = Array(cards.keys)[section]
             return cards[cardsIn]!.count
         }
     }
@@ -119,12 +119,12 @@ class MainTableViewController: UITableViewController, UIViewControllerTransition
         UITableViewCell {
             
             if isLoading {
-                let cell = tableView.dequeueReusableCellWithIdentifier(kLoadingIdentifier, forIndexPath:indexPath) as! UITableViewCell
+                let cell = tableView.dequeueReusableCellWithIdentifier(kLoadingIdentifier, forIndexPath:indexPath) 
                 return cell;
             }
             
-            let currentCard = cards[cards.keys.array[indexPath.section]]![indexPath.row]
-            var cell = tableView.dequeueReusableCellWithIdentifier(kCardsIdentifier, forIndexPath: indexPath) as! CardTableViewCell
+            let currentCard = (cards[Array(cards.keys)[indexPath.section]])![indexPath.row]
+            let cell = tableView.dequeueReusableCellWithIdentifier(kCardsIdentifier, forIndexPath: indexPath) as! CardTableViewCell
             cell.initWithCart(currentCard)
             
             cell.superview?.backgroundColor = UIColor.clearColor()
