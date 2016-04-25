@@ -23,7 +23,7 @@ class MainTableViewController: UITableViewController, UIViewControllerTransition
     
     private var isLoading = true
     
-    private var cards: [String : [Card]] = [:]
+    private var sections: [Section] = []
     private let transitionDelegate: TransitionDelegate = TransitionDelegate()
     private var sectionOpened = -1
     
@@ -35,13 +35,12 @@ class MainTableViewController: UITableViewController, UIViewControllerTransition
         setNavigationBar()
         setTableViewBackground()
         
-        
         //Simulating asynchronous model
         NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(loadCards), userInfo: nil, repeats: false)
     }
     
     func setNavigationBar() {
-        navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor(rgba: "#58595B")]
+        navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor(hex: "#58595B")]
     }
     
     func setTableViewBackground() {
@@ -53,7 +52,7 @@ class MainTableViewController: UITableViewController, UIViewControllerTransition
     
     func loadCards() {
         // Something cool
-        cards = CardsManager.loadCards();
+        sections = InformationManager.loadInformation()
         isLoading = false
         self.tableView.reloadData()
     }
@@ -65,7 +64,7 @@ class MainTableViewController: UITableViewController, UIViewControllerTransition
         if isLoading {
             return 1
         } else {
-            return cards.keys.count
+            return sections.count
         }
     }
     
@@ -90,8 +89,8 @@ class MainTableViewController: UITableViewController, UIViewControllerTransition
             header.imageSectionIndicator.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_2))
         }
         
-        let text = Array(cards.keys)[section].lowercaseString
-        header.labelSection.text = text
+        let section = sections[section]
+        header.labelSection.text = section.title
 
         return header
     }
@@ -102,8 +101,8 @@ class MainTableViewController: UITableViewController, UIViewControllerTransition
         } else if (section != sectionOpened) {
             return 0
         } else {
-            let cardsIn = Array(cards.keys)[section]
-            return cards[cardsIn]!.count
+            let section = sections[section]
+            return section.cards.count
         }
     }
     
@@ -123,11 +122,13 @@ class MainTableViewController: UITableViewController, UIViewControllerTransition
                 return cell;
             }
             
-            let currentCard = (cards[Array(cards.keys)[indexPath.section]])![indexPath.row]
+            let section = sections[indexPath.section]
+            let currentCard = section.cards[indexPath.row]
+            
             let cell = tableView.dequeueReusableCellWithIdentifier(kCardsIdentifier, forIndexPath: indexPath) as! CardTableViewCell
             cell.initWithCart(currentCard)
             
-            cell.superview?.backgroundColor = UIColor.clearColor()
+            cell.superview?.backgroundColor = UIColor.clearColor() // ??
             
             return cell
     }
@@ -148,12 +149,12 @@ class MainTableViewController: UITableViewController, UIViewControllerTransition
         let frameToOpenFrom = tableView.convertRect(rect, toView: tableView.superview)
         transitionDelegate.openingFrame = frameToOpenFrom
         
-        if cell.m_type == "project" {
+        if cell.cardType == .Project,
+            let navigationController = self.storyboard?.instantiateViewControllerWithIdentifier("projectNavigationController") as? UINavigationController {
             
-            // Present Project View Controller only for projects (Custom)
-            let projectViewController = self.storyboard?.instantiateViewControllerWithIdentifier("projectViewController") as! ProjectViewController
+            let projectViewController = navigationController.viewControllers.first as! ProjectViewController
             projectViewController.card = cell.card
-            presentViewController(projectViewController, animated: true, completion: nil)
+            presentViewController(navigationController, animated: true, completion: nil)
             
         } else {
             
@@ -172,7 +173,7 @@ class MainTableViewController: UITableViewController, UIViewControllerTransition
     }
     
     
-    // MARK: - UserHeaderTableViewCell delegate
+    // MARK: UserHeaderTableViewCell delegate
     
     func didSelectUserHeaderTableViewCell(Selected: Bool, Section: Int, UserHeader: CardHeaderTableViewCell) {
         if Section == sectionOpened {
@@ -181,8 +182,8 @@ class MainTableViewController: UITableViewController, UIViewControllerTransition
             sectionOpened = Section // Open Section
         }
         
-        UIView.transitionWithView(tableView, duration: 0.5, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: { () -> Void in
-            self.tableView.reloadData()
+        UIView.transitionWithView(tableView, duration: 0.5, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: { [weak self] _ in
+            self?.tableView.reloadData()
             
             }, completion: nil)
     }

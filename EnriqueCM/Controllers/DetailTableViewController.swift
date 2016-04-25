@@ -11,7 +11,6 @@ import UIKit
 private let kTableHeaderHeight  : CGFloat = 400.0
 private let kTableHeaderCut     : CGFloat = 80.0
 
-
 class DetailTableViewController: UITableViewController, DetailCollectionTableViewCellDelegate {
     
     private var isLoading = true
@@ -23,8 +22,8 @@ class DetailTableViewController: UITableViewController, DetailCollectionTableVie
     @IBOutlet var miniImageView : UIImageView!
     @IBOutlet var viewFullImageView: UIView!
     
-    var card            : Card? = nil
-    var fullImage       : UIImage? = nil
+    var card        : Card? = nil
+    var fullImage   : UIImage? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,17 +34,14 @@ class DetailTableViewController: UITableViewController, DetailCollectionTableVie
         tableView.estimatedRowHeight = 60
         tableView.rowHeight = UITableViewAutomaticDimension
         
-        
-        //TODO: Remove Timer
+        // TODO: Remove Timer
         NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(loadCardInfo), userInfo: nil, repeats: false)
     }
     
     func loadCardInfo() {
-        if card != nil {
-            if let array = card!.info as? [[String : AnyObject]] {
-                for info in array {
-                    arrayOfCardInfo?.append(info)
-                }
+        if let array = card?.info as? [[String : AnyObject]] {
+            for info in array {
+                arrayOfCardInfo?.append(info)
             }
         }
         isLoading = false
@@ -53,23 +49,24 @@ class DetailTableViewController: UITableViewController, DetailCollectionTableVie
     }
     
     override func viewDidAppear(animated: Bool) {
-        UIView.animateWithDuration(0.5, animations: { () -> Void in
+        UIView.animateWithDuration(0.5, animations: { [weak self] _ in
             
-            self.headerView = self.tableView.tableHeaderView
-            self.tableView.tableHeaderView = nil
-            self.tableView.addSubview(self.headerView)
+            self?.headerView = self?.tableView.tableHeaderView
+            self?.tableView.tableHeaderView = nil
+            self?.tableView.addSubview(self?.headerView ?? UIView())
             
             let effectiveHeight = kTableHeaderHeight //- kTableHeaderCut/2
-            self.tableView.contentInset = UIEdgeInsets(top: effectiveHeight, left: 0, bottom: 0, right: 0)
-            self.tableView.contentOffset = CGPoint(x: 0, y: -effectiveHeight)
+            self?.tableView.contentInset = UIEdgeInsets(top: effectiveHeight, left: 0, bottom: 0, right: 0)
+            self?.tableView.contentOffset = CGPoint(x: 0, y: -effectiveHeight)
             
-            self.headerMaskLayer = CAShapeLayer()
-            self.headerMaskLayer.fillColor = UIColor.blackColor().CGColor
+            self?.headerMaskLayer = CAShapeLayer()
+            self?.headerMaskLayer.fillColor = UIColor.blackColor().CGColor
             
-            self.headerView.layer.mask = self.headerMaskLayer
+            self?.headerView.layer.mask = self?.headerMaskLayer
             
-            self.updateHeaderView()
-            }) { (finished) -> Void in
+            self?.updateHeaderView()
+            
+            }) { finished in
                 //Nothing to do
         }
     }
@@ -92,38 +89,32 @@ class DetailTableViewController: UITableViewController, DetailCollectionTableVie
     }
     
     
-    // MARK: Segue unwind
-    override func segueForUnwindingToViewController(toViewController: UIViewController, fromViewController: UIViewController, identifier: String?) -> UIStoryboardSegue? {
-        if let id = identifier {
-            if id == "segueToDetailUnwind" {
-                let unwindSegue = UnwindBottonToUpCustomSegue(identifier: id,
-                    source:fromViewController,
-                    destination: toViewController,
-                    performHandler: { () -> Void in
-                        
-                })
-                return unwindSegue
-            }
-        }
-        
-        return super.segueForUnwindingToViewController(toViewController, fromViewController: fromViewController, identifier: identifier)
-    }
-    
-    @IBAction func returnFromSegueActions(sender: UIStoryboardSegue){
-        
-    }
+    // MARK: Segue unwind ----->>> Deprecated in iOS9
+//    override func segueForUnwindingToViewController(toViewController: UIViewController, fromViewController: UIViewController, identifier: String?) -> UIStoryboardSegue? {
+//        if let id = identifier {
+//            if id == "segueToDetailUnwind" {
+//                let unwindSegue = UnwindBottonToUpCustomSegue(identifier: id,
+//                    source:fromViewController,
+//                    destination: toViewController,
+//                    performHandler: { () -> Void in
+//                        
+//                })
+//                return unwindSegue
+//            }
+//        }
+//        
+//        return super.segueForUnwindingToViewController(toViewController, fromViewController: fromViewController, identifier: identifier)
+//    }
     
     @IBAction func dismissViewController(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }
-    
     
     // MARK: - ScrollView delegate
     
     override func scrollViewDidScroll(scrollView: UIScrollView) {
         updateHeaderView()
     }
-    
     
     // MARK: - Table view data source and delegate
     
@@ -143,21 +134,18 @@ class DetailTableViewController: UITableViewController, DetailCollectionTableVie
         var cell: UITableViewCell
         
         if isLoading {
-            cell = tableView.dequeueReusableCellWithIdentifier("cellLoading", forIndexPath: indexPath) as! UITableViewCell
+            cell = tableView.dequeueReusableCellWithIdentifier("cellLoading", forIndexPath: indexPath)
             return cell
         }
         
-        var info = arrayOfCardInfo![indexPath.row]
-        if info["type"] is String {
+        if let info = arrayOfCardInfo?[indexPath.row] where info["type"] is String {
             
             let identifier = getPropertiesFromType(info["type"] as! String)["identifier"] as! String
-            cell = tableView.dequeueReusableCellWithIdentifier(identifier, forIndexPath: indexPath) as! UITableViewCell
-            if cell.respondsToSelector("initWithDictionary:") {
-                cell.initWithDictionary(info)
-            }
+            cell = tableView.dequeueReusableCellWithIdentifier(identifier, forIndexPath: indexPath)
+            cell.initWithDictionary(info)
             
             // Custom property on Detail Collection Table View Cell
-            if cell.isKindOfClass(DetailCollectionTableViewCell) {
+            if cell is DetailCollectionTableViewCell {
                 let cellCollection = cell as! DetailCollectionTableViewCell
                 cellCollection.delegate = self;
             }
@@ -165,11 +153,9 @@ class DetailTableViewController: UITableViewController, DetailCollectionTableVie
             return cell
             
         } else {
-            cell = tableView.dequeueReusableCellWithIdentifier("cellLoading", forIndexPath: indexPath) as! UITableViewCell
-            return cell
+            return tableView.dequeueReusableCellWithIdentifier("cellLoading", forIndexPath: indexPath)
         }
     }
-    
     
     //MARK: - Methods
     
@@ -194,7 +180,6 @@ class DetailTableViewController: UITableViewController, DetailCollectionTableVie
     //MARK: - DetailCollectionTableViewCellDelegate
     
     func didSelectDetailCollectionTableViewCell(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath, type: String) {
-        
         
         //TODO Go To Projects
         if type == "project" {

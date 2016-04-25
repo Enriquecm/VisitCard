@@ -35,8 +35,8 @@ class UnwindBottonToUpCustomSegue: UIStoryboardSegue {
     override func perform() {
         
         // Source and Destination views
-        var secondViewControllerView = self.sourceViewController.view as UIView!
-        var firstViewControllerView = self.destinationViewController.view as UIView!
+        let secondViewControllerView = self.sourceViewController.view as UIView!
+        let firstViewControllerView = self.destinationViewController.view as UIView!
         
         //Screen Height
         let screenHeight = UIScreen.mainScreen().bounds.size.height

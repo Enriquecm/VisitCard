@@ -12,9 +12,8 @@ class CustomSequeUnwind: UIStoryboardSegue {
     
     override func perform() {
         
-        var firstViewControllerView = self.sourceViewController.view as UIView!
-        var secondViewControllerView = self.destinationViewController.view as UIView!
-        
+        let firstViewControllerView = self.sourceViewController.view as UIView!
+        let secondViewControllerView = self.destinationViewController.view as UIView!
         
         let screenHeight = UIScreen.mainScreen().bounds.size.height
         

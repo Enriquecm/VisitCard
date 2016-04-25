@@ -16,8 +16,7 @@ class Utils: NSObject {
     /// :param: colorA starts on top.
     /// :param: colorB starts on below.
     /// :param: rotation It is between 0 and 1. Move anti-clockwise.
-    class func gradientView(frame: CGRect, colorA: UIColor, colorB: UIColor, rotation: Float) -> UIView
-    {
+    class func gradientView(frame: CGRect, colorA: UIColor, colorB: UIColor, rotation: Float) -> UIView {
         let view = UIView(frame: frame)
         
         let layer: CAGradientLayer = CAGradientLayer()

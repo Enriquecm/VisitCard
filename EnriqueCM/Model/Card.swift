@@ -9,7 +9,6 @@
 import Foundation
 
 class Card {
-    let id          : Int?
     let title       : String?
     let subtitle    : String?
     let imageName   : String?
@@ -18,7 +17,6 @@ class Card {
     let info        : AnyObject?
     
     init(dictionary : NSDictionary) {
-        id          = dictionary["id"]      as? Int
         title       = dictionary["title"]   as? String
         subtitle    = dictionary["subtitle"]as? String
         imageName   = dictionary["image"]   as? String

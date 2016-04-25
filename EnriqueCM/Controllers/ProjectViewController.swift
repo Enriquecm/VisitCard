@@ -26,6 +26,7 @@ class ProjectViewController: UIViewController, UITableViewDataSource, UITableVie
         }
         if let appName = card?.title {
             titleLabel.text = appName
+            title = appName
         }
         if var info = card?.info as? [[String : AnyObject]]{
             if let appCompany = info[0]["subtitle"] as? String{
@@ -42,7 +43,7 @@ class ProjectViewController: UIViewController, UITableViewDataSource, UITableVie
         tableView.estimatedRowHeight = 44
         tableView.rowHeight = UITableViewAutomaticDimension
     }
-
+    
     @IBAction func closeProject(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: {})
     }
@@ -91,7 +92,7 @@ class ProjectViewController: UIViewController, UITableViewDataSource, UITableVie
             return cell
             
         } else {
-            let cell = tableView.dequeueReusableCellWithIdentifier("cellDescription", forIndexPath: indexPath) as! UITableViewCell
+            let cell = tableView.dequeueReusableCellWithIdentifier("cellDescription", forIndexPath: indexPath)
             if var info = card?.info as? [[String : AnyObject]]{
                 if let appDescription = info[0]["text"] as? String{
                     if let label = cell.viewWithTag(1000) as? UILabel {

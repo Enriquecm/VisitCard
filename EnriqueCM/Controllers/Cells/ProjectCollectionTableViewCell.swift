@@ -23,7 +23,7 @@ class ProjectCollectionTableViewCell: UITableViewCell, UICollectionViewDataSourc
     
     override func initWithDictionary(dictionary : NSDictionary) {
 
-        if var images = dictionary["media"] as? [String] {
+        if let images = dictionary["media"] as? [String] {
             for image in images {
                 collection.append(image)
             }
@@ -53,11 +53,11 @@ class ProjectCollectionTableViewCell: UITableViewCell, UICollectionViewDataSourc
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! UICollectionViewCell
-        var imageView = cell.viewWithTag(1001) as? UIImageView
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath)
+        let imageView = cell.viewWithTag(1001) as? UIImageView
 
-        var item: AnyObject = collection[indexPath.row]
-        if var image = item as? String {
+        let item = collection[indexPath.row]
+        if let image = item as? String {
             imageView?.image = UIImage(named: image)
         }
 

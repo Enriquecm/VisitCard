@@ -15,8 +15,8 @@ class BottomToUpCustomSegue: UIStoryboardSegue {
  
     override func perform() {
         // Source and Destination views
-        var firstViewControllerView = self.sourceViewController.view as UIView!
-        var secondViewControllerView = self.destinationViewController.view as UIView!
+        let firstViewControllerView = self.sourceViewController.view as UIView!
+        let secondViewControllerView = self.destinationViewController.view as UIView!
 
         // Screen Size
         let screenWidht = UIScreen.mainScreen().bounds.size.width
@@ -33,7 +33,7 @@ class BottomToUpCustomSegue: UIStoryboardSegue {
             firstViewControllerView.frame = CGRectOffset(firstViewControllerView.frame, 0.0, -screenHeight)
             secondViewControllerView.frame = CGRectOffset(secondViewControllerView.frame, 0.0, -screenHeight)
         }) { (completed) -> Void in
-            self.sourceViewController.presentViewController(self.destinationViewController as! UIViewController,
+            self.sourceViewController.presentViewController(self.destinationViewController,
                 animated: false,
                 completion: nil)
         }

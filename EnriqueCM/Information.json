@@ -5,7 +5,7 @@
                   "title"           : "Enrique",
                   "subtitle"        : "Enrique Choynowski Melgarejo",
                   "image"		: "ImageProfile",
-                  "about"		: "Bachelor's at Control and Automation Engineering from Pontifícia Universidade Católica do Rio Grande do Sul (2013), developed research projects in software development and wireless networking analysis. Currently undergraduate at Internet System at Universidade Luterana do Brasil.\n\nWith experience in developing applications for iOS,Windows 8 and Windows Phone.\n\nHas joined BEPiD(Brazilian Education Program for iOS Developers) offered by Instituto Eldorado and PUCRS in partnership with Apple.\nLooking for obtain as much experience as possible in the subjects above, as well as mastering the subjects learned during graduation, focusing on researches and innovation projects.",
+                  "about"		: "Bachelor's at Control and Automation Engineering from Pontifícia Universidade Católica do Rio Grande do Sul (2013), developed research projects in software development and wireless networking analysis. Currently undergraduate at Internet System at Universidade Luterana do Brasil.\n\nWith experience in developing applications for iOS, Node.js, Windows 8 and Windows Phone.\n\nHas joined BEPiD(Brazilian Education Program for iOS Developers) offered by Instituto Eldorado and PUCRS in partnership with Apple.\nLooking for obtain as much experience as possible in the subjects above, as well as mastering the subjects learned during graduation, focusing on researches and innovation projects.",
                   "type"		: "detail",
                   "info"		: [{
                         "type": "title",
@@ -513,7 +513,7 @@
                   "info"            : [{
                         "id"              : 1003,
                         "title"           : "Gogo Birdie!",
-                        "subtitle"        : "Rafael Bom Fraga",
+                        "subtitle"        : "Enrique C. Melgarejo",
                         "action"          : "Download",
                         "link"            : "https://itunes.apple.com/us/app/gogo-birdie!/id903382605?mt=8",
                         "text"            : "GoGo Birdie! is a game developed using Sprite Kit. In this project we used: Sprite Kit and Google Admob. It is a really challenging game where you have to guide a bird through waves of bad birds.",

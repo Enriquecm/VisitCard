@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		AD1A83511AE2E2E5008F336F /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1A83501AE2E2E5008F336F /* CardTableViewCell.swift */; };
 		AD1A83531AE2E493008F336F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1A83521AE2E493008F336F /* Card.swift */; };
-		AD1A83551AE2E606008F336F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1A83541AE2E606008F336F /* Extensions.swift */; };
-		AD1A83561AE2E7E8008F336F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1A83541AE2E606008F336F /* Extensions.swift */; };
-		AD1A835A1AE2F642008F336F /* CardsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1A83591AE2F642008F336F /* CardsManager.swift */; };
+		AD1A83551AE2E606008F336F /* UITableViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1A83541AE2E606008F336F /* UITableViewCellExtensions.swift */; };
 		AD1A835C1AE2FA90008F336F /* Information.json in Resources */ = {isa = PBXBuildFile; fileRef = AD1A835B1AE2FA90008F336F /* Information.json */; };
 		AD1A835F1AE34001008F336F /* TransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1A835E1AE34001008F336F /* TransitionDelegate.swift */; };
 		AD1A83611AE3402E008F336F /* TransitionPresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1A83601AE3402E008F336F /* TransitionPresentationAnimator.swift */; };
@@ -24,15 +22,12 @@
 		AD2FEC361AE13D3F00EF8B65 /* UnwindBottonToUpCustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2FEC351AE13D3F00EF8B65 /* UnwindBottonToUpCustomSegue.swift */; };
 		AD2FEC381AE14BDA00EF8B65 /* CustomSequeUnwind.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2FEC371AE14BDA00EF8B65 /* CustomSequeUnwind.swift */; };
 		AD2FEC3E1AE1DCC300EF8B65 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2FEC3D1AE1DCC300EF8B65 /* MainTableViewController.swift */; };
-		AD2FEC431AE2B1DE00EF8B65 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD2FEC421AE2B1DE00EF8B65 /* Data.plist */; };
 		AD2FEC451AE2B7E200EF8B65 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2FEC441AE2B7E200EF8B65 /* DatabaseManager.swift */; };
 		AD37EF951CCB1A200016F946 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37EF941CCB1A200016F946 /* AppDelegate.swift */; };
 		AD37EF971CCB1A200016F946 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37EF961CCB1A200016F946 /* FirstViewController.swift */; };
 		AD37EF991CCB1A200016F946 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37EF981CCB1A200016F946 /* SecondViewController.swift */; };
 		AD37EF9C1CCB1A200016F946 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD37EF9A1CCB1A200016F946 /* Main.storyboard */; };
 		AD37EF9E1CCB1A200016F946 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD37EF9D1CCB1A200016F946 /* Assets.xcassets */; };
-		AD37EFA91CCB1A200016F946 /* EnriqueCM_tvTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37EFA81CCB1A200016F946 /* EnriqueCM_tvTests.swift */; };
-		AD37EFB41CCB1A200016F946 /* EnriqueCM_tvUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37EFB31CCB1A200016F946 /* EnriqueCM_tvUITests.swift */; };
 		AD4405951AEB47E000BADC06 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4405941AEB47E000BADC06 /* Utils.swift */; };
 		AD4405971AEC23E500BADC06 /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4405961AEC23E500BADC06 /* ProjectViewController.swift */; };
 		AD4405991AEC534500BADC06 /* ProjectCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4405981AEC534500BADC06 /* ProjectCollectionTableViewCell.swift */; };
@@ -111,49 +106,28 @@
 		AD4406331AED921100BADC06 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = AD4406321AED921100BADC06 /* background.png */; };
 		AD4406351AED9B4400BADC06 /* RunShadow-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = AD4406341AED9B4400BADC06 /* RunShadow-logo.png */; };
 		AD4406381AED9D8500BADC06 /* qualities.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD4406371AED9D8500BADC06 /* qualities.jpg */; };
-		AD9389871AE5A96F00580D4A /* Default.json in Resources */ = {isa = PBXBuildFile; fileRef = AD9389861AE5A96F00580D4A /* Default.json */; };
 		AD93898A1AE6AC6900580D4A /* DetailTitleSubtitleImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9389891AE6AC6900580D4A /* DetailTitleSubtitleImageTableViewCell.swift */; };
 		AD93898C1AE6AF8000580D4A /* DetailAdjustableTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD93898B1AE6AF8000580D4A /* DetailAdjustableTextTableViewCell.swift */; };
 		AD93898E1AE6EE8A00580D4A /* DetailLinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD93898D1AE6EE8A00580D4A /* DetailLinkTableViewCell.swift */; };
 		AD9389901AE70E4200580D4A /* DetailDateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD93898F1AE70E4200580D4A /* DetailDateTableViewCell.swift */; };
 		AD9389921AE70EE800580D4A /* DetailCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9389911AE70EE800580D4A /* DetailCollectionTableViewCell.swift */; };
+		ADB493161CCC55620047D886 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADDB24941ADFEA2A00FDFBE1 /* Images.xcassets */; };
+		ADB493191CCD5D470047D886 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB493181CCD5D470047D886 /* UIColorExtensions.swift */; };
+		ADB4931B1CCD5D930047D886 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB4931A1CCD5D930047D886 /* StringExtensions.swift */; };
+		ADB4931E1CCD78120047D886 /* InformationV2.json in Resources */ = {isa = PBXBuildFile; fileRef = ADB4931D1CCD78120047D886 /* InformationV2.json */; };
+		ADB493201CCD7F5F0047D886 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB4931F1CCD7F5F0047D886 /* Section.swift */; };
+		ADB493221CCD86630047D886 /* InformationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB493211CCD86630047D886 /* InformationManager.swift */; };
 		ADCCD5FA1AE45FAA0061674B /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCD5F91AE45FAA0061674B /* DetailTableViewController.swift */; };
 		ADDB248E1ADFEA2A00FDFBE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDB248D1ADFEA2A00FDFBE1 /* AppDelegate.swift */; };
 		ADDB24931ADFEA2A00FDFBE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADDB24911ADFEA2A00FDFBE1 /* Main.storyboard */; };
 		ADDB24951ADFEA2A00FDFBE1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADDB24941ADFEA2A00FDFBE1 /* Images.xcassets */; };
 		ADDB24981ADFEA2A00FDFBE1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADDB24961ADFEA2A00FDFBE1 /* LaunchScreen.xib */; };
-		ADDB24A41ADFEA2A00FDFBE1 /* EnriqueCMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDB24A31ADFEA2A00FDFBE1 /* EnriqueCMTests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		AD37EFA51CCB1A200016F946 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ADDB24801ADFEA2A00FDFBE1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AD37EF911CCB1A200016F946;
-			remoteInfo = "EnriqueCM-tv";
-		};
-		AD37EFB01CCB1A200016F946 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ADDB24801ADFEA2A00FDFBE1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AD37EF911CCB1A200016F946;
-			remoteInfo = "EnriqueCM-tv";
-		};
-		ADDB249E1ADFEA2A00FDFBE1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ADDB24801ADFEA2A00FDFBE1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ADDB24871ADFEA2A00FDFBE1;
-			remoteInfo = EnriqueCM;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AD1A83501AE2E2E5008F336F /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		AD1A83521AE2E493008F336F /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Model/Card.swift; sourceTree = "<group>"; };
-		AD1A83541AE2E606008F336F /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		AD1A83591AE2F642008F336F /* CardsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardsManager.swift; path = Managers/CardsManager.swift; sourceTree = "<group>"; };
+		AD1A83541AE2E606008F336F /* UITableViewCellExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtensions.swift; sourceTree = "<group>"; };
 		AD1A835B1AE2FA90008F336F /* Information.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Information.json; sourceTree = "<group>"; };
 		AD1A835E1AE34001008F336F /* TransitionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionDelegate.swift; sourceTree = "<group>"; };
 		AD1A83601AE3402E008F336F /* TransitionPresentationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionPresentationAnimator.swift; sourceTree = "<group>"; };
@@ -166,7 +140,6 @@
 		AD2FEC351AE13D3F00EF8B65 /* UnwindBottonToUpCustomSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindBottonToUpCustomSegue.swift; sourceTree = "<group>"; };
 		AD2FEC371AE14BDA00EF8B65 /* CustomSequeUnwind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSequeUnwind.swift; sourceTree = "<group>"; };
 		AD2FEC3D1AE1DCC300EF8B65 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTableViewController.swift; path = Controllers/MainTableViewController.swift; sourceTree = "<group>"; };
-		AD2FEC421AE2B1DE00EF8B65 /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
 		AD2FEC441AE2B7E200EF8B65 /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DatabaseManager.swift; path = Managers/DatabaseManager.swift; sourceTree = "<group>"; };
 		AD37EF921CCB1A200016F946 /* EnriqueCM-tv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EnriqueCM-tv.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD37EF941CCB1A200016F946 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -175,10 +148,8 @@
 		AD37EF9B1CCB1A200016F946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD37EF9D1CCB1A200016F946 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD37EF9F1CCB1A200016F946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD37EFA41CCB1A200016F946 /* EnriqueCM-tvTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EnriqueCM-tvTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD37EFA81CCB1A200016F946 /* EnriqueCM_tvTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnriqueCM_tvTests.swift; sourceTree = "<group>"; };
 		AD37EFAA1CCB1A200016F946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD37EFAF1CCB1A200016F946 /* EnriqueCM-tvUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EnriqueCM-tvUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD37EFB31CCB1A200016F946 /* EnriqueCM_tvUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnriqueCM_tvUITests.swift; sourceTree = "<group>"; };
 		AD37EFB51CCB1A200016F946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD4405941AEB47E000BADC06 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Managers/Utils.swift; sourceTree = "<group>"; };
@@ -259,12 +230,16 @@
 		AD4406321AED921100BADC06 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		AD4406341AED9B4400BADC06 /* RunShadow-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RunShadow-logo.png"; sourceTree = "<group>"; };
 		AD4406371AED9D8500BADC06 /* qualities.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = qualities.jpg; sourceTree = "<group>"; };
-		AD9389861AE5A96F00580D4A /* Default.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Default.json; sourceTree = "<group>"; };
 		AD9389891AE6AC6900580D4A /* DetailTitleSubtitleImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailTitleSubtitleImageTableViewCell.swift; path = Controllers/Cells/DetailTitleSubtitleImageTableViewCell.swift; sourceTree = "<group>"; };
 		AD93898B1AE6AF8000580D4A /* DetailAdjustableTextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailAdjustableTextTableViewCell.swift; path = Controllers/Cells/DetailAdjustableTextTableViewCell.swift; sourceTree = "<group>"; };
 		AD93898D1AE6EE8A00580D4A /* DetailLinkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailLinkTableViewCell.swift; path = Controllers/Cells/DetailLinkTableViewCell.swift; sourceTree = "<group>"; };
 		AD93898F1AE70E4200580D4A /* DetailDateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailDateTableViewCell.swift; path = Controllers/Cells/DetailDateTableViewCell.swift; sourceTree = "<group>"; };
 		AD9389911AE70EE800580D4A /* DetailCollectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailCollectionTableViewCell.swift; path = Controllers/Cells/DetailCollectionTableViewCell.swift; sourceTree = "<group>"; };
+		ADB493181CCD5D470047D886 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		ADB4931A1CCD5D930047D886 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		ADB4931D1CCD78120047D886 /* InformationV2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = InformationV2.json; sourceTree = "<group>"; };
+		ADB4931F1CCD7F5F0047D886 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		ADB493211CCD86630047D886 /* InformationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationManager.swift; sourceTree = "<group>"; };
 		ADCCD5F91AE45FAA0061674B /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailTableViewController.swift; path = Controllers/DetailTableViewController.swift; sourceTree = "<group>"; };
 		ADDB24881ADFEA2A00FDFBE1 /* EnriqueCM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnriqueCM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADDB248C1ADFEA2A00FDFBE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -272,7 +247,6 @@
 		ADDB24921ADFEA2A00FDFBE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADDB24941ADFEA2A00FDFBE1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ADDB24971ADFEA2A00FDFBE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		ADDB249D1ADFEA2A00FDFBE1 /* EnriqueCMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnriqueCMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADDB24A21ADFEA2A00FDFBE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADDB24A31ADFEA2A00FDFBE1 /* EnriqueCMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnriqueCMTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -285,28 +259,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD37EFA11CCB1A200016F946 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD37EFAC1CCB1A200016F946 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		ADDB24851ADFEA2A00FDFBE1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ADDB249A1ADFEA2A00FDFBE1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -351,8 +304,8 @@
 			isa = PBXGroup;
 			children = (
 				AD2FEC441AE2B7E200EF8B65 /* DatabaseManager.swift */,
-				AD1A83591AE2F642008F336F /* CardsManager.swift */,
 				AD4405941AEB47E000BADC06 /* Utils.swift */,
+				ADB493211CCD86630047D886 /* InformationManager.swift */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -361,6 +314,7 @@
 			isa = PBXGroup;
 			children = (
 				AD1A83521AE2E493008F336F /* Card.swift */,
+				ADB4931F1CCD7F5F0047D886 /* Section.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -538,6 +492,26 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		ADB493171CCD5D0B0047D886 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AD1A83541AE2E606008F336F /* UITableViewCellExtensions.swift */,
+				ADB493181CCD5D470047D886 /* UIColorExtensions.swift */,
+				ADB4931A1CCD5D930047D886 /* StringExtensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		ADB4931C1CCD643B0047D886 /* Information */ = {
+			isa = PBXGroup;
+			children = (
+				AD1A835B1AE2FA90008F336F /* Information.json */,
+				ADB4931D1CCD78120047D886 /* InformationV2.json */,
+				ADCCD5FD1AE474B80061674B /* Assets */,
+			);
+			name = Information;
+			sourceTree = "<group>";
+		};
 		ADBA09241AEA816B00DC2B24 /* PersonalDetails */ = {
 			isa = PBXGroup;
 			children = (
@@ -591,10 +565,7 @@
 			isa = PBXGroup;
 			children = (
 				ADDB24881ADFEA2A00FDFBE1 /* EnriqueCM.app */,
-				ADDB249D1ADFEA2A00FDFBE1 /* EnriqueCMTests.xctest */,
 				AD37EF921CCB1A200016F946 /* EnriqueCM-tv.app */,
-				AD37EFA41CCB1A200016F946 /* EnriqueCM-tvTests.xctest */,
-				AD37EFAF1CCB1A200016F946 /* EnriqueCM-tvUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -602,14 +573,14 @@
 		ADDB248A1ADFEA2A00FDFBE1 /* EnriqueCM */ = {
 			isa = PBXGroup;
 			children = (
-				ADCCD5FD1AE474B80061674B /* Assets */,
+				ADB4931C1CCD643B0047D886 /* Information */,
+				ADB493171CCD5D0B0047D886 /* Extensions */,
 				AD1A835D1AE33FBE008F336F /* Transitions */,
 				AD2FEC411AE2B1AD00EF8B65 /* CustomSegue */,
 				AD2FEC401AE1DD1E00EF8B65 /* Model */,
 				AD2FEC3F1AE1DD0500EF8B65 /* Managers */,
 				AD2FEC3C1AE1DC9200EF8B65 /* Controllers */,
 				AD1A836C1AE420F3008F336F /* Views */,
-				AD1A83541AE2E606008F336F /* Extensions.swift */,
 				ADDB24911ADFEA2A00FDFBE1 /* Main.storyboard */,
 				ADDB24941ADFEA2A00FDFBE1 /* Images.xcassets */,
 				ADDB248D1ADFEA2A00FDFBE1 /* AppDelegate.swift */,
@@ -623,9 +594,6 @@
 			isa = PBXGroup;
 			children = (
 				ADDB248C1ADFEA2A00FDFBE1 /* Info.plist */,
-				AD2FEC421AE2B1DE00EF8B65 /* Data.plist */,
-				AD1A835B1AE2FA90008F336F /* Information.json */,
-				AD9389861AE5A96F00580D4A /* Default.json */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -667,42 +635,6 @@
 			productReference = AD37EF921CCB1A200016F946 /* EnriqueCM-tv.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AD37EFA31CCB1A200016F946 /* EnriqueCM-tvTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AD37EFB91CCB1A200016F946 /* Build configuration list for PBXNativeTarget "EnriqueCM-tvTests" */;
-			buildPhases = (
-				AD37EFA01CCB1A200016F946 /* Sources */,
-				AD37EFA11CCB1A200016F946 /* Frameworks */,
-				AD37EFA21CCB1A200016F946 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AD37EFA61CCB1A200016F946 /* PBXTargetDependency */,
-			);
-			name = "EnriqueCM-tvTests";
-			productName = "EnriqueCM-tvTests";
-			productReference = AD37EFA41CCB1A200016F946 /* EnriqueCM-tvTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		AD37EFAE1CCB1A200016F946 /* EnriqueCM-tvUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AD37EFBC1CCB1A200016F946 /* Build configuration list for PBXNativeTarget "EnriqueCM-tvUITests" */;
-			buildPhases = (
-				AD37EFAB1CCB1A200016F946 /* Sources */,
-				AD37EFAC1CCB1A200016F946 /* Frameworks */,
-				AD37EFAD1CCB1A200016F946 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AD37EFB11CCB1A200016F946 /* PBXTargetDependency */,
-			);
-			name = "EnriqueCM-tvUITests";
-			productName = "EnriqueCM-tvUITests";
-			productReference = AD37EFAF1CCB1A200016F946 /* EnriqueCM-tvUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		ADDB24871ADFEA2A00FDFBE1 /* EnriqueCM */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADDB24A71ADFEA2A00FDFBE1 /* Build configuration list for PBXNativeTarget "EnriqueCM" */;
@@ -720,24 +652,6 @@
 			productReference = ADDB24881ADFEA2A00FDFBE1 /* EnriqueCM.app */;
 			productType = "com.apple.product-type.application";
 		};
-		ADDB249C1ADFEA2A00FDFBE1 /* EnriqueCMTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ADDB24AA1ADFEA2A00FDFBE1 /* Build configuration list for PBXNativeTarget "EnriqueCMTests" */;
-			buildPhases = (
-				ADDB24991ADFEA2A00FDFBE1 /* Sources */,
-				ADDB249A1ADFEA2A00FDFBE1 /* Frameworks */,
-				ADDB249B1ADFEA2A00FDFBE1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				ADDB249F1ADFEA2A00FDFBE1 /* PBXTargetDependency */,
-			);
-			name = EnriqueCMTests;
-			productName = EnriqueCMTests;
-			productReference = ADDB249D1ADFEA2A00FDFBE1 /* EnriqueCMTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -751,21 +665,9 @@
 					AD37EF911CCB1A200016F946 = {
 						CreatedOnToolsVersion = 7.3;
 					};
-					AD37EFA31CCB1A200016F946 = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = AD37EF911CCB1A200016F946;
-					};
-					AD37EFAE1CCB1A200016F946 = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = AD37EF911CCB1A200016F946;
-					};
 					ADDB24871ADFEA2A00FDFBE1 = {
 						CreatedOnToolsVersion = 6.3;
 						DevelopmentTeam = 38HUSCHT3G;
-					};
-					ADDB249C1ADFEA2A00FDFBE1 = {
-						CreatedOnToolsVersion = 6.3;
-						TestTargetID = ADDB24871ADFEA2A00FDFBE1;
 					};
 				};
 			};
@@ -783,10 +685,7 @@
 			projectRoot = "";
 			targets = (
 				ADDB24871ADFEA2A00FDFBE1 /* EnriqueCM */,
-				ADDB249C1ADFEA2A00FDFBE1 /* EnriqueCMTests */,
 				AD37EF911CCB1A200016F946 /* EnriqueCM-tv */,
-				AD37EFA31CCB1A200016F946 /* EnriqueCM-tvTests */,
-				AD37EFAE1CCB1A200016F946 /* EnriqueCM-tvUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -796,22 +695,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADB493161CCC55620047D886 /* Images.xcassets in Resources */,
 				AD37EF9E1CCB1A200016F946 /* Assets.xcassets in Resources */,
 				AD37EF9C1CCB1A200016F946 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD37EFA21CCB1A200016F946 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD37EFAD1CCB1A200016F946 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -827,6 +713,7 @@
 				AD4405A41AED449800BADC06 /* PUCRS-main.jpg in Resources */,
 				AD4405FD1AED868600BADC06 /* aproximar9.png in Resources */,
 				AD4406271AED8A0700BADC06 /* elipse-print5.jpeg in Resources */,
+				ADB4931E1CCD78120047D886 /* InformationV2.json in Resources */,
 				AD4406381AED9D8500BADC06 /* qualities.jpg in Resources */,
 				AD4405CB1AED774C00BADC06 /* backend-dev-main.jpg in Resources */,
 				AD4406141AED879300BADC06 /* gogobirdie-print4.jpeg in Resources */,
@@ -842,7 +729,6 @@
 				AD4405BC1AED729500BADC06 /* gogobirdie-logo.jpg in Resources */,
 				AD4406251AED8A0700BADC06 /* elipse-print3.jpeg in Resources */,
 				AD4405F51AED868600BADC06 /* aproximar1.png in Resources */,
-				AD9389871AE5A96F00580D4A /* Default.json in Resources */,
 				AD4405E91AED865F00BADC06 /* sp-print5.jpeg in Resources */,
 				AD4406151AED879300BADC06 /* gogobirdie-print5.jpeg in Resources */,
 				AD4405AA1AED6C6900BADC06 /* sp-main.png in Resources */,
@@ -853,7 +739,6 @@
 				ADDB24981ADFEA2A00FDFBE1 /* LaunchScreen.xib in Resources */,
 				AD4405FB1AED868600BADC06 /* aproximar7.png in Resources */,
 				AD4405A31AED449800BADC06 /* PUCRS-logo-landscape.png in Resources */,
-				AD2FEC431AE2B1DE00EF8B65 /* Data.plist in Resources */,
 				AD4405FF1AED868600BADC06 /* aproximar11.png in Resources */,
 				AD4405F81AED868600BADC06 /* aproximar4.png in Resources */,
 				AD4405D51AED775400BADC06 /* spa.png in Resources */,
@@ -903,13 +788,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ADDB249B1ADFEA2A00FDFBE1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -923,30 +801,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD37EFA01CCB1A200016F946 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD37EFA91CCB1A200016F946 /* EnriqueCM_tvTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD37EFAB1CCB1A200016F946 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD37EFB41CCB1A200016F946 /* EnriqueCM_tvUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		ADDB24841ADFEA2A00FDFBE1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AD2FEC321AE1335E00EF8B65 /* CustomSegue.swift in Sources */,
+				ADB493201CCD7F5F0047D886 /* Section.swift in Sources */,
 				AD1A83631AE341B3008F336F /* TransitionDismissalAnimator.swift in Sources */,
 				AD4405951AEB47E000BADC06 /* Utils.swift in Sources */,
-				AD1A835A1AE2F642008F336F /* CardsManager.swift in Sources */,
 				AD9389901AE70E4200580D4A /* DetailDateTableViewCell.swift in Sources */,
 				AD1A83611AE3402E008F336F /* TransitionPresentationAnimator.swift in Sources */,
 				AD2FEC301AE1277700EF8B65 /* BottomToUpCustomSegue.swift in Sources */,
@@ -957,49 +819,25 @@
 				AD1A83511AE2E2E5008F336F /* CardTableViewCell.swift in Sources */,
 				ADCCD5FA1AE45FAA0061674B /* DetailTableViewController.swift in Sources */,
 				ADDB248E1ADFEA2A00FDFBE1 /* AppDelegate.swift in Sources */,
+				ADB493191CCD5D470047D886 /* UIColorExtensions.swift in Sources */,
 				AD1A83671AE34261008F336F /* DismissalAnimator.swift in Sources */,
-				AD1A83551AE2E606008F336F /* Extensions.swift in Sources */,
+				AD1A83551AE2E606008F336F /* UITableViewCellExtensions.swift in Sources */,
 				AD93898A1AE6AC6900580D4A /* DetailTitleSubtitleImageTableViewCell.swift in Sources */,
 				AD4405971AEC23E500BADC06 /* ProjectViewController.swift in Sources */,
 				AD2FEC381AE14BDA00EF8B65 /* CustomSequeUnwind.swift in Sources */,
 				AD1A83651AE34240008F336F /* PresentationAnimator.swift in Sources */,
 				AD2FEC361AE13D3F00EF8B65 /* UnwindBottonToUpCustomSegue.swift in Sources */,
 				AD93898C1AE6AF8000580D4A /* DetailAdjustableTextTableViewCell.swift in Sources */,
+				ADB493221CCD86630047D886 /* InformationManager.swift in Sources */,
 				AD1A835F1AE34001008F336F /* TransitionDelegate.swift in Sources */,
+				ADB4931B1CCD5D930047D886 /* StringExtensions.swift in Sources */,
 				AD93898E1AE6EE8A00580D4A /* DetailLinkTableViewCell.swift in Sources */,
 				AD2FEC451AE2B7E200EF8B65 /* DatabaseManager.swift in Sources */,
 				AD1A83531AE2E493008F336F /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ADDB24991ADFEA2A00FDFBE1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ADDB24A41ADFEA2A00FDFBE1 /* EnriqueCMTests.swift in Sources */,
-				AD1A83561AE2E7E8008F336F /* Extensions.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AD37EFA61CCB1A200016F946 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AD37EF911CCB1A200016F946 /* EnriqueCM-tv */;
-			targetProxy = AD37EFA51CCB1A200016F946 /* PBXContainerItemProxy */;
-		};
-		AD37EFB11CCB1A200016F946 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AD37EF911CCB1A200016F946 /* EnriqueCM-tv */;
-			targetProxy = AD37EFB01CCB1A200016F946 /* PBXContainerItemProxy */;
-		};
-		ADDB249F1ADFEA2A00FDFBE1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = ADDB24871ADFEA2A00FDFBE1 /* EnriqueCM */;
-			targetProxy = ADDB249E1ADFEA2A00FDFBE1 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AD37EF9A1CCB1A200016F946 /* Main.storyboard */ = {
@@ -1058,66 +896,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
-			};
-			name = Release;
-		};
-		AD37EFBA1CCB1A200016F946 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ANALYZER_NONNULL = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				INFOPLIST_FILE = "EnriqueCM-tvTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.choynowski.EnriqueCM-tvTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnriqueCM-tv.app/EnriqueCM-tv";
-				TVOS_DEPLOYMENT_TARGET = 9.2;
-			};
-			name = Debug;
-		};
-		AD37EFBB1CCB1A200016F946 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ANALYZER_NONNULL = YES;
-				INFOPLIST_FILE = "EnriqueCM-tvTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.choynowski.EnriqueCM-tvTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnriqueCM-tv.app/EnriqueCM-tv";
-				TVOS_DEPLOYMENT_TARGET = 9.2;
-			};
-			name = Release;
-		};
-		AD37EFBD1CCB1A200016F946 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				INFOPLIST_FILE = "EnriqueCM-tvUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.choynowski.EnriqueCM-tvUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				TEST_TARGET_NAME = "EnriqueCM-tv";
-				TVOS_DEPLOYMENT_TARGET = 9.2;
-			};
-			name = Debug;
-		};
-		AD37EFBE1CCB1A200016F946 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				INFOPLIST_FILE = "EnriqueCM-tvUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.choynowski.EnriqueCM-tvUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				TEST_TARGET_NAME = "EnriqueCM-tv";
 				TVOS_DEPLOYMENT_TARGET = 9.2;
 			};
 			name = Release;
@@ -1212,7 +990,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = EnriqueCM/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.choynowski.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1226,47 +1004,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = EnriqueCM/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.choynowski.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
-		ADDB24AB1ADFEA2A00FDFBE1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = EnriqueCMTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.choynowski.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnriqueCM.app/EnriqueCM";
-			};
-			name = Debug;
-		};
-		ADDB24AC1ADFEA2A00FDFBE1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = EnriqueCMTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.choynowski.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnriqueCM.app/EnriqueCM";
 			};
 			name = Release;
 		};
@@ -1280,22 +1022,7 @@
 				AD37EFB81CCB1A200016F946 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		AD37EFB91CCB1A200016F946 /* Build configuration list for PBXNativeTarget "EnriqueCM-tvTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AD37EFBA1CCB1A200016F946 /* Debug */,
-				AD37EFBB1CCB1A200016F946 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		AD37EFBC1CCB1A200016F946 /* Build configuration list for PBXNativeTarget "EnriqueCM-tvUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AD37EFBD1CCB1A200016F946 /* Debug */,
-				AD37EFBE1CCB1A200016F946 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADDB24831ADFEA2A00FDFBE1 /* Build configuration list for PBXProject "EnriqueCM" */ = {
 			isa = XCConfigurationList;
@@ -1311,15 +1038,6 @@
 			buildConfigurations = (
 				ADDB24A81ADFEA2A00FDFBE1 /* Debug */,
 				ADDB24A91ADFEA2A00FDFBE1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ADDB24AA1ADFEA2A00FDFBE1 /* Build configuration list for PBXNativeTarget "EnriqueCMTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ADDB24AB1ADFEA2A00FDFBE1 /* Debug */,
-				ADDB24AC1ADFEA2A00FDFBE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

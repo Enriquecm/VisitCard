@@ -12,8 +12,8 @@ class CustomSegue: UIStoryboardSegue {
     
     override func perform() {
         // Source and Destination views
-        var firstViewControllerView = self.sourceViewController.view as UIView!
-        var secondViewControllerView = self.destinationViewController.view as UIView!
+        let firstViewControllerView = self.sourceViewController.view as UIView!
+        let secondViewControllerView = self.destinationViewController.view as UIView!
         
         let window = UIApplication.sharedApplication().keyWindow
         window?.insertSubview(secondViewControllerView, belowSubview: firstViewControllerView)
@@ -28,7 +28,7 @@ class CustomSegue: UIStoryboardSegue {
                 secondViewControllerView.transform = CGAffineTransformIdentity
             }, completion: { (secondCompleted) -> Void in
                 firstViewControllerView.transform = CGAffineTransformIdentity
-                self.sourceViewController.presentViewController(self.destinationViewController as! UIViewController,
+                self.sourceViewController.presentViewController(self.destinationViewController,
                     animated: false,
                     completion: nil)
             })

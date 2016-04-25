@@ -23,7 +23,7 @@ class DetailCollectionTableViewCell: UITableViewCell, UICollectionViewDataSource
     private let kTypeProject : String    = "project"
     private let kTypeHonor : String      = "honor"
     
-    private var m_type : String?
+    private var type : String?
     private var isOpening : Bool = true
     
     @IBOutlet var titleLabel    : UILabel!
@@ -32,18 +32,18 @@ class DetailCollectionTableViewCell: UITableViewCell, UICollectionViewDataSource
     override func initWithDictionary(dictionary : NSDictionary) {
         guard let info = dictionary["info"] as? NSDictionary else { return }
         
-        m_type      = dictionary["type"]as? String
-        id          = info["id"]        as? Int
-        title       = info["title"]     as? String
+        type    = dictionary["type"]as? String
+        id      = info["id"]        as? Int
+        title   = info["title"]     as? String
 
         titleLabel.text = title
         
         // Invalid configuration
-        if m_type == nil {
+        if type == nil {
             return;
         }
         
-        switch (m_type!) {
+        switch (type!) {
         case kTypeMedia:
             if let images = info["images"] as? [String] {
                 collection.append(images)
@@ -61,7 +61,6 @@ class DetailCollectionTableViewCell: UITableViewCell, UICollectionViewDataSource
         isOpening = false;
         collectionView.reloadData()
     }
-    
     
     //MARK: UICollectionViewDataSource
     
@@ -83,23 +82,23 @@ class DetailCollectionTableViewCell: UITableViewCell, UICollectionViewDataSource
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cellCollectionDetail", forIndexPath: indexPath)
-        let imageView = cell.viewWithTag(1001) as UIImageView?
-        let label = cell.viewWithTag(1002) as UILabel?
+        let imageView = cell.viewWithTag(1001) as? UIImageView
+        let label = cell.viewWithTag(1002) as? UILabel
         
         let item: AnyObject = collection[indexPath.row]
         
-        switch (m_type!) {
+        switch (type!) {
         case kTypeMedia:
             if let image = item as? String {
-                imageView.image = UIImage(named: image)
+                imageView?.image = UIImage(named: image)
             }
         
         case kTypeProject, kTypeHonor:
             if let image = (item["image"]) as? String {
-                imageView.image = UIImage(named: image)
+                imageView?.image = UIImage(named: image)
             }   
             if let text = (item["name"]) as? String {
-                label.text = text;
+                label?.text = text;
             }
         
         default:
@@ -114,6 +113,6 @@ class DetailCollectionTableViewCell: UITableViewCell, UICollectionViewDataSource
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        delegate!.didSelectDetailCollectionTableViewCell(collectionView, didSelectItemAtIndexPath: indexPath, type: m_type!)
+        delegate!.didSelectDetailCollectionTableViewCell(collectionView, didSelectItemAtIndexPath: indexPath, type: type!)
     }
 }

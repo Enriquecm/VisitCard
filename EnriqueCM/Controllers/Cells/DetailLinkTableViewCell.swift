@@ -20,7 +20,7 @@ class DetailLinkTableViewCell: UITableViewCell {
     @IBOutlet var linkButton: UIButton!
     
     override func initWithDictionary(dictionary : NSDictionary) {
-        var info : NSDictionary = dictionary["info"] as! NSDictionary
+        guard let info = dictionary["info"] as? NSDictionary else { return }
         
         m_type      = dictionary["type"]as? String
         id          = info["id"]        as? Int
@@ -32,10 +32,10 @@ class DetailLinkTableViewCell: UITableViewCell {
     }
     
     @IBAction func linkClicked(sender: UIButton) {
-        let application = UIApplication.sharedApplication()
         let url = NSURL(string: sender.titleForState(.Normal)!)
-        if application.canOpenURL(url!) {
-            application.openURL(url!)
+        
+        if UIApplication.sharedApplication().canOpenURL(url!) {
+            UIApplication.sharedApplication().openURL(url!)
         } else {
             //TODO: can't open the URL
         }

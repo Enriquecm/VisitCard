@@ -21,7 +21,7 @@ class DetailAdjustableTextTableViewCell: UITableViewCell {
     @IBOutlet var mainTextLabel : UILabel! //TODO: Create adjustable label
     
     override func initWithDictionary(dictionary : NSDictionary) {
-        guard let info = dictionary["info"] as NSDictionary? else { return }
+        guard let info = dictionary["info"] as? NSDictionary else { return }
         
         m_type      = dictionary["type"]as? String
         id          = info["id"]        as? Int
