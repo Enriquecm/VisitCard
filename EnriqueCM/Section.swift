@@ -9,6 +9,7 @@
 import Foundation
 
 class Section {
+    
     var title : String = ""
     var cards : [Card] = []
     

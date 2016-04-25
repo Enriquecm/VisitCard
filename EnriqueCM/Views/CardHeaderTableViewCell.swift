@@ -10,7 +10,7 @@ import UIKit
 import Darwin
 
 protocol CardHeaderTableViewCellDelegate {
-    func didSelectUserHeaderTableViewCell(Selected: Bool, Section: Int, UserHeader: CardHeaderTableViewCell)
+    func didSelecCardHeaderTableViewCell(selected: Bool, section: Int)
 }
 
 class CardHeaderTableViewCell: UITableViewCell {
@@ -20,7 +20,7 @@ class CardHeaderTableViewCell: UITableViewCell {
 
     @IBOutlet var _backgroundView: UIView!
     var delegate : CardHeaderTableViewCellDelegate?
-    var section : Int? = -1
+    var section: Int = -1
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -50,6 +50,6 @@ class CardHeaderTableViewCell: UITableViewCell {
     }
     
     func selectedHeader(sender: AnyObject) {
-        delegate?.didSelectUserHeaderTableViewCell(true, Section: section!, UserHeader: self)   
+        delegate?.didSelecCardHeaderTableViewCell(true, section: section)
     }
 }

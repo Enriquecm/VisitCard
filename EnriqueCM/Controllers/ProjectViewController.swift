@@ -42,12 +42,11 @@ class ProjectViewController: UIViewController, UITableViewDataSource, UITableVie
         
         tableView.estimatedRowHeight = 44
         tableView.rowHeight = UITableViewAutomaticDimension
-    }
+    } 
     
     @IBAction func closeProject(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: {})
     }
-    
     
     @IBAction func actionButtonClicked(sender: UIButton) {
         

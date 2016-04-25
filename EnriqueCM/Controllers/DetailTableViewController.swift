@@ -69,6 +69,11 @@ class DetailTableViewController: UITableViewController, DetailCollectionTableVie
             }) { finished in
                 //Nothing to do
         }
+        
+//        if self.fullImage != nil {
+//            let vc = UIActivityViewController(activityItems: [self.fullImage!], applicationActivities: [])
+//            self.presentViewController(vc, animated: true, completion: nil)
+//        }
     }
     
     func updateHeaderView() {
@@ -187,6 +192,14 @@ class DetailTableViewController: UITableViewController, DetailCollectionTableVie
 //            projectViewController.card = card
 //            presentViewController(projectViewController, animated: true, completion: nil)
         }
+    }
+    
+    //MARK: Actions
+    
+    @IBAction func shareButtonPressed(sender: UIButton) {
+        //TODO: Share screen information
+        
+//        http://stackoverflow.com/questions/15781877/how-to-send-a-pdf-file-using-uiactivityviewcontroller
     }
 }
 

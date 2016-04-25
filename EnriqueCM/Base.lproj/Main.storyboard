@@ -50,7 +50,7 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nNe-OL-KCQ">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="61"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OpenCloseIndicator" translatesAutoresizingMaskIntoConstraints="NO" id="v7a-dL-TfA">
+                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="OpenCloseIndicator" translatesAutoresizingMaskIntoConstraints="NO" id="v7a-dL-TfA">
                                                     <rect key="frame" x="560" y="20" width="5" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="d1D-lb-QaU"/>
@@ -244,8 +244,8 @@
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </view>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T6z-ZI-Uyo">
-                                    <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T6z-ZI-Uyo" userLabel="Close Button">
+                                    <rect key="frame" x="0.0" y="10" width="64" height="64"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="64" id="oSv-oo-q1G"/>
                                         <constraint firstAttribute="width" secondItem="T6z-ZI-Uyo" secondAttribute="height" multiplier="1:1" id="xjR-AS-mM5"/>
@@ -257,13 +257,27 @@
                                         <action selector="dismissViewController:" destination="6t0-CI-If1" eventType="touchUpInside" id="POb-7X-Crz"/>
                                     </connections>
                                 </button>
+                                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cG9-wL-oif" userLabel="Share Button">
+                                    <rect key="frame" x="536" y="10" width="64" height="64"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="64" id="P21-fv-Bz8"/>
+                                        <constraint firstAttribute="width" constant="64" id="zAp-ul-ndM"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="15" minY="15" maxX="20" maxY="15"/>
+                                    <state key="normal" image="Action"/>
+                                    <connections>
+                                        <action selector="shareButtonPressed:" destination="6t0-CI-If1" eventType="touchUpInside" id="akB-il-Gvn"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstItem="dOD-5P-pUP" firstAttribute="leading" secondItem="uyq-uw-e0c" secondAttribute="leading" id="4R7-8j-8qm"/>
-                                <constraint firstItem="T6z-ZI-Uyo" firstAttribute="top" secondItem="uyq-uw-e0c" secondAttribute="top" id="Br9-1P-WZG"/>
+                                <constraint firstAttribute="trailing" secondItem="cG9-wL-oif" secondAttribute="trailing" id="5Ib-Vk-5fH"/>
+                                <constraint firstItem="T6z-ZI-Uyo" firstAttribute="top" secondItem="uyq-uw-e0c" secondAttribute="top" constant="10" id="Br9-1P-WZG"/>
                                 <constraint firstAttribute="centerY" secondItem="cNJ-1V-aLm" secondAttribute="centerY" id="H5l-tO-te9"/>
                                 <constraint firstAttribute="centerX" secondItem="Ho2-gT-NBo" secondAttribute="centerX" id="MKe-x7-eRJ"/>
+                                <constraint firstItem="cG9-wL-oif" firstAttribute="top" secondItem="uyq-uw-e0c" secondAttribute="top" constant="10" id="NoV-pK-1oP"/>
                                 <constraint firstItem="Aqd-Gg-hH4" firstAttribute="top" secondItem="uyq-uw-e0c" secondAttribute="top" id="O9D-7b-fdJ"/>
                                 <constraint firstAttribute="bottom" secondItem="dOD-5P-pUP" secondAttribute="bottom" id="QJS-Zi-pOl"/>
                                 <constraint firstAttribute="trailing" secondItem="Aqd-Gg-hH4" secondAttribute="trailing" id="ROT-33-cK6"/>
@@ -881,6 +895,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Action" width="240" height="302"/>
         <image name="Close" width="50" height="50"/>
         <image name="OpenCloseIndicator" width="5" height="7"/>
     </resources>

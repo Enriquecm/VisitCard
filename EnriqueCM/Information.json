@@ -1,853 +1,855 @@
 {
-      "information" :{
-            "personal details": [{
-                  "id"              : 1,
-                  "title"           : "Enrique",
-                  "subtitle"        : "Enrique Choynowski Melgarejo",
-                  "image"		: "ImageProfile",
-                  "about"		: "Bachelor's at Control and Automation Engineering from Pontifícia Universidade Católica do Rio Grande do Sul (2013), developed research projects in software development and wireless networking analysis. Currently undergraduate at Internet System at Universidade Luterana do Brasil.\n\nWith experience in developing applications for iOS, Node.js, Windows 8 and Windows Phone.\n\nHas joined BEPiD(Brazilian Education Program for iOS Developers) offered by Instituto Eldorado and PUCRS in partnership with Apple.\nLooking for obtain as much experience as possible in the subjects above, as well as mastering the subjects learned during graduation, focusing on researches and innovation projects.",
-                  "type"		: "detail",
-                  "info"		: [{
-                        "type": "title",
-                        "info": {
-                              "title"     : "Name",
-                              "subtitle"  : "Enrique Choynowski Melgarejo",
-                              "image"     : ""
-                              }
-                        },
-                        {
-                        "type": "link",
-                        "info": {
-                              "title"     : "Email",
-                              "link"      : "mailto:enriquecmelgarejo@hotmail.com"
-                              }
-                        },
-                        {
-                        "type": "link",
-                        "info": {
-                              "title"     : "Contact",
-                              "link"      : "tel://+555193084860"
-                              }
-                        },
-                        {
-                        "type": "adjustable-text",
-                        "info": {
-                              "title"     : "About",
-                              "text"      : "Bachelor's at Control and Automation Engineering from Pontifícia Universidade Católica do Rio Grande do Sul (2013), developed research projects in software development and wireless networking analysis. Currently undergraduate at Internet System at Universidade Luterana do Brasil.\n\nWith experience in developing applications for iOS,Windows 8 and Windows Phone.\n\nHas joined BEPiD(Brazilian Education Program for iOS Developers) offered by Instituto Eldorado and PUCRS in partnership with Apple.\nLooking for obtain as much experience as possible in the subjects above, as well as mastering the subjects learned during graduation, focusing on researches and innovation projects."
-                              }
-                        },
-                        {
-                        "type": "link",
-                        "info": {
-                              "title"     : "Linkedin",
-                              "link"      : "https://www.linkedin.com/in/enriquecm"
-                              }
-                        },
-                        {
-                        "type": "link",
-                        "info": {
-                              "title"     : "GitHub",
-                              "link"      : "https://github.com/Enriquecm"
-                              }
-                        }]
-                  }],
-            "education"       : [{
-                  "id"              : 1,
-                  "title"           : "ULBRA",
-                  "subtitle"        : "Universidade Luterana do Brasil",
-                  "image"           : "ULBRA-main.jpg",
-                  "about"           : "Currently, at the second year of graduation on Internet Systems at Universidade Luterana do Brasil. As the needed to deal with the digital engines for development and management of websites, I could see an enormous potential for website's problem's solutions. By the end of the graduation, im expecting acquire the knowledge needed for developing solutions, interfaces and applications directed for web.",
-                  "type"            : "detail",
-                  "info"            : [{
-                        "type": "title",
-                        "info": { 
-                              "title"     : "ULBRA",
-                              "subtitle"  : "Universidade Luterana do Brasil",
-                              "image"     : "ULBRA-logo-landscape.png"
-                              }
-                        },
-                        {
-                        "type": "adjustable-text",
-                        "info": {
-                              "title"     : "About",
-                              "text"      : "Currently, at the second year of graduation on Internet Systems at Universidade Luterana do Brasil. As the needed to deal with the digital engines for development and management of websites, I could see an enormous potential for website's problem's solutions. By the end of the graduation, im expecting acquire the knowledge needed for developing solutions, interfaces and applications directed for web."
-                              }
-                        },
-                        {
-                        "type": "title",
-                        "info": { 
-                              "title"     : "Undergraduate",
-                              "subtitle"  : "Internet Systems",
-                              "image"     : ""
-                              }
-                        },
-                        {
-                        "type": "date",
-                        "info": { 
-                              "title"     : "Current Graduation:",
-                              "date"      : "Second year"
-                              }
-                        },
-                        {
-                        "type": "link",
-                        "info": {
-                              "title"     : "University page:",
-                              "link"      : "http://ulbra.br"
-                              }
-                        }]
-                  },
-                  {
-                  "id"              : 2,
-                  "title"           : "PUCRS",
-                  "subtitle"        : "Pontifícia Universidade Católica do Rio Grande do Sul",
-                  "image"           : "PUCRS-main.jpg",
-                  "about"           : "Bachelor's at Control and Automation Engineering from Pontifícia Universidade Católica do Rio Grande do Sul by 2013. \n\nThe engineer projects, manages and operates equipments used during the production process of industry. Through the graduation, I gained the knowledge of how to develop and train my skills, as well as improved my logical reasoning, my desire of develop projects and automate processes.\n\nThe engineering has provided me the knowledge needed to gain space among the development of software and mobile applications, as I had already gone through the process of learning and had experience in learning by myself.",
-                  "type"            : "detail",
-                  "info"            : [{
-                        "type": "title",
-                        "info": { 
-                              "title"     : "PUCRS",
-                              "subtitle"  : "Pontifícia Universidade Católica do Rio Grande do Sul",
-                              "image"     : "PUCRS-logo-landscape.png"
-                              }
-                        },
-                        {
-                        "type": "adjustable-text",
-                        "info": {
-                              "title"     : "About",
-                              "text"      : "Bachelor's at Control and Automation Engineering from Pontifícia Universidade Católica do Rio Grande do Sul by 2013. \n\nThe engineer projects, manages and operates equipments used during the production process of industry. Through the graduation, I gained the knowledge of how to develop and train my skills, as well as improved my logical reasoning, my desire of develop projects and automate processes.\n\nThe engineering has provided me the knowledge needed to gain space among the development of software and mobile applications, as I had already gone through the process of learning and had experience in learning by myself."
-                              }
-                        },
-                        {
-                        "type": "title",
-                        "info": { 
-                              "title"     : "Graduated at university:",
-                              "subtitle"  : "Control and Automation Engineering",
-                              "image"     : ""
-                              }
-                        },
-                        {
-                        "type": "title",
-                        "info": { 
-                              "title"     : "Final note:",
-                              "subtitle"  : "8.4",
-                              "image"     : ""
-                              }
-                        },
-                        {
-                        "type": "date",
-                        "info": { 
-                              "title"     : "Graduated:",
-                              "date"      : "2013"
-                              }
-                        },
-                        {
-                        "type": "link",
-                        "info": {
-                              "title"     : "University page:",
-                              "link"      : "http://pucrs.br"
-                              }
-                        }]
-                  },
-                  {
-                  "id"              : 3,
-                  "title"           : "CTBM",
-                  "subtitle"        : "Colégio Tiradentes da Brigada Militar",
-                  "image"           : "CTBM-main.jpg",
-                  "about"           : "Graduated at school by 2006 at Escola Militar de Porto Alegre(Brasil) Colégio Tiradentes da Brigada Militar.\n\nWith extra-class activities and a strict discipline, the school stimulated my determination, responsibility and study hard. It opened up my eyes to the huge range of opportunities at the beginning of my studies. Was during this period that I decided to study engineering.",
-                  "type"            : "detail",
-                  "info"            : [{
-                        "type": "title",
-                        "info": { 
-                              "title"     : "CTBM",
-                              "subtitle"  : "Colégio Tiradentes da Brigada Militar ",
-                              "image"     : "CTBM-logo-landscape.png"
-                              }
-                        },
-                        {
-                        "type": "adjustable-text",
-                        "info": {
-                              "title"     : "About",
-                              "text"      : "Graduated at school by 2006 at Escola Militar de Porto Alegre(Brasil) Colégio Tiradentes da Brigada Militar.\n\nWith extra-class activities and a strict discipline, the school stimulated my determination, responsibility and study hard. It opened up my eyes to the huge range of opportunities at the beginning of my studies. Was during this period that I decided to study engineering."
-                              }
-                        },
-                        {
-                        "type": "date",
-                        "info": { 
-                              "title"     : "High School Degree:",
-                              "date"      : "2006"
-                              }
-                        },
-                        {
-                        "type": "link",
-                        "info": {
-                              "title"     : "School facebook page:",
-                              "link"      : "https://www.facebook.com/colegiotiradentes.brigadamilitar"
-                              }
-                        }]
-                  }],
-            "experience"      : [{
-                  "id"              : 1,
-                  "title"           : "Superplayer",
-                  "subtitle"        : "Lead iOS Engineer",
-                  "image"           : "sp-main.png",
-                  "about"           : "Superplayer is a great way to listen to music. You hear your favorite songs in playlists Free made for every moment of your life just a click away.",
-                  "type"            : "detail",
-                  "info"            : [{
-                        "type": "title",
-                        "info": { 
-                              "title"     : "Superplayer",
-                              "subtitle"  : "Lead iOS Engineer",
-                              "image"     : "sp-logo-landscape.png"
-                              }
-                        },
-                        {
-                        "type": "date",
-                        "info": { 
-                              "title"     : "Time Period:",
-                              "date"      : "March 2015 - Present (2 months)"
-                              }
-                        },
-                        {
-                        "type": "adjustable-text",
-                        "info": {
-                              "title"     : "About",
-                              "text"      : "Superplayer is a service that provides online music streaming. Superplayer belongs to 3BR Tech company. The service provides custom radio stations and playlists created by specialists, organized by genre, activities or mood.\n\nDuring two months, I already improved my agile methodology, scrum and how to deal with an application that has millions of users."
-                              }
-                        },
-                        {
-                        "type": "project",
-                        "info": {
-                              "title"     : "Projects",
-                              "items"     :[{
-                                    "id"        : 1000,
-                                    "name"      : "Superplayer",
-                                    "image"     : "sp-logo.jpeg"
-                                    }] 
-                              }
-                        },
-                        {
-                        "type": "link",
-                        "info": {
-                              "title"     : "Company page:",
-                              "link"      : "http://superplayer.fm"
-                              }
-                        }]
-                  },
-                  {
-                  "id"              : 2,
-                  "title"           : "GreenB",
-                  "subtitle"        : "CEO / Backend developer / iOS developer",
-                  "image"           : "greenb-main.png",
-                  "about"           : "Startup founded by my group from BEPiD and I. The company will be used to commercialize the Aproximar app as well as developing, prototyping and releasing innovated projects.",
-                  "type"            : "detail",
-                  "info"            : [{
-                        "type": "title",
-                        "info": { 
-                              "title"     : "GreenB",
-                              "subtitle"  : "CEO / Backend developer / iOS developer",
-                              "image"     : "greenb-logo-landscape.png"
-                              }
-                        },
-                        {
-                        "type": "date",
-                        "info": { 
-                              "title"     : "Time Period:",
-                              "date"      : "August 2014 - Present (9 months)"
-                              }
-                        },
-                        {
-                        "type": "adjustable-text",
-                        "info": {
-                              "title"     : "About",
-                              "text"      : "Startup founded by my group from BEPiD and I. The company will be used to commercialize the Aproximar app as well as developing, prototyping and releasing innovated projects."
-                              }
-                        },
-                        {
-                        "type": "project",
-                        "info": {
-                              "title"     : "Projects",
-                              "items"     :[{
-                                    "id"        : 1001,
-                                    "name"      : "Aproximar",
-                                    "image"     : "aproximar-logo.png"
-                                    },
-                                    {
-                                    "id"        : 1002,
-                                    "name"      : "NoWastes",
-                                    "image"     : "nowastes-logo.png"
-                                    }] 
-                              }
-                        },
-                        {
-                        "type": "honor",
-                        "info": {
-                              "title"     : "Honors",
-                              "items"      : [{
-                                    "id"        : 2000,
-                                    "name"      : "3rd place",
-                                    "image"     : "torneio.jpg"
-                                    }]      
-                              }
-                        },
-                        {
-                        "type": "link",
-                        "info": {
-                              "title"     : "Company page:",
-                              "link"      : "http://greenb.com.br"
-                              }
-                        }]
-                  },
-                  {
-                  "id"              : 3,
-                  "title"           : "BEPiD",
-                  "subtitle"        : "Brazilian Education Program for iOS Development",
-                  "image"           : "bepid-main.png",
-                  "about"           : "This one year program aims to form iOS developers in order to create apps for the brazilian AppStore. My group and I were selected to continue our main project in the BEPiD's second edition. In this company I worked as iOS developer, developing applications, databases and web-services. All activities were performed using agile methods like Scrum and CBL.",
-                  "type"            : "detail",
-                  "info"            : [{
-                        "type": "title",
-                        "info": { 
-                              "title"     : "BEPiD",
-                              "subtitle"  : "Brazilian Education Program for iOS Development",
-                              "image"     : ""
-                              }
-                        },
-                        {
-                        "type": "date",
-                        "info": { 
-                              "title"     : "Time Period:",
-                              "date"      : "November 2013 - Present (1 year 6 months)"
-                              }
-                        },
-                        {
-                        "type": "adjustable-text",
-                        "info": {
-                              "title"     : "About",
-                              "text"      : "This one year program aims to form iOS developers in order to create apps for the brazilian AppStore. My group and I were selected to continue our main project in the BEPiD's second edition. In this company I worked as iOS developer, developing applications, databases and web-services. All activities were performed using agile methods like Scrum and CBL."
-                              }
-                        },
-                        {
-                        "type": "project",
-                        "info": {
-                              "title"     : "Projects",
-                              "items"     :[{
-                                    "id"        : 1003,
-                                    "name"      : "GoGo Birdie!",
-                                    "image"     : "gogobirdie-logo.jpg"
-                                    },
-                                    {
-                                    "id"        : 1001,
-                                    "name"      : "Aproximar",
-                                    "image"     : "aproximar-logo.png"
-                                    },
-                                    {
-                                    "id"        : 1002,
-                                    "name"      : "NoWastes",
-                                    "image"     : "nowastes-logo.png"
-                                    }] 
-                              }
-                        },
-                        {
-                        "type": "link",
-                        "info": {
-                              "title"     : "Course page:",
-                              "link"      : "http://www.bepid.com.br/poa/Pages/Default.aspx"
-                              }
-                        }]
-                  },
-                  {
-                  "id"              : 4,
-                  "title"           : "Ciberbras",
-                  "subtitle"        : "Mobile Application Developer",
-                  "image"           : "ciberbras-main.jpg",
-                  "about"           : "Development and management of an iOS application, developed over the Xamarin platform. With the goal of exchanging information in a secure way, the solution allows to establish a secure exchange of messages in a encrypted ambient",
-                  "type"            : "detail",
-                  "info"            : [{
-                        "type": "title",
-                        "info": { 
-                              "title"     : "Ciberbras",
-                              "subtitle"  : "Mobile Application Developer",
-                              "image"     : "ciberbras-logo-landscape.png"
-                              }
-                        },
-                        {
-                        "type": "date",
-                        "info": { 
-                              "title"     : "Time Period:",
-                              "date"      : "December 2014 - February 2015 (3 months)"
-                              }
-                        },
-                        {
-                        "type": "adjustable-text",
-                        "info": {
-                              "title"     : "About",
-                              "text"      : "Development and management of an iOS application, developed over the Xamarin platform. With the goal of exchanging information in a secure way, the solution allows to establish a secure exchange of messages in a encrypted ambient"
-                              }
-                        },
-                        {
-                        "type": "project",
-                        "info": {
-                              "title"     : "Projects",
-                              "items"     :[{
-                                    "id"        : 1004,
-                                    "name"      : "Sikur",
-                                    "image"     : "sikur-logo.png"
-                                    }] 
-                              }
-                        },
-                        {
-                        "type": "link",
-                        "info": {
-                              "title"     : "Company page:",
-                              "link"      : "http://www.sikur.com/en"
-                              }
-                        }]
-                  },
-                  {
-                  "id"              : 5,
-                  "title"           : "Elipse Software",
-                  "subtitle"        : "Software Developer",
-                  "image"           : "elipse-main.png",
-                  "about"           : "Helping over the development, management and tests of a client-server system with mobile applications, focusing over the management, supervision and control of industrial processes and energy.\n\nServer in C++11 for Windows with secure connection (https) and RESTful API data.\n\nClients: Web client (Browser) (jQuery and HTML5), Windows Phone 8.1 (C# .NET 4.5), Android 4.4 (Java), iOS (iPhone and iPad) (Objective-C).",
-                  "type"            : "detail",
-                  "info"            : [{
-                        "type": "title",
-                        "info": {
-                              "title"     : "Elipse Software",
-                              "subtitle"  : "Software Developer",
-                              "image"     : "elipse-logo-landscape.png"
-                              }
-                        },
-                        {
-                        "type": "date",
-                        "info": { 
-                              "title"     : "Time Period:",
-                              "date"      : "July 2013 - November 2014 (1 year 5 months)"
-                              }
-                        },
-                        {
-                        "type": "adjustable-text",
-                        "info": {
-                              "title"     : "About",
-                              "text"      : "Helping over the development, management and tests of a client-server system with mobile applications, focusing over the management, supervision and control of industrial processes and energy.\n\nServer in C++11 for Windows with secure connection (https) and RESTful API data.\n\nClients: Web client (Browser) (jQuery and HTML5), Windows Phone 8.1 (C# .NET 4.5), Android 4.4 (Java), iOS (iPhone and iPad) (Objective-C)."
-                              }
-                        },
-                        {
-                        "type": "project",
-                        "info": {
-                              "title"     : "Projects",
-                              "items"     :[{
-                                    "id"        : 1005,
-                                    "name"      : "Elipse Mobile",
-                                    "image"     : "elipse-logo.jpeg"
-                                    }] 
-                              }
-                        },
-                        {
-                        "type": "link",
-                        "info": {
-                              "title"     : "Company page:",
-                              "link"      : "http://www.elipse.com.br"
-                              }
-                        }]
-                  }],
-            "projects"        : [{
-                  "id"              : 6,
-                  "title"           : "Superplayer",
-                  "subtitle"        : "iOS Application",
-                  "image"           : "sp-logo.jpeg",
-                  "about"           : "Superplayer is an online radio station, in which users can find custom radio stations and playlists developed by specialists for every moment and mood.\n\nApplication in which I have been using knowledge in Core Data, background tasks, streaming of music,MapKit and pods, for maintain the application which millions of users use everyday secure and solid.",
-                  "type"            : "project",
-                  "info"            : [{
-                        "id"              : 1000,
-                        "title"           : "Superplayer",
-                        "subtitle"        : "3BR Tech Desenvolvimento de Websites e Softwares Eireli",
-                        "action"          : "Download",
-                        "link"            : "https://itunes.apple.com/us/app/superplayer-musica-online/id691456396?mt=8",
-                        "text"            : "Superplayer is an online radio station, in which users can find custom radio stations and playlists developed by specialists for every moment and mood.\n\nApplication in which I have been using knowledge in Core Data, background tasks, streaming of music,MapKit and pods, for maintain the application which millions of users use everyday secure and solid.",
-                        "media"           : ["sp-print1.jpeg", "sp-print2.jpeg", "sp-print3.jpeg", "sp-print4.jpeg", "sp-print5.jpeg"]
-                        }]
-                  },
-                  {
-                  "id"              : 7,
-                  "title"           : "Aproximar",
-                  "subtitle"        : "iOS Application",
-                  "image"           : "aproximar-logo.png",
-                  "about"           : "This project aims to facilitate the communication between schools and parents through mobile applications. With a simple and intuitive interface, the application is developed on 5 friends, where I am the team leader and responsible for the entire backend(web service, data base and infrastructure). Besides that, I am helping over the development of the iOS application. We are currently validating an MVP(Minimum viable product) with our app on TestFlight.",
-                  "type"            : "project",
-                  "info"            : [{
-                        "id"              : 1001,
-                        "title"           : "Aproximar",
-                        "subtitle"        : "GreenB",
-                        "action"          : "More",
-                        "link"            : "http://aproximar.com.br",
-                        "text"            : "This project aims to facilitate the communication between schools and parents through mobile applications.\n\nWith a simple and intuitive interface, the application is developed on 5 friends, where I am the team leader and responsible for the entire backend(web service, data base and infrastructure). Besides that, I am helping over the development of the iOS application. We are currently validating an MVP(Minimum viable product) with our app on TestFlight.",
-                        "media"           : ["aproximar1.png", "aproximar2.png", "aproximar3.png", "aproximar4.png", "aproximar5.png", "aproximar6.png", "aproximar7.png", "aproximar8.png", "aproximar9.png", "aproximar10.png", "aproximar11.png"]
-                        }]
-                  },
-                  {
-                  "id"              : 8,
-                  "title"           : "NoWastes",
-                  "subtitle"        : "iOS Application",
-                  "image"           : "nowastes-logo.png",
-                  "about"           : "NoWastes is an app that helps the users to check the expiration date of their products. Knowlodge: Image download/upload, local notifications, data persistence in CoreData, advertising and user experience.",
-                  "type"            : "project",
-                  "info"            : [{
-                        "id"              : 1002,
-                        "title"           : "NoWastes",
-                        "subtitle"        : "Enrique Choynowski Melgarejo",
-                        "action"          : "Download",
-                        "link"            : "https://itunes.apple.com/us/app/nowastes/id881480975?mt=8",
-                        "text"            : "NoWastes is an app that helps the users to check the expiration date of their products. \n\nKnowlodge: Image download/upload, local notifications, data persistence in CoreData, advertising and user experience.",
-                        "media"           : ["nowastes-print1.jpeg", "nowastes-print2.jpeg", "nowastes-print3.jpeg", "nowastes-print4.jpeg", "nowastes-print5.jpeg"]
-                        }]
-                  },
-                  {
-                  "id"              : 9,
-                  "title"           : "GoGo Birdie!",
-                  "subtitle"        : "iOS Application",
-                  "image"           : "gogobirdie-logo.jpg",
-                  "about"           : "GoGo Birdie! is a game developed using Sprite Kit. In this project we used: Sprite Kit and Google Admob. It is a really challenging game where you have to guide a bird through waves of bad birds.",
-                  "type"            : "project",
-                  "info"            : [{
-                        "id"              : 1003,
-                        "title"           : "Gogo Birdie!",
-                        "subtitle"        : "Enrique C. Melgarejo",
-                        "action"          : "Download",
-                        "link"            : "https://itunes.apple.com/us/app/gogo-birdie!/id903382605?mt=8",
-                        "text"            : "GoGo Birdie! is a game developed using Sprite Kit. In this project we used: Sprite Kit and Google Admob. It is a really challenging game where you have to guide a bird through waves of bad birds.",
-                        "media"           : ["gogobirdie-print1.jpeg", "gogobirdie-print2.jpeg", "gogobirdie-print3.jpeg", "gogobirdie-print4.jpeg", "gogobirdie-print5.jpeg"]
-                        }]
-                  },
-                  {
-                  "id"              : 10,
-                  "title"           : "Sikur",
-                  "subtitle"        : "Xamarin Application",
-                  "image"           : "sikur-logo.png",
-                  "about"           : "A complete messaging system for secure information exchange between users, groups and businesses, while ensuring that shared data has total privacy. Senders and receivers can be secure in the knowledge that their messages will not be tampered with between source and destination.",
-                  "type"            : "project",
-                  "info"            : [{
-                        "id"              : 1004,
-                        "title"           : "Sikur",
-                        "subtitle"        : "Ciberbras",
-                        "action"          : "Download",
-                        "link"            : "https://itunes.apple.com/us/app/sikur/id818654886?mt=8",
-                        "text"            : "A complete messaging system for secure information exchange between users, groups and businesses, while ensuring that shared data has total privacy. Senders and receivers can be secure in the knowledge that their messages will not be tampered with between source and destination.",
-                        "media"           : ["Sikur-print1.jpeg", "Sikur-print2.jpeg", "Sikur-print3.jpeg", "Sikur-print4.jpeg"]
-                        }]
-                  },
-                  {
-                  "id"              : 12,
-                  "title"           : "Elipse Mobile",
-                  "subtitle"        : "iOS Application",
-                  "image"           : "elipse-logo.jpeg",
-                  "about"           : "Elipse Mobile is a mobile platform for integration with automation systems, which lets you monitor variables and command your process’s devices.\n\nNative clients for iOS, Android and Windows Phone and a WebApp in HTML and Javascript.\n\nServer in C++11 for Windows.",
-                  "type"            : "project",
-                  "info"            : [{
-                        "id"              : 1005,
-                        "title"           : "Elipse Mobile",
-                        "subtitle"        : "Elipse Software",
-                        "action"          : "Download",
-                        "link"            : "https://itunes.apple.com/us/app/elipse-mobile/id855194610?mt=8",
-                        "text"            : "Elipse Mobile is a mobile platform for integration with automation systems, which lets you monitor variables and command your process’s devices.\n\nNative clients for iOS, Android and Windows Phone and a WebApp in HTML and Javascript.\n\nServer in C++11 for Windows.",
-                        "media"           : ["elipse-print1.jpeg", "elipse-print2.jpeg", "elipse-print3.jpeg", "elipse-print4.jpeg", "elipse-print5.jpeg"]
-                        }]
-                  },
-                  {
-                  "id"              : 13,
-                  "title"           : "Run Shadow",
-                  "subtitle"        : "iOS Application",
-                  "image"           : "RunShadow-logo.png",
-                  "about"           : "Run Shadow is an Endless Runner game made with Unity3D for Smartphones and Tablets (iOS, Android and Windows)",
-                  "type"            : "project",
-                  "info"            : [{
-                        "id"              : 1006,
-                        "title"           : "Run Shadow",
-                        "subtitle"        : "Enrique Choynowski Melgarejo",
-                        "action"          : "download",
-                        "link"            : "https://itunes.apple.com/us/app/run-shadow/id881946921?mt=8",
-                        "text"            : "Run Shadow is an Endless Runner game made with Unity3D for Smartphones and Tablets (iOS, Android and Windows)\n\nFeatures:\n- Challenging, randomized maps\n- Beautiful 2D graphics\n- Simple controls\n- Online Highscores\n- Many Characters and Maps to unlock",
-                        "media"           : ["RunShadow-print1.jpeg","RunShadow-print2.jpeg","RunShadow-print3.jpeg","RunShadow-print4.jpeg"]
-                        }]
-                  }],
-            "skills"          : [{
-                  "id"              : 14,
-                  "title"           : "Backend Developer",
-                  "subtitle"        : "Developer",
-                  "image"           : "backend-dev-main.jpg",
-                  "about"           : "Development of an API in Node.js on Amazon Web Service.I really enjoy developing backend applications for my apps, making easier to share data on the application.",
-                  "type"            : "detail",
-                  "info"            : [{
-                        "type": "adjustable-text",
-                        "info": {
-                              "title"     : "About",
-                              "text"      : "Development of an API in Node.js on Amazon Web Service.\n\nI really enjoy developing backend applications for my apps, making easier to share data on the application."
-                              }
-                        },
-                        {
-                        "type": "title",
-                        "info": { 
-                              "title"     : "",
-                              "subtitle"  : "Amazon Web Services",
-                              "image"     : "aws.png"
-                              }
-                        },
-                        {
-                        "type": "title",
-                        "info": { 
-                              "title"     : "",
-                              "subtitle"  : "Node.js",
-                              "image"     : "node.png"
-                              }
-                        },
-                        {
-                        "type": "title",
-                        "info": { 
-                              "title"     : "",
-                              "subtitle"  : "JavaScript",
-                              "image"     : "js.png"
-                              }
-                        },
-                        {
-                        "type": "title",
-                        "info": { 
-                              "title"     : "",
-                              "subtitle"  : "MySQL",
-                              "image"     : "mysql.png"
-                              }
-                        },
-                        {
-                        "type": "title",
-                        "info": { 
-                              "title"     : "",
-                              "subtitle"  : "Single Page Application",
-                              "image"     : "spa.png"
-                              }
-                        }]
-                  },
-                  {
-                  "id"              : 15,
-                  "title"           : "Development Systems with Windows 8",
-                  "subtitle"        : "Complementary Course",
-                  "image"           : "code-main.jpeg",
-                  "about"           : "Joined a course for mastering development of windows 8 applications.This course specifically stimulated me for developing mobile applications, as it was my very first contact with mobile development, leading me afterwards to get in contact with iOS development.\n\nFinishing as the best student among the course.",
-                  "type"            : "detail",
-                  "info"            : [{
-                        "type": "title",
-                        "info": { 
-                              "title"     : "Complementary Course",
-                              "subtitle"  : "Development Systems with Windows 8",
-                              "image"     : ""
-                              }
-                        },
-                        {
-                        "type": "date",
-                        "info": { 
-                              "title"     : "Time Period:",
-                              "date"      : "April 2013 - May 2013"
-                              }
-                        },
-                        {
-                        "type": "adjustable-text",
-                        "info": {
-                              "title"     : "About",
-                              "text"      : "Joined a course for mastering development of windows 8 applications.\n\nThis course specifically stimulated me for developing mobile applications, as it was my very first contact with mobile development, leading me afterwards to get in contact with iOS development.\n\nFinishing as the best student among the course."
-                              }
-                        }]
-                  }],
-            "qualities"       : [{
-                  "id"              : 16,
-                  "title"           : "My Qualities",
-                  "subtitle"        : ":)",
-                  "image"           : "qualities.jpg",
-                  "about"           : "",
-                  "type"            : "detail",
-                  "info"            : [{
-                        "type": "date",
-                        "info": { 
-                              "title"     : "Positive Attitude",
-                              "date"      : ""
-                              }
-                        },
-                        {
-                        "type": "date",
-                        "info": { 
-                              "title"     : "Never give up",
-                              "date"      : ""
-                              }
-                        },
-                        {
-                        "type": "date",
-                        "info": { 
-                              "title"     : "Determined",
-                              "date"      : ""
-                              }
-                        },
-                        {
-                        "type": "date",
-                        "info": { 
-                              "title"     : "Honest",
-                              "date"      : ""
-                              }
-                        },
-                        {
-                        "type": "date",
-                        "info": { 
-                              "title"     : "Loyal",
-                              "date"      : ""
-                              }
-                        },
-                        {
-                        "type": "date",
-                        "info": { 
-                              "title"     : "Clever",
-                              "date"      : ""
-                              }
-                        },
-                        {
-                        "type": "date",
-                        "info": { 
-                              "title"     : "Smart",
-                              "date"      : ""
-                              }
-                        },
-                        {
-                        "type": "date",
-                        "info": { 
-                              "title"     : "Generous",
-                              "date"      : ""
-                              }
-                        },
-                        {
-                        "type": "date",
-                        "info": { 
-                              "title"     : "Pleasant",
-                              "date"      : ""
-                              }
-                        },
-                        {
-                        "type": "date",
-                        "info": { 
-                              "title"     : "Educated",
-                              "date"      : ""
-                              }
-                        },
-                        {
-                        "type": "date",
-                        "info": { 
-                              "title"     : "Responsable",
-                              "date"      : ""
-                              }
-                        },
-                        {
-                        "type": "date",
-                        "info": { 
-                              "title"     : "Friendly",
-                              "date"      : ""
-                              }
-                        },
-                        {
-                        "type": "date",
-                        "info": { 
-                              "title"     : "Easy going",
-                              "date"      : ""
-                              }
-                        }]
-                  }],
-            "volunteering"    : [{
-                  "id"              : 17,
-                  "title"           : "Volunteer at Gerdau's Olympics",
-                  "subtitle"        : "Volunteer",
-                  "image"           : "volunteers.png",
-                  "about"           : "Volunteer at the organization and participation of several games focusing on helping charity.The event was create by Gerdau company to help charities and needy people.",
-                  "type"            : "detail",
-                  "info"            : [{
-                        "type": "adjustable-text",
-                        "info": {
-                              "title"     : "About",
-                              "text"      : "Volunteer at the organization and participation of several games focusing on helping charity.\n\nThe event was create by Gerdau company to help charities and needy people.\n\nWe help more than 1,000 people and 50 entities, with food, clothes, work and fundraising events."
-                              }
-                        }]
-                  }],
-            "honororawards"   : [{
-                  "id"              : 18,
-                  "title"           : "3rd Place - 8º Torneio Empreendedor PUCRS",
-                  "subtitle"        : "Entrepreneurship Tournament",
-                  "image"           : "torneio.jpg",
-                  "about"           : "Award achieved with the Aproximar project.The Torneio Empreendedor PUCRS was designed to stimulate the entrepreneurship culture at the PUCRS University. This project allows students from diverse academic areas to put into practice the knowledge acquired through the tournament.",
-                  "type"            : "detail",
-                  "info"            : [{
-                        "type": "title",
-                        "info": { 
-                              "title"     : "Tournament",
-                              "subtitle"  : "3rd Place - 8º Torneio Empreendedor PUCRS",
-                              "image"     : ""
-                              }
-                        },
-                        {
-                        "type": "date",
-                        "info": { 
-                              "title"     : "Date:",
-                              "date"      : "November 27th 2014"
-                              }
-                        },
-                        {
-                        "type": "adjustable-text",
-                        "info": {
-                              "title"     : "About",
-                              "text"      : "Award achieved with the Aproximar project.\n\nThe Torneio Empreendedor PUCRS was designed to stimulate the entrepreneurship culture at the PUCRS University. This project allows students from diverse academic areas to put into practice the knowledge acquired through the tournament."
-                              }
-                        },
-                        {
-                        "type": "link",
-                        "info": {
-                              "title"     : "Tournament page:",
-                              "link"      : "http://www.pucrs.br/portal/?p=noticias&n=1417097459.html"
-                              }
-                        },
-                        {
-                        "type": "project",
-                        "info": {
-                              "title"     : "Projects",
-                              "items"     :[{
-                                    "id"        : 1001,
-                                    "name"      : "Aproximar",
-                                    "image"     : "aproximar-logo.png"
-                                    }] 
-                              }
-                        }]
-                  },
-                  {
-                  "id"              : 19,
-                  "title"           : "Prize Marcelino Champagnat PUCRS 2013/2",
-                  "subtitle"        : "The friend of the class",
-                  "image"           : "prize.jpg",
-                  "about"           : "Prize as student for being friendliest and helpful with fellows during school graduation",
-                  "type"            : "detail",
-                  "info"            : [{
-                        "type": "title",
-                        "info": { 
-                              "title"     : "Prize",
-                              "subtitle"  : "Marcelino Champagnat PUCRS 2013/2",
-                              "image"     : ""
-                              }
-                        },
-                        {
-                        "type": "adjustable-text",
-                        "info": {
-                              "title"     : "About",
-                              "text"      : "Prize as student for being friendliest and helpful with fellows during school graduation."
-                              }
-                        },
-                        {
-                        "type": "media",
-                        "info": {
-                                    "id"        : 1,
-                                    "name"      : "Minha Foto1",
-                                    "image"     : "prize-image1.jpg"
-                              }
-                        }]
-                  }]
-    }
+    "information" : [
+                     {
+                     "title" :  "personal details",
+                     "items" : [{
+                                "title"           : "Enrique",
+                                "subtitle"        : "Enrique Choynowski Melgarejo",
+                                "image"           : "ImageProfile",
+                                "about"           : "Bachelor's at Control and Automation Engineering from Pontifícia Universidade Católica do Rio Grande do Sul (2013), developed research projects in software development and wireless networking analysis. Currently coursing postgraduation in mobile development.\n\nWith experience in developing applications for iOS, Node.js, Windows 8 and Windows Phone.\n\nHas joined BEPiD(Brazilian Education Program for iOS Developers) offered by Instituto Eldorado and PUCRS in partnership with Apple.\nLooking for obtain as much experience as possible in the subjects above, as well as mastering the subjects learned during graduation, focusing on researches and innovation projects.",
+                                "type"            : "detail",
+                                "info"            : [{
+                                                     "type": "title",
+                                                     "info": {
+                                                     "title"     : "Name",
+                                                     "subtitle"  : "Enrique Choynowski Melgarejo",
+                                                     "image"     : ""
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "link",
+                                                     "info": {
+                                                     "title"     : "Email",
+                                                     "link"      : "mailto:enriquecmelgarejo@hotmail.com"
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "link",
+                                                     "info": {
+                                                     "title"     : "Contact",
+                                                     "link"      : "tel://+555193084860"
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "adjustable-text",
+                                                     "info": {
+                                                     "title"     : "About",
+                                                     "text"      : "Bachelor's at Control and Automation Engineering from Pontifícia Universidade Católica do Rio Grande do Sul (2013), developed research projects in software development and wireless networking analysis. Currently undergraduate at Internet System at Universidade Luterana do Brasil.\n\nWith experience in developing applications for iOS,Windows 8 and Windows Phone.\n\nHas joined BEPiD(Brazilian Education Program for iOS Developers) offered by Instituto Eldorado and PUCRS in partnership with Apple.\nLooking for obtain as much experience as possible in the subjects above, as well as mastering the subjects learned during graduation, focusing on researches and innovation projects."
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "link",
+                                                     "info": {
+                                                     "title"     : "Linkedin",
+                                                     "link"      : "https://www.linkedin.com/in/enriquecm"
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "link",
+                                                     "info": {
+                                                     "title"     : "GitHub",
+                                                     "link"      : "https://github.com/Enriquecm"
+                                                     }
+                                                     }]
+                                }]
+                     },
+                     {
+                     "title" : "education",
+                     "items" : [{
+                                "title"           : "ULBRA",
+                                "subtitle"        : "Universidade Luterana do Brasil",
+                                "image"           : "ULBRA-main.jpg",
+                                "about"           : "Currently, at the second year of graduation on Internet Systems at Universidade Luterana do Brasil. As the needed to deal with the digital engines for development and management of websites, I could see an enormous potential for website's problem's solutions. By the end of the graduation, im expecting acquire the knowledge needed for developing solutions, interfaces and applications directed for web.",
+                                "type"            : "detail",
+                                "info"            : [{
+                                                     "type": "title",
+                                                     "info": {
+                                                     "title"     : "ULBRA",
+                                                     "subtitle"  : "Universidade Luterana do Brasil",
+                                                     "image"     : "ULBRA-logo-landscape.png"
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "adjustable-text",
+                                                     "info": {
+                                                     "title"     : "About",
+                                                     "text"      : "Currently, at the second year of graduation on Internet Systems at Universidade Luterana do Brasil. As the needed to deal with the digital engines for development and management of websites, I could see an enormous potential for website's problem's solutions. By the end of the graduation, im expecting acquire the knowledge needed for developing solutions, interfaces and applications directed for web."
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "title",
+                                                     "info": {
+                                                     "title"     : "Undergraduate",
+                                                     "subtitle"  : "Internet Systems",
+                                                     "image"     : ""
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "date",
+                                                     "info": {
+                                                     "title"     : "Current Graduation:",
+                                                     "date"      : "Second year"
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "link",
+                                                     "info": {
+                                                     "title"     : "University page:",
+                                                     "link"      : "http://ulbra.br"
+                                                     }
+                                                     }]
+                                },
+                                {
+                                "title"           : "PUCRS",
+                                "subtitle"        : "Pontifícia Universidade Católica do Rio Grande do Sul",
+                                "image"           : "PUCRS-main.jpg",
+                                "about"           : "Bachelor's at Control and Automation Engineering from Pontifícia Universidade Católica do Rio Grande do Sul by 2013. \n\nThe engineer projects, manages and operates equipments used during the production process of industry. Through the graduation, I gained the knowledge of how to develop and train my skills, as well as improved my logical reasoning, my desire of develop projects and automate processes.\n\nThe engineering has provided me the knowledge needed to gain space among the development of software and mobile applications, as I had already gone through the process of learning and had experience in learning by myself.",
+                                "type"            : "detail",
+                                "info"            : [{
+                                                     "type": "title",
+                                                     "info": {
+                                                     "title"     : "PUCRS",
+                                                     "subtitle"  : "Pontifícia Universidade Católica do Rio Grande do Sul",
+                                                     "image"     : "PUCRS-logo-landscape.png"
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "adjustable-text",
+                                                     "info": {
+                                                     "title"     : "About",
+                                                     "text"      : "Bachelor's at Control and Automation Engineering from Pontifícia Universidade Católica do Rio Grande do Sul by 2013. \n\nThe engineer projects, manages and operates equipments used during the production process of industry. Through the graduation, I gained the knowledge of how to develop and train my skills, as well as improved my logical reasoning, my desire of develop projects and automate processes.\n\nThe engineering has provided me the knowledge needed to gain space among the development of software and mobile applications, as I had already gone through the process of learning and had experience in learning by myself."
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "title",
+                                                     "info": {
+                                                     "title"     : "Graduated at university:",
+                                                     "subtitle"  : "Control and Automation Engineering",
+                                                     "image"     : ""
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "title",
+                                                     "info": {
+                                                     "title"     : "Final note:",
+                                                     "subtitle"  : "8.4",
+                                                     "image"     : ""
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "date",
+                                                     "info": {
+                                                     "title"     : "Graduated:",
+                                                     "date"      : "2013"
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "link",
+                                                     "info": {
+                                                     "title"     : "University page:",
+                                                     "link"      : "http://pucrs.br"
+                                                     }
+                                                     }]
+                                },
+                                {
+                                "title"           : "CTBM",
+                                "subtitle"        : "Colégio Tiradentes da Brigada Militar",
+                                "image"           : "CTBM-main.jpg",
+                                "about"           : "Graduated at school by 2006 at Escola Militar de Porto Alegre(Brasil) Colégio Tiradentes da Brigada Militar.\n\nWith extra-class activities and a strict discipline, the school stimulated my determination, responsibility and study hard. It opened up my eyes to the huge range of opportunities at the beginning of my studies. Was during this period that I decided to study engineering.",
+                                "type"            : "detail",
+                                "info"            : [{
+                                                     "type": "title",
+                                                     "info": {
+                                                     "title"     : "CTBM",
+                                                     "subtitle"  : "Colégio Tiradentes da Brigada Militar ",
+                                                     "image"     : "CTBM-logo-landscape.png"
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "adjustable-text",
+                                                     "info": {
+                                                     "title"     : "About",
+                                                     "text"      : "Graduated at school by 2006 at Escola Militar de Porto Alegre(Brasil) Colégio Tiradentes da Brigada Militar.\n\nWith extra-class activities and a strict discipline, the school stimulated my determination, responsibility and study hard. It opened up my eyes to the huge range of opportunities at the beginning of my studies. Was during this period that I decided to study engineering."
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "date",
+                                                     "info": {
+                                                     "title"     : "High School Degree:",
+                                                     "date"      : "2006"
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "link",
+                                                     "info": {
+                                                     "title"     : "School facebook page:",
+                                                     "link"      : "https://www.facebook.com/colegiotiradentes.brigadamilitar"
+                                                     }
+                                                     }]
+                                }]
+                     },
+                     {
+                     "title" : "experience",
+                     "items" : [{
+                                "title"           : "Superplayer",
+                                "subtitle"        : "Lead iOS Engineer",
+                                "image"           : "sp-main.png",
+                                "about"           : "Superplayer is a great way to listen to music. You hear your favorite songs in playlists Free made for every moment of your life just a click away.",
+                                "type"            : "detail",
+                                "info"            : [{
+                                                     "type": "title",
+                                                     "info": {
+                                                     "title"     : "Superplayer",
+                                                     "subtitle"  : "Lead iOS Engineer",
+                                                     "image"     : "sp-logo-landscape.png"
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "date",
+                                                     "info": {
+                                                     "title"     : "Time Period:",
+                                                     "date"      : "March 2015 - Present (2 months)"
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "adjustable-text",
+                                                     "info": {
+                                                     "title"     : "About",
+                                                     "text"      : "Superplayer is a service that provides online music streaming. Superplayer belongs to 3BR Tech company. The service provides custom radio stations and playlists created by specialists, organized by genre, activities or mood.\n\nDuring two months, I already improved my agile methodology, scrum and how to deal with an application that has millions of users."
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "project",
+                                                     "info": {
+                                                     "title"     : "Projects",
+                                                     "items"     :[{
+                                                                   "id"        : 1000,
+                                                                   "name"      : "Superplayer",
+                                                                   "image"     : "sp-logo.jpeg"
+                                                                   }]
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "link",
+                                                     "info": {
+                                                     "title"     : "Company page:",
+                                                     "link"      : "http://superplayer.fm"
+                                                     }
+                                                     }]
+                                },
+                                {
+                                "title"           : "GreenB",
+                                "subtitle"        : "CEO / Backend developer / iOS developer",
+                                "image"           : "greenb-main.png",
+                                "about"           : "Startup founded by my group from BEPiD and I. The company will be used to commercialize the Aproximar app as well as developing, prototyping and releasing innovated projects.",
+                                "type"            : "detail",
+                                "info"            : [{
+                                                     "type": "title",
+                                                     "info": {
+                                                     "title"     : "GreenB",
+                                                     "subtitle"  : "CEO / Backend developer / iOS developer",
+                                                     "image"     : "greenb-logo-landscape.png"
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "date",
+                                                     "info": {
+                                                     "title"     : "Time Period:",
+                                                     "date"      : "August 2014 - Present (9 months)"
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "adjustable-text",
+                                                     "info": {
+                                                     "title"     : "About",
+                                                     "text"      : "Startup founded by my group from BEPiD and I. The company will be used to commercialize the Aproximar app as well as developing, prototyping and releasing innovated projects."
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "project",
+                                                     "info": {
+                                                     "title"     : "Projects",
+                                                     "items"     :[{
+                                                                   "id"        : 1001,
+                                                                   "name"      : "Aproximar",
+                                                                   "image"     : "aproximar-logo.png"
+                                                                   },
+                                                                   {
+                                                                   "id"        : 1002,
+                                                                   "name"      : "NoWastes",
+                                                                   "image"     : "nowastes-logo.png"
+                                                                   }]
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "honor",
+                                                     "info": {
+                                                     "title"     : "Honors",
+                                                     "items"      : [{
+                                                                     "id"        : 2000,
+                                                                     "name"      : "3rd place",
+                                                                     "image"     : "torneio.jpg"
+                                                                     }]
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "link",
+                                                     "info": {
+                                                     "title"     : "Company page:",
+                                                     "link"      : "http://greenb.com.br"
+                                                     }
+                                                     }]
+                                },
+                                {
+                                "title"           : "BEPiD",
+                                "subtitle"        : "Brazilian Education Program for iOS Development",
+                                "image"           : "bepid-main.png",
+                                "about"           : "This one year program aims to form iOS developers in order to create apps for the brazilian AppStore. My group and I were selected to continue our main project in the BEPiD's second edition. In this company I worked as iOS developer, developing applications, databases and web-services. All activities were performed using agile methods like Scrum and CBL.",
+                                "type"            : "detail",
+                                "info"            : [{
+                                                     "type": "title",
+                                                     "info": {
+                                                     "title"     : "BEPiD",
+                                                     "subtitle"  : "Brazilian Education Program for iOS Development",
+                                                     "image"     : ""
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "date",
+                                                     "info": {
+                                                     "title"     : "Time Period:",
+                                                     "date"      : "November 2013 - Present (1 year 6 months)"
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "adjustable-text",
+                                                     "info": {
+                                                     "title"     : "About",
+                                                     "text"      : "This one year program aims to form iOS developers in order to create apps for the brazilian AppStore. My group and I were selected to continue our main project in the BEPiD's second edition. In this company I worked as iOS developer, developing applications, databases and web-services. All activities were performed using agile methods like Scrum and CBL."
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "project",
+                                                     "info": {
+                                                     "title"     : "Projects",
+                                                     "items"     :[{
+                                                                   "id"        : 1003,
+                                                                   "name"      : "GoGo Birdie!",
+                                                                   "image"     : "gogobirdie-logo.jpg"
+                                                                   },
+                                                                   {
+                                                                   "id"        : 1001,
+                                                                   "name"      : "Aproximar",
+                                                                   "image"     : "aproximar-logo.png"
+                                                                   },
+                                                                   {
+                                                                   "id"        : 1002,
+                                                                   "name"      : "NoWastes",
+                                                                   "image"     : "nowastes-logo.png"
+                                                                   }]
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "link",
+                                                     "info": {
+                                                     "title"     : "Course page:",
+                                                     "link"      : "http://www.bepid.com.br/poa/Pages/Default.aspx"
+                                                     }
+                                                     }]
+                                },
+                                {
+                                "title"           : "Ciberbras",
+                                "subtitle"        : "Mobile Application Developer",
+                                "image"           : "ciberbras-main.jpg",
+                                "about"           : "Development and management of an iOS application, developed over the Xamarin platform. With the goal of exchanging information in a secure way, the solution allows to establish a secure exchange of messages in a encrypted ambient",
+                                "type"            : "detail",
+                                "info"            : [{
+                                                     "type": "title",
+                                                     "info": {
+                                                     "title"     : "Ciberbras",
+                                                     "subtitle"  : "Mobile Application Developer",
+                                                     "image"     : "ciberbras-logo-landscape.png"
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "date",
+                                                     "info": {
+                                                     "title"     : "Time Period:",
+                                                     "date"      : "December 2014 - February 2015 (3 months)"
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "adjustable-text",
+                                                     "info": {
+                                                     "title"     : "About",
+                                                     "text"      : "Development and management of an iOS application, developed over the Xamarin platform. With the goal of exchanging information in a secure way, the solution allows to establish a secure exchange of messages in a encrypted ambient"
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "project",
+                                                     "info": {
+                                                     "title"     : "Projects",
+                                                     "items"     :[{
+                                                                   "id"        : 1004,
+                                                                   "name"      : "Sikur",
+                                                                   "image"     : "sikur-logo.png"
+                                                                   }]
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "link",
+                                                     "info": {
+                                                     "title"     : "Company page:",
+                                                     "link"      : "http://www.sikur.com/en"
+                                                     }
+                                                     }]
+                                },
+                                {
+                                "title"           : "Elipse Software",
+                                "subtitle"        : "Software Developer",
+                                "image"           : "elipse-main.png",
+                                "about"           : "Helping over the development, management and tests of a client-server system with mobile applications, focusing over the management, supervision and control of industrial processes and energy.\n\nServer in C++11 for Windows with secure connection (https) and RESTful API data.\n\nClients: Web client (Browser) (jQuery and HTML5), Windows Phone 8.1 (C# .NET 4.5), Android 4.4 (Java), iOS (iPhone and iPad) (Objective-C).",
+                                "type"            : "detail",
+                                "info"            : [{
+                                                     "type": "title",
+                                                     "info": {
+                                                     "title"     : "Elipse Software",
+                                                     "subtitle"  : "Software Developer",
+                                                     "image"     : "elipse-logo-landscape.png"
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "date",
+                                                     "info": {
+                                                     "title"     : "Time Period:",
+                                                     "date"      : "July 2013 - November 2014 (1 year 5 months)"
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "adjustable-text",
+                                                     "info": {
+                                                     "title"     : "About",
+                                                     "text"      : "Helping over the development, management and tests of a client-server system with mobile applications, focusing over the management, supervision and control of industrial processes and energy.\n\nServer in C++11 for Windows with secure connection (https) and RESTful API data.\n\nClients: Web client (Browser) (jQuery and HTML5), Windows Phone 8.1 (C# .NET 4.5), Android 4.4 (Java), iOS (iPhone and iPad) (Objective-C)."
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "project",
+                                                     "info": {
+                                                     "title"     : "Projects",
+                                                     "items"     :[{
+                                                                   "id"        : 1005,
+                                                                   "name"      : "Elipse Mobile",
+                                                                   "image"     : "elipse-logo.jpeg"
+                                                                   }]
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "link",
+                                                     "info": {
+                                                     "title"     : "Company page:",
+                                                     "link"      : "http://www.elipse.com.br"
+                                                     }
+                                                     }]
+                                }]
+                     },
+                     {
+                     "title" : "projects",
+                     "items" : [{
+                                "title"           : "Superplayer",
+                                "subtitle"        : "iOS Application",
+                                "image"           : "sp-logo.jpeg",
+                                "about"           : "Superplayer is an online radio station, in which users can find custom radio stations and playlists developed by specialists for every moment and mood.\n\nApplication in which I have been using knowledge in Core Data, background tasks, streaming of music,MapKit and pods, for maintain the application which millions of users use everyday secure and solid.",
+                                "type"            : "project",
+                                "info"            : [{
+                                                     "id"              : 1000,
+                                                     "title"           : "Superplayer",
+                                                     "subtitle"        : "3BR Tech Desenvolvimento de Websites e Softwares Eireli",
+                                                     "action"          : "Download",
+                                                     "link"            : "https://itunes.apple.com/us/app/superplayer-musica-online/id691456396?mt=8",
+                                                     "text"            : "Superplayer is an online radio station, in which users can find custom radio stations and playlists developed by specialists for every moment and mood.\n\nApplication in which I have been using knowledge in Core Data, background tasks, streaming of music,MapKit and pods, for maintain the application which millions of users use everyday secure and solid.",
+                                                     "media"           : ["sp-print1.jpeg", "sp-print2.jpeg", "sp-print3.jpeg", "sp-print4.jpeg", "sp-print5.jpeg"]
+                                                     }]
+                                },
+                                {
+                                "title"           : "Aproximar",
+                                "subtitle"        : "iOS Application",
+                                "image"           : "aproximar-logo.png",
+                                "about"           : "This project aims to facilitate the communication between schools and parents through mobile applications. With a simple and intuitive interface, the application is developed on 5 friends, where I am the team leader and responsible for the entire backend(web service, data base and infrastructure). Besides that, I am helping over the development of the iOS application. We are currently validating an MVP(Minimum viable product) with our app on TestFlight.",
+                                "type"            : "project",
+                                "info"            : [{
+                                                     "id"              : 1001,
+                                                     "title"           : "Aproximar",
+                                                     "subtitle"        : "GreenB",
+                                                     "action"          : "More",
+                                                     "link"            : "http://aproximar.com.br",
+                                                     "text"            : "This project aims to facilitate the communication between schools and parents through mobile applications.\n\nWith a simple and intuitive interface, the application is developed on 5 friends, where I am the team leader and responsible for the entire backend(web service, data base and infrastructure). Besides that, I am helping over the development of the iOS application. We are currently validating an MVP(Minimum viable product) with our app on TestFlight.",
+                                                     "media"           : ["aproximar1.png", "aproximar2.png", "aproximar3.png", "aproximar4.png", "aproximar5.png", "aproximar6.png", "aproximar7.png", "aproximar8.png", "aproximar9.png", "aproximar10.png", "aproximar11.png"]
+                                                     }]
+                                },
+                                {
+                                "title"           : "NoWastes",
+                                "subtitle"        : "iOS Application",
+                                "image"           : "nowastes-logo.png",
+                                "about"           : "NoWastes is an app that helps the users to check the expiration date of their products. Knowlodge: Image download/upload, local notifications, data persistence in CoreData, advertising and user experience.",
+                                "type"            : "project",
+                                "info"            : [{
+                                                     "id"              : 1002,
+                                                     "title"           : "NoWastes",
+                                                     "subtitle"        : "Enrique Choynowski Melgarejo",
+                                                     "action"          : "Download",
+                                                     "link"            : "https://itunes.apple.com/us/app/nowastes/id881480975?mt=8",
+                                                     "text"            : "NoWastes is an app that helps the users to check the expiration date of their products. \n\nKnowlodge: Image download/upload, local notifications, data persistence in CoreData, advertising and user experience.",
+                                                     "media"           : ["nowastes-print1.jpeg", "nowastes-print2.jpeg", "nowastes-print3.jpeg", "nowastes-print4.jpeg", "nowastes-print5.jpeg"]
+                                                     }]
+                                },
+                                {
+                                "title"           : "GoGo Birdie!",
+                                "subtitle"        : "iOS Application",
+                                "image"           : "gogobirdie-logo.jpg",
+                                "about"           : "GoGo Birdie! is a game developed using Sprite Kit. In this project we used: Sprite Kit and Google Admob. It is a really challenging game where you have to guide a bird through waves of bad birds.",
+                                "type"            : "project",
+                                "info"            : [{
+                                                     "id"              : 1003,
+                                                     "title"           : "Gogo Birdie!",
+                                                     "subtitle"        : "Enrique C. Melgarejo",
+                                                     "action"          : "Download",
+                                                     "link"            : "https://itunes.apple.com/us/app/gogo-birdie!/id903382605?mt=8",
+                                                     "text"            : "GoGo Birdie! is a game developed using Sprite Kit. In this project we used: Sprite Kit and Google Admob. It is a really challenging game where you have to guide a bird through waves of bad birds.",
+                                                     "media"           : ["gogobirdie-print1.jpeg", "gogobirdie-print2.jpeg", "gogobirdie-print3.jpeg", "gogobirdie-print4.jpeg", "gogobirdie-print5.jpeg"]
+                                                     }]
+                                },
+                                {
+                                "title"           : "Sikur",
+                                "subtitle"        : "Xamarin Application",
+                                "image"           : "sikur-logo.png",
+                                "about"           : "A complete messaging system for secure information exchange between users, groups and businesses, while ensuring that shared data has total privacy. Senders and receivers can be secure in the knowledge that their messages will not be tampered with between source and destination.",
+                                "type"            : "project",
+                                "info"            : [{
+                                                     "id"              : 1004,
+                                                     "title"           : "Sikur",
+                                                     "subtitle"        : "Ciberbras",
+                                                     "action"          : "Download",
+                                                     "link"            : "https://itunes.apple.com/us/app/sikur/id818654886?mt=8",
+                                                     "text"            : "A complete messaging system for secure information exchange between users, groups and businesses, while ensuring that shared data has total privacy. Senders and receivers can be secure in the knowledge that their messages will not be tampered with between source and destination.",
+                                                     "media"           : ["Sikur-print1.jpeg", "Sikur-print2.jpeg", "Sikur-print3.jpeg", "Sikur-print4.jpeg"]
+                                                     }]
+                                },
+                                {
+                                "title"           : "Elipse Mobile",
+                                "subtitle"        : "iOS Application",
+                                "image"           : "elipse-logo.jpeg",
+                                "about"           : "Elipse Mobile is a mobile platform for integration with automation systems, which lets you monitor variables and command your process’s devices.\n\nNative clients for iOS, Android and Windows Phone and a WebApp in HTML and Javascript.\n\nServer in C++11 for Windows.",
+                                "type"            : "project",
+                                "info"            : [{
+                                                     "id"              : 1005,
+                                                     "title"           : "Elipse Mobile",
+                                                     "subtitle"        : "Elipse Software",
+                                                     "action"          : "Download",
+                                                     "link"            : "https://itunes.apple.com/us/app/elipse-mobile/id855194610?mt=8",
+                                                     "text"            : "Elipse Mobile is a mobile platform for integration with automation systems, which lets you monitor variables and command your process’s devices.\n\nNative clients for iOS, Android and Windows Phone and a WebApp in HTML and Javascript.\n\nServer in C++11 for Windows.",
+                                                     "media"           : ["elipse-print1.jpeg", "elipse-print2.jpeg", "elipse-print3.jpeg", "elipse-print4.jpeg", "elipse-print5.jpeg"]
+                                                     }]
+                                },
+                                {
+                                "title"           : "Run Shadow",
+                                "subtitle"        : "iOS Application",
+                                "image"           : "RunShadow-logo.png",
+                                "about"           : "Run Shadow is an Endless Runner game made with Unity3D for Smartphones and Tablets (iOS, Android and Windows)",
+                                "type"            : "project",
+                                "info"            : [{
+                                                     "id"              : 1006,
+                                                     "title"           : "Run Shadow",
+                                                     "subtitle"        : "Enrique Choynowski Melgarejo",
+                                                     "action"          : "download",
+                                                     "link"            : "https://itunes.apple.com/us/app/run-shadow/id881946921?mt=8",
+                                                     "text"            : "Run Shadow is an Endless Runner game made with Unity3D for Smartphones and Tablets (iOS, Android and Windows)\n\nFeatures:\n- Challenging, randomized maps\n- Beautiful 2D graphics\n- Simple controls\n- Online Highscores\n- Many Characters and Maps to unlock",
+                                                     "media"           : ["RunShadow-print1.jpeg","RunShadow-print2.jpeg","RunShadow-print3.jpeg","RunShadow-print4.jpeg"]
+                                                     }]
+                                }]
+                     },
+                     {
+                     "title" : "skills",
+                     "items" : [{
+                                "title"           : "Backend Developer",
+                                "subtitle"        : "Developer",
+                                "image"           : "backend-dev-main.jpg",
+                                "about"           : "Development of an API in Node.js on Amazon Web Service.I really enjoy developing backend applications for my apps, making easier to share data on the application.",
+                                "type"            : "detail",
+                                "info"            : [{
+                                                     "type": "adjustable-text",
+                                                     "info": {
+                                                     "title"     : "About",
+                                                     "text"      : "Development of an API in Node.js on Amazon Web Service.\n\nI really enjoy developing backend applications for my apps, making easier to share data on the application."
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "title",
+                                                     "info": { 
+                                                     "title"     : "",
+                                                     "subtitle"  : "Amazon Web Services",
+                                                     "image"     : "aws.png"
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "title",
+                                                     "info": { 
+                                                     "title"     : "",
+                                                     "subtitle"  : "Node.js",
+                                                     "image"     : "node.png"
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "title",
+                                                     "info": { 
+                                                     "title"     : "",
+                                                     "subtitle"  : "JavaScript",
+                                                     "image"     : "js.png"
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "title",
+                                                     "info": { 
+                                                     "title"     : "",
+                                                     "subtitle"  : "MySQL",
+                                                     "image"     : "mysql.png"
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "title",
+                                                     "info": { 
+                                                     "title"     : "",
+                                                     "subtitle"  : "Single Page Application",
+                                                     "image"     : "spa.png"
+                                                     }
+                                                     }]
+                                },
+                                {
+                                "title"           : "Development Systems with Windows 8",
+                                "subtitle"        : "Complementary Course",
+                                "image"           : "code-main.jpeg",
+                                "about"           : "Joined a course for mastering development of windows 8 applications.This course specifically stimulated me for developing mobile applications, as it was my very first contact with mobile development, leading me afterwards to get in contact with iOS development.\n\nFinishing as the best student among the course.",
+                                "type"            : "detail",
+                                "info"            : [{
+                                                     "type": "title",
+                                                     "info": { 
+                                                     "title"     : "Complementary Course",
+                                                     "subtitle"  : "Development Systems with Windows 8",
+                                                     "image"     : ""
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "date",
+                                                     "info": { 
+                                                     "title"     : "Time Period:",
+                                                     "date"      : "April 2013 - May 2013"
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "adjustable-text",
+                                                     "info": {
+                                                     "title"     : "About",
+                                                     "text"      : "Joined a course for mastering development of windows 8 applications.\n\nThis course specifically stimulated me for developing mobile applications, as it was my very first contact with mobile development, leading me afterwards to get in contact with iOS development.\n\nFinishing as the best student among the course."
+                                                     }
+                                                     }]
+                                }]
+                     },
+                     {
+                     "title" : "qualities",
+                     "items" : [{
+                                "title"           : "My Qualities",
+                                "subtitle"        : ":)",
+                                "image"           : "qualities.jpg",
+                                "about"           : "",
+                                "type"            : "detail",
+                                "info"            : [{
+                                                     "type": "date",
+                                                     "info": { 
+                                                     "title"     : "Positive Attitude",
+                                                     "date"      : ""
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "date",
+                                                     "info": { 
+                                                     "title"     : "Never give up",
+                                                     "date"      : ""
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "date",
+                                                     "info": { 
+                                                     "title"     : "Determined",
+                                                     "date"      : ""
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "date",
+                                                     "info": { 
+                                                     "title"     : "Honest",
+                                                     "date"      : ""
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "date",
+                                                     "info": { 
+                                                     "title"     : "Loyal",
+                                                     "date"      : ""
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "date",
+                                                     "info": { 
+                                                     "title"     : "Clever",
+                                                     "date"      : ""
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "date",
+                                                     "info": { 
+                                                     "title"     : "Smart",
+                                                     "date"      : ""
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "date",
+                                                     "info": { 
+                                                     "title"     : "Generous",
+                                                     "date"      : ""
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "date",
+                                                     "info": { 
+                                                     "title"     : "Pleasant",
+                                                     "date"      : ""
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "date",
+                                                     "info": { 
+                                                     "title"     : "Educated",
+                                                     "date"      : ""
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "date",
+                                                     "info": { 
+                                                     "title"     : "Responsable",
+                                                     "date"      : ""
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "date",
+                                                     "info": { 
+                                                     "title"     : "Friendly",
+                                                     "date"      : ""
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "date",
+                                                     "info": { 
+                                                     "title"     : "Easy going",
+                                                     "date"      : ""
+                                                     }
+                                                     }]
+                                }]
+                     },
+                     {
+                     "title" : "volunteering",
+                     "items" : [{
+                                "title"           : "Volunteer at Gerdau's Olympics",
+                                "subtitle"        : "Volunteer",
+                                "image"           : "volunteers.png",
+                                "about"           : "Volunteer at the organization and participation of several games focusing on helping charity.The event was create by Gerdau company to help charities and needy people.",
+                                "type"            : "detail",
+                                "info"            : [{
+                                                     "type": "adjustable-text",
+                                                     "info": {
+                                                     "title"     : "About",
+                                                     "text"      : "Volunteer at the organization and participation of several games focusing on helping charity.\n\nThe event was create by Gerdau company to help charities and needy people.\n\nWe help more than 1,000 people and 50 entities, with food, clothes, work and fundraising events."
+                                                     }
+                                                     }]
+                                }]
+                     },
+                     {
+                     "title" : "honororawards",
+                     "items" : [{
+                                "title"           : "3rd Place - 8º Torneio Empreendedor PUCRS",
+                                "subtitle"        : "Entrepreneurship Tournament",
+                                "image"           : "torneio.jpg",
+                                "about"           : "Award achieved with the Aproximar project.The Torneio Empreendedor PUCRS was designed to stimulate the entrepreneurship culture at the PUCRS University. This project allows students from diverse academic areas to put into practice the knowledge acquired through the tournament.",
+                                "type"            : "detail",
+                                "info"            : [{
+                                                     "type": "title",
+                                                     "info": { 
+                                                     "title"     : "Tournament",
+                                                     "subtitle"  : "3rd Place - 8º Torneio Empreendedor PUCRS",
+                                                     "image"     : ""
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "date",
+                                                     "info": { 
+                                                     "title"     : "Date:",
+                                                     "date"      : "November 27th 2014"
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "adjustable-text",
+                                                     "info": {
+                                                     "title"     : "About",
+                                                     "text"      : "Award achieved with the Aproximar project.\n\nThe Torneio Empreendedor PUCRS was designed to stimulate the entrepreneurship culture at the PUCRS University. This project allows students from diverse academic areas to put into practice the knowledge acquired through the tournament."
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "link",
+                                                     "info": {
+                                                     "title"     : "Tournament page:",
+                                                     "link"      : "http://www.pucrs.br/portal/?p=noticias&n=1417097459.html"
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "project",
+                                                     "info": {
+                                                     "title"     : "Projects",
+                                                     "items"     :[{
+                                                                   "id"        : 1001,
+                                                                   "name"      : "Aproximar",
+                                                                   "image"     : "aproximar-logo.png"
+                                                                   }] 
+                                                     }
+                                                     }]
+                                },
+                                {
+                                "title"           : "Prize Marcelino Champagnat PUCRS 2013/2",
+                                "subtitle"        : "The friend of the class",
+                                "image"           : "prize.jpg",
+                                "about"           : "Prize as student for being friendliest and helpful with fellows during school graduation",
+                                "type"            : "detail",
+                                "info"            : [{
+                                                     "type": "title",
+                                                     "info": { 
+                                                     "title"     : "Prize",
+                                                     "subtitle"  : "Marcelino Champagnat PUCRS 2013/2",
+                                                     "image"     : ""
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "adjustable-text",
+                                                     "info": {
+                                                     "title"     : "About",
+                                                     "text"      : "Prize as student for being friendliest and helpful with fellows during school graduation."
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "media",
+                                                     "info": {
+                                                     "id"        : 1,
+                                                     "name"      : "Minha Foto1",
+                                                     "image"     : "prize-image1.jpg"
+                                                     }
+                                                     }]
+                                }]
+                     }
+                     ]
 }

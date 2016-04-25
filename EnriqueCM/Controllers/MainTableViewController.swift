@@ -174,12 +174,12 @@ class MainTableViewController: UITableViewController, UIViewControllerTransition
     
     
     // MARK: UserHeaderTableViewCell delegate
-    
-    func didSelectUserHeaderTableViewCell(Selected: Bool, Section: Int, UserHeader: CardHeaderTableViewCell) {
-        if Section == sectionOpened {
+    func didSelecCardHeaderTableViewCell(selected: Bool, section: Int) {
+        
+        if section == sectionOpened {
             sectionOpened = -1      // Close Section
         } else {
-            sectionOpened = Section // Open Section
+            sectionOpened = section // Open Section
         }
         
         UIView.transitionWithView(tableView, duration: 0.5, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: { [weak self] _ in
