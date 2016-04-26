@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01B3EF061CD032CB00110037 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01B3EF041CD032CB00110037 /* Interface.storyboard */; };
+		01B3EF081CD032CB00110037 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01B3EF071CD032CB00110037 /* Assets.xcassets */; };
+		01B3EF0F1CD032CB00110037 /* EnquiCMWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 01B3EF0E1CD032CB00110037 /* EnquiCMWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		01B3EF141CD032CB00110037 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B3EF131CD032CB00110037 /* InterfaceController.swift */; };
+		01B3EF161CD032CB00110037 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B3EF151CD032CB00110037 /* ExtensionDelegate.swift */; };
+		01B3EF181CD032CB00110037 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01B3EF171CD032CB00110037 /* Assets.xcassets */; };
+		01B3EF1C1CD032CB00110037 /* EnquiCMWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 01B3EF021CD032CB00110037 /* EnquiCMWatch.app */; };
 		AD1A83511AE2E2E5008F336F /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1A83501AE2E2E5008F336F /* CardTableViewCell.swift */; };
 		AD1A83531AE2E493008F336F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1A83521AE2E493008F336F /* Card.swift */; };
 		AD1A83551AE2E606008F336F /* UITableViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1A83541AE2E606008F336F /* UITableViewCellExtensions.swift */; };
@@ -124,7 +131,58 @@
 		ADDB24981ADFEA2A00FDFBE1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADDB24961ADFEA2A00FDFBE1 /* LaunchScreen.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		01B3EF101CD032CB00110037 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADDB24801ADFEA2A00FDFBE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01B3EF0D1CD032CB00110037;
+			remoteInfo = "EnquiCMWatch Extension";
+		};
+		01B3EF1A1CD032CB00110037 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADDB24801ADFEA2A00FDFBE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01B3EF011CD032CB00110037;
+			remoteInfo = EnquiCMWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		01B3EF221CD032CC00110037 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				01B3EF0F1CD032CB00110037 /* EnquiCMWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01B3EF241CD032CC00110037 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				01B3EF1C1CD032CB00110037 /* EnquiCMWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		01B3EF021CD032CB00110037 /* EnquiCMWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnquiCMWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01B3EF051CD032CB00110037 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		01B3EF071CD032CB00110037 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01B3EF091CD032CB00110037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01B3EF0E1CD032CB00110037 /* EnquiCMWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "EnquiCMWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01B3EF131CD032CB00110037 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		01B3EF151CD032CB00110037 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		01B3EF171CD032CB00110037 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01B3EF191CD032CB00110037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD1A83501AE2E2E5008F336F /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		AD1A83521AE2E493008F336F /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Model/Card.swift; sourceTree = "<group>"; };
 		AD1A83541AE2E606008F336F /* UITableViewCellExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtensions.swift; sourceTree = "<group>"; };
@@ -252,6 +310,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		01B3EF0B1CD032CB00110037 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AD37EF8F1CCB1A200016F946 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -269,6 +334,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01B3EF031CD032CB00110037 /* EnquiCMWatch */ = {
+			isa = PBXGroup;
+			children = (
+				01B3EF041CD032CB00110037 /* Interface.storyboard */,
+				01B3EF071CD032CB00110037 /* Assets.xcassets */,
+				01B3EF091CD032CB00110037 /* Info.plist */,
+			);
+			path = EnquiCMWatch;
+			sourceTree = "<group>";
+		};
+		01B3EF121CD032CB00110037 /* EnquiCMWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				01B3EF131CD032CB00110037 /* InterfaceController.swift */,
+				01B3EF151CD032CB00110037 /* ExtensionDelegate.swift */,
+				01B3EF171CD032CB00110037 /* Assets.xcassets */,
+				01B3EF191CD032CB00110037 /* Info.plist */,
+			);
+			path = "EnquiCMWatch Extension";
+			sourceTree = "<group>";
+		};
 		AD1A835D1AE33FBE008F336F /* Transitions */ = {
 			isa = PBXGroup;
 			children = (
@@ -557,6 +643,8 @@
 				AD37EF931CCB1A200016F946 /* EnriqueCM-tv */,
 				AD37EFA71CCB1A200016F946 /* EnriqueCM-tvTests */,
 				AD37EFB21CCB1A200016F946 /* EnriqueCM-tvUITests */,
+				01B3EF031CD032CB00110037 /* EnquiCMWatch */,
+				01B3EF121CD032CB00110037 /* EnquiCMWatch Extension */,
 				ADDB24891ADFEA2A00FDFBE1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -566,6 +654,8 @@
 			children = (
 				ADDB24881ADFEA2A00FDFBE1 /* EnriqueCM.app */,
 				AD37EF921CCB1A200016F946 /* EnriqueCM-tv.app */,
+				01B3EF021CD032CB00110037 /* EnquiCMWatch.app */,
+				01B3EF0E1CD032CB00110037 /* EnquiCMWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -618,6 +708,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		01B3EF011CD032CB00110037 /* EnquiCMWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01B3EF231CD032CC00110037 /* Build configuration list for PBXNativeTarget "EnquiCMWatch" */;
+			buildPhases = (
+				01B3EF001CD032CB00110037 /* Resources */,
+				01B3EF221CD032CC00110037 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01B3EF111CD032CB00110037 /* PBXTargetDependency */,
+			);
+			name = EnquiCMWatch;
+			productName = EnquiCMWatch;
+			productReference = 01B3EF021CD032CB00110037 /* EnquiCMWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		01B3EF0D1CD032CB00110037 /* EnquiCMWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01B3EF211CD032CC00110037 /* Build configuration list for PBXNativeTarget "EnquiCMWatch Extension" */;
+			buildPhases = (
+				01B3EF0A1CD032CB00110037 /* Sources */,
+				01B3EF0B1CD032CB00110037 /* Frameworks */,
+				01B3EF0C1CD032CB00110037 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EnquiCMWatch Extension";
+			productName = "EnquiCMWatch Extension";
+			productReference = 01B3EF0E1CD032CB00110037 /* EnquiCMWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		AD37EF911CCB1A200016F946 /* EnriqueCM-tv */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD37EFB61CCB1A200016F946 /* Build configuration list for PBXNativeTarget "EnriqueCM-tv" */;
@@ -642,10 +766,12 @@
 				ADDB24841ADFEA2A00FDFBE1 /* Sources */,
 				ADDB24851ADFEA2A00FDFBE1 /* Frameworks */,
 				ADDB24861ADFEA2A00FDFBE1 /* Resources */,
+				01B3EF241CD032CC00110037 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				01B3EF1B1CD032CB00110037 /* PBXTargetDependency */,
 			);
 			name = EnriqueCM;
 			productName = EnriqueCM;
@@ -662,6 +788,13 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Enrique Choynowski Melgarejo";
 				TargetAttributes = {
+					01B3EF011CD032CB00110037 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 38HUSCHT3G;
+					};
+					01B3EF0D1CD032CB00110037 = {
+						CreatedOnToolsVersion = 7.3;
+					};
 					AD37EF911CCB1A200016F946 = {
 						CreatedOnToolsVersion = 7.3;
 					};
@@ -686,11 +819,30 @@
 			targets = (
 				ADDB24871ADFEA2A00FDFBE1 /* EnriqueCM */,
 				AD37EF911CCB1A200016F946 /* EnriqueCM-tv */,
+				01B3EF011CD032CB00110037 /* EnquiCMWatch */,
+				01B3EF0D1CD032CB00110037 /* EnquiCMWatch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		01B3EF001CD032CB00110037 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01B3EF081CD032CB00110037 /* Assets.xcassets in Resources */,
+				01B3EF061CD032CB00110037 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01B3EF0C1CD032CB00110037 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01B3EF181CD032CB00110037 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AD37EF901CCB1A200016F946 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -791,6 +943,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		01B3EF0A1CD032CB00110037 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01B3EF161CD032CB00110037 /* ExtensionDelegate.swift in Sources */,
+				01B3EF141CD032CB00110037 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AD37EF8E1CCB1A200016F946 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -839,7 +1000,28 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		01B3EF111CD032CB00110037 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01B3EF0D1CD032CB00110037 /* EnquiCMWatch Extension */;
+			targetProxy = 01B3EF101CD032CB00110037 /* PBXContainerItemProxy */;
+		};
+		01B3EF1B1CD032CB00110037 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01B3EF011CD032CB00110037 /* EnquiCMWatch */;
+			targetProxy = 01B3EF1A1CD032CB00110037 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		01B3EF041CD032CB00110037 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01B3EF051CD032CB00110037 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		AD37EF9A1CCB1A200016F946 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -867,6 +1049,74 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		01B3EF1D1CD032CC00110037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = EnquiCMWatch_Extension;
+				INFOPLIST_FILE = EnquiCMWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.choynowski.EnriqueCM.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		01B3EF1E1CD032CC00110037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = EnquiCMWatch_Extension;
+				INFOPLIST_FILE = EnquiCMWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.choynowski.EnriqueCM.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		01B3EF1F1CD032CC00110037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "EnquiCMWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.choynowski.EnriqueCM.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		01B3EF201CD032CC00110037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = "EnquiCMWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.choynowski.EnriqueCM.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
 		AD37EFB71CCB1A200016F946 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1015,6 +1265,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		01B3EF211CD032CC00110037 /* Build configuration list for PBXNativeTarget "EnquiCMWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01B3EF1F1CD032CC00110037 /* Debug */,
+				01B3EF201CD032CC00110037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		01B3EF231CD032CC00110037 /* Build configuration list for PBXNativeTarget "EnquiCMWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01B3EF1D1CD032CC00110037 /* Debug */,
+				01B3EF1E1CD032CC00110037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		AD37EFB61CCB1A200016F946 /* Build configuration list for PBXNativeTarget "EnriqueCM-tv" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
