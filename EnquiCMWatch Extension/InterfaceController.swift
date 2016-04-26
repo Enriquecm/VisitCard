@@ -12,20 +12,35 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet weak var table: WKInterfaceTable!
+    
+    let names = ["A", "B", "C", "D", "E"]
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        
-        // Configure interface objects here.
+        setupTable()
     }
-
+    
     override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
         super.willActivate()
     }
 
     override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
 
+}
+
+extension InterfaceController {
+    internal func setupTable() {
+        table.setNumberOfRows(names.count, withRowType: TableController.identifier)
+        fetchData()
+    }
+    
+    private func fetchData() {
+        for (index, data) in names.enumerate() {
+            guard let row = table.rowControllerAtIndex(index) as? TableController else { return }
+            row.name = data
+        }
+    }
 }

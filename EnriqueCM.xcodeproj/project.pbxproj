@@ -14,6 +14,11 @@
 		01B3EF161CD032CB00110037 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B3EF151CD032CB00110037 /* ExtensionDelegate.swift */; };
 		01B3EF181CD032CB00110037 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01B3EF171CD032CB00110037 /* Assets.xcassets */; };
 		01B3EF1C1CD032CB00110037 /* EnquiCMWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 01B3EF021CD032CB00110037 /* EnquiCMWatch.app */; };
+		01B3EF251CD0332400110037 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1A83521AE2E493008F336F /* Card.swift */; };
+		01B3EF261CD0332600110037 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB4931F1CCD7F5F0047D886 /* Section.swift */; };
+		01B3EF271CD0332C00110037 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2FEC441AE2B7E200EF8B65 /* DatabaseManager.swift */; };
+		01B3EF281CD0333100110037 /* InformationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB493211CCD86630047D886 /* InformationManager.swift */; };
+		01B3EF2A1CD0336A00110037 /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B3EF291CD0336A00110037 /* TableController.swift */; };
 		AD1A83511AE2E2E5008F336F /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1A83501AE2E2E5008F336F /* CardTableViewCell.swift */; };
 		AD1A83531AE2E493008F336F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1A83521AE2E493008F336F /* Card.swift */; };
 		AD1A83551AE2E606008F336F /* UITableViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1A83541AE2E606008F336F /* UITableViewCellExtensions.swift */; };
@@ -183,6 +188,7 @@
 		01B3EF151CD032CB00110037 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		01B3EF171CD032CB00110037 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01B3EF191CD032CB00110037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01B3EF291CD0336A00110037 /* TableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
 		AD1A83501AE2E2E5008F336F /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		AD1A83521AE2E493008F336F /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Model/Card.swift; sourceTree = "<group>"; };
 		AD1A83541AE2E606008F336F /* UITableViewCellExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtensions.swift; sourceTree = "<group>"; };
@@ -348,6 +354,7 @@
 			isa = PBXGroup;
 			children = (
 				01B3EF131CD032CB00110037 /* InterfaceController.swift */,
+				01B3EF291CD0336A00110037 /* TableController.swift */,
 				01B3EF151CD032CB00110037 /* ExtensionDelegate.swift */,
 				01B3EF171CD032CB00110037 /* Assets.xcassets */,
 				01B3EF191CD032CB00110037 /* Info.plist */,
@@ -947,7 +954,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01B3EF2A1CD0336A00110037 /* TableController.swift in Sources */,
+				01B3EF281CD0333100110037 /* InformationManager.swift in Sources */,
 				01B3EF161CD032CB00110037 /* ExtensionDelegate.swift in Sources */,
+				01B3EF261CD0332600110037 /* Section.swift in Sources */,
+				01B3EF271CD0332C00110037 /* DatabaseManager.swift in Sources */,
+				01B3EF251CD0332400110037 /* Card.swift in Sources */,
 				01B3EF141CD032CB00110037 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1054,15 +1066,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = EnquiCMWatch_Extension;
 				INFOPLIST_FILE = EnquiCMWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.choynowski.EnriqueCM.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.2;
 			};
@@ -1073,10 +1088,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = EnquiCMWatch_Extension;
 				INFOPLIST_FILE = EnquiCMWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.choynowski.EnriqueCM.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
