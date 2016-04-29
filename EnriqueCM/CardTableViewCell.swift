@@ -8,14 +8,15 @@
 
 import UIKit
 
-enum CardType: String {
-    case Unknown, Detail = "detail", Project = "project"
+protocol CardTableViewCellDelegate {
+    func didSelectCardTableViewCell(card: Card, atIndexPath: NSIndexPath)
 }
 
 class CardTableViewCell: UITableViewCell {
 
     var card: Card? = nil
-    var cardType: CardType? = .Unknown
+    var indexPath: NSIndexPath?
+    var delegate: CardTableViewCellDelegate?
     
     @IBOutlet var mainView: UIView!
     @IBOutlet var cardImageView: UIImageView!
@@ -23,7 +24,9 @@ class CardTableViewCell: UITableViewCell {
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var subtitleLabel: UILabel!
     @IBOutlet var aboutSummaryLabel: UILabel!
+    @IBOutlet weak var imageMiniCard: UIImageView!
     
+    @IBOutlet weak var buttonFake: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -33,15 +36,15 @@ class CardTableViewCell: UITableViewCell {
         self.layer.shadowOpacity = 0.2
     }
 
-    func initWithCart(_card : Card) {
+    func initWithCart(_card : Card, atIndexPath: NSIndexPath) {
         card = _card
+        indexPath = atIndexPath
         
         titleLabel.text         = _card.title
         subtitleLabel.text      = _card.subtitle
         aboutSummaryLabel.text  = _card.about
-        if let type = _card.type {
-            cardType = CardType.init(rawValue:type)
-        }
+        
+        imageMiniCard.hidden    = !_card.isVisitCard
         
         if let photoName = _card.imageName {
             if (!photoName.isEmpty) {
@@ -49,6 +52,17 @@ class CardTableViewCell: UITableViewCell {
             } else {
                 cardImageView.image = nil
             }
+        }
+    }
+    
+    @IBAction func testeFakeButton(sender: AnyObject) {
+        print(sender)
+    }
+    
+    @IBAction func fakeButtonPressed(sender: AnyObject) {
+        if let cardS = card as Card?,
+            let index = indexPath as NSIndexPath? {
+            delegate?.didSelectCardTableViewCell(cardS, atIndexPath: index)
         }
     }
 }

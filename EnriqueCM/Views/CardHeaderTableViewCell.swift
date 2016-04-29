@@ -10,17 +10,31 @@ import UIKit
 import Darwin
 
 protocol CardHeaderTableViewCellDelegate {
+    func didSelecAddToShortcut(section: Section)
+    func didSelecRemoveShortcut(section: Section)
     func didSelecCardHeaderTableViewCell(selected: Bool, section: Int)
 }
 
 class CardHeaderTableViewCell: UITableViewCell {
     
-    @IBOutlet var labelSection: UILabel!
-    @IBOutlet var imageSectionIndicator: UIImageView!
-
-    @IBOutlet var _backgroundView: UIView!
+    @IBOutlet private weak var labelSection: UILabel!
+    @IBOutlet private weak var viewBackground: UIView!
+    @IBOutlet private weak var buttonRadio: UIButton!
+    
+    @IBOutlet weak var imageSectionIndicator: UIImageView!
+    
+    private var currentSection: Section? {
+        didSet {
+            if currentSection != nil &&
+                currentSection!.isShortcut {
+                buttonRadio.setImage(UIImage(named: "radio-checked"), forState: UIControlState.Normal)
+            } else {
+                buttonRadio.setImage(UIImage(named: "radio-unchecked"), forState: UIControlState.Normal)
+            }
+        }
+    }
     var delegate : CardHeaderTableViewCellDelegate?
-    var section: Int = -1
+    var indexSection: Int = -1
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,7 +45,7 @@ class CardHeaderTableViewCell: UITableViewCell {
         
         // Degrades added with 45 degrees
         let layer: CAGradientLayer = CAGradientLayer()
-        layer.frame = _backgroundView.frame
+        layer.frame = viewBackground.frame
         layer.colors = [leftColor.CGColor, rightColor.CGColor]
         
         let a = CGFloat(powf(sinf((2*Float(M_PI)*((rotation+0.75)/2))),2))
@@ -41,7 +55,7 @@ class CardHeaderTableViewCell: UITableViewCell {
         
         layer.startPoint = CGPointMake(a, b)
         layer.endPoint = CGPointMake(c, d)
-        _backgroundView.layer.insertSublayer(layer, atIndex: 0)
+        viewBackground.layer.insertSublayer(layer, atIndex: 0)
         
         
         // Selected Header
@@ -49,7 +63,22 @@ class CardHeaderTableViewCell: UITableViewCell {
         self.addGestureRecognizer(tapRecognizer)
     }
     
+    func configureWithSection(section: Section) {
+        labelSection.text = section.title
+        currentSection = section
+    }
+    
     func selectedHeader(sender: AnyObject) {
-        delegate?.didSelecCardHeaderTableViewCell(true, section: section)
+        delegate?.didSelecCardHeaderTableViewCell(true, section: indexSection)
+    }
+    
+    @IBAction func didSelectRadioButton(sender: AnyObject) {
+        if let section = currentSection as Section? {
+            if section.isShortcut {
+                delegate?.didSelecRemoveShortcut(section)
+            } else {
+                delegate?.didSelecAddToShortcut(section)
+            }
+        }
     }
 }

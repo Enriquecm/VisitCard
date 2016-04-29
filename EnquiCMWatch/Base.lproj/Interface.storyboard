@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <scenes>
+        <!--Main Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="MainInterfaceController" customModule="EnquiCMWatch_Extension">
+                    <items>
+                        <table alignment="left" id="oYx-9i-etB">
+                            <items>
+                                <tableRow identifier="SectionTableControllerIdentifier" id="3db-jO-TvX" customClass="SectionTableController" customModule="EnquiCMWatch_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="2mv-nl-lIw">
+                                        <items>
+                                            <label width="1" height="40.5" alignment="center" verticalAlignment="center" text="Label" textAlignment="center" id="4sz-rr-bfe"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="nameLabel" destination="4sz-rr-bfe" id="ifJ-br-DMr"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="oYx-9i-etB" id="Vm3-32-IKa"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="159" y="416"/>
+        </scene>
+        <!--DetailInterfaceController-->
+        <scene sceneID="Dio-X2-JmG">
+            <objects>
+                <controller identifier="DetailInterfaceController" hidesWhenLoading="NO" id="tTj-jJ-eou" customClass="DetailInterfaceController" customModule="EnquiCMWatch_Extension">
+                    <items>
+                        <table alignment="center" verticalAlignment="center" id="2UN-Co-Ffl">
+                            <items>
+                                <tableRow identifier="DetailTableControllerIdentifier" id="mwt-YO-6p8" customClass="DetailTableController" customModule="EnquiCMWatch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" animationDuration="0.5" layout="vertical" radius="10" spacing="0.0" id="sdS-Uf-g8h">
+                                        <items>
+                                            <label width="1" height="25.5" alignment="left" text="Title" textAlignment="center" id="YeT-yy-GbD">
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </label>
+                                            <separator alignment="center" id="rgJ-tq-xOZ">
+                                                <color key="color" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            </separator>
+                                            <label width="1" alignment="center" verticalAlignment="center" text="Description" textAlignment="center" numberOfLines="0" id="fFt-fK-5jh"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="descriptionLabel" destination="fFt-fK-5jh" id="W8m-Mn-paK"/>
+                                        <outlet property="titleLabel" destination="YeT-yy-GbD" id="uP7-zi-5dV"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <menu key="menu" id="AxB-yT-1cB">
+                        <items>
+                            <menuItem title="See More..." icon="more" id="gLz-N0-g13" userLabel="Open App">
+                                <connections>
+                                    <action selector="openAppPressed" destination="tTj-jJ-eou" id="7Gc-Kq-JZJ"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Share Visit Card" icon="share" id="KPP-oc-pQP">
+                                <connections>
+                                    <action selector="shareVisitCardPressed" destination="tTj-jJ-eou" id="bgy-eU-YTR"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="table" destination="2UN-Co-Ffl" id="lZU-tv-QV8"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="441" y="416"/>
+        </scene>
+    </scenes>
+</document>

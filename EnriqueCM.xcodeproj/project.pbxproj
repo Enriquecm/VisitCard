@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		012BD5451CD040FC0030E4FA /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2FEC441AE2B7E200EF8B65 /* DatabaseManager.swift */; };
+		012BD5471CD0413E0030E4FA /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1A83521AE2E493008F336F /* Card.swift */; };
+		012BD5491CD041740030E4FA /* Information.json in Resources */ = {isa = PBXBuildFile; fileRef = AD1A835B1AE2FA90008F336F /* Information.json */; };
+		012BD54A1CD041740030E4FA /* InformationV2.json in Resources */ = {isa = PBXBuildFile; fileRef = ADB4931D1CCD78120047D886 /* InformationV2.json */; };
+		012BD54B1CD042CB0030E4FA /* MainInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B3EF131CD032CB00110037 /* MainInterfaceController.swift */; };
+		012BD54C1CD042CB0030E4FA /* SectionTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B3EF291CD0336A00110037 /* SectionTableController.swift */; };
+		012BD54D1CD042CB0030E4FA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B3EF151CD032CB00110037 /* ExtensionDelegate.swift */; };
+		01B3EF061CD032CB00110037 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01B3EF041CD032CB00110037 /* Interface.storyboard */; };
+		01B3EF081CD032CB00110037 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01B3EF071CD032CB00110037 /* Assets.xcassets */; };
+		01B3EF0F1CD032CB00110037 /* EnquiCMWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 01B3EF0E1CD032CB00110037 /* EnquiCMWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		01B3EF181CD032CB00110037 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01B3EF171CD032CB00110037 /* Assets.xcassets */; };
+		01B3EF1C1CD032CB00110037 /* EnquiCMWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 01B3EF021CD032CB00110037 /* EnquiCMWatch.app */; };
+		01F6D2C81CD179DC008F1E10 /* DetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F6D2C71CD179DC008F1E10 /* DetailInterfaceController.swift */; };
+		01F6D2CA1CD17BB7008F1E10 /* DetailTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F6D2C91CD17BB7008F1E10 /* DetailTableController.swift */; };
 		AD1A83511AE2E2E5008F336F /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1A83501AE2E2E5008F336F /* CardTableViewCell.swift */; };
 		AD1A83531AE2E493008F336F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1A83521AE2E493008F336F /* Card.swift */; };
 		AD1A83551AE2E606008F336F /* UITableViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1A83541AE2E606008F336F /* UITableViewCellExtensions.swift */; };
@@ -23,11 +37,6 @@
 		AD2FEC381AE14BDA00EF8B65 /* CustomSequeUnwind.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2FEC371AE14BDA00EF8B65 /* CustomSequeUnwind.swift */; };
 		AD2FEC3E1AE1DCC300EF8B65 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2FEC3D1AE1DCC300EF8B65 /* MainTableViewController.swift */; };
 		AD2FEC451AE2B7E200EF8B65 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2FEC441AE2B7E200EF8B65 /* DatabaseManager.swift */; };
-		AD37EF951CCB1A200016F946 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37EF941CCB1A200016F946 /* AppDelegate.swift */; };
-		AD37EF971CCB1A200016F946 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37EF961CCB1A200016F946 /* FirstViewController.swift */; };
-		AD37EF991CCB1A200016F946 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37EF981CCB1A200016F946 /* SecondViewController.swift */; };
-		AD37EF9C1CCB1A200016F946 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD37EF9A1CCB1A200016F946 /* Main.storyboard */; };
-		AD37EF9E1CCB1A200016F946 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD37EF9D1CCB1A200016F946 /* Assets.xcassets */; };
 		AD4405951AEB47E000BADC06 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4405941AEB47E000BADC06 /* Utils.swift */; };
 		AD4405971AEC23E500BADC06 /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4405961AEC23E500BADC06 /* ProjectViewController.swift */; };
 		AD4405991AEC534500BADC06 /* ProjectCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4405981AEC534500BADC06 /* ProjectCollectionTableViewCell.swift */; };
@@ -103,20 +112,22 @@
 		AD44062E1AED8E2800BADC06 /* RunShadow-print3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AD44062A1AED8E2800BADC06 /* RunShadow-print3.jpeg */; };
 		AD44062F1AED8E2800BADC06 /* RunShadow-print4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AD44062B1AED8E2800BADC06 /* RunShadow-print4.jpeg */; };
 		AD4406311AED915500BADC06 /* enrique-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AD4406301AED915500BADC06 /* enrique-icon.png */; };
-		AD4406331AED921100BADC06 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = AD4406321AED921100BADC06 /* background.png */; };
 		AD4406351AED9B4400BADC06 /* RunShadow-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = AD4406341AED9B4400BADC06 /* RunShadow-logo.png */; };
 		AD4406381AED9D8500BADC06 /* qualities.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD4406371AED9D8500BADC06 /* qualities.jpg */; };
+		AD8A078D1CD05F67007BCE53 /* NSNotificationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8A078C1CD05F67007BCE53 /* NSNotificationExtensions.swift */; };
 		AD93898A1AE6AC6900580D4A /* DetailTitleSubtitleImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9389891AE6AC6900580D4A /* DetailTitleSubtitleImageTableViewCell.swift */; };
 		AD93898C1AE6AF8000580D4A /* DetailAdjustableTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD93898B1AE6AF8000580D4A /* DetailAdjustableTextTableViewCell.swift */; };
 		AD93898E1AE6EE8A00580D4A /* DetailLinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD93898D1AE6EE8A00580D4A /* DetailLinkTableViewCell.swift */; };
 		AD9389901AE70E4200580D4A /* DetailDateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD93898F1AE70E4200580D4A /* DetailDateTableViewCell.swift */; };
 		AD9389921AE70EE800580D4A /* DetailCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9389911AE70EE800580D4A /* DetailCollectionTableViewCell.swift */; };
-		ADB493161CCC55620047D886 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADDB24941ADFEA2A00FDFBE1 /* Images.xcassets */; };
+		ADA6D77C1CCEF7FF0081A1BA /* ShortcutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6D77B1CCEF7FF0081A1BA /* ShortcutManager.swift */; };
 		ADB493191CCD5D470047D886 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB493181CCD5D470047D886 /* UIColorExtensions.swift */; };
 		ADB4931B1CCD5D930047D886 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB4931A1CCD5D930047D886 /* StringExtensions.swift */; };
 		ADB4931E1CCD78120047D886 /* InformationV2.json in Resources */ = {isa = PBXBuildFile; fileRef = ADB4931D1CCD78120047D886 /* InformationV2.json */; };
 		ADB493201CCD7F5F0047D886 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB4931F1CCD7F5F0047D886 /* Section.swift */; };
 		ADB493221CCD86630047D886 /* InformationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB493211CCD86630047D886 /* InformationManager.swift */; };
+		ADC069261CD002CA00A8CB57 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC069251CD002CA00A8CB57 /* UIViewExtensions.swift */; };
+		ADC069281CD0090900A8CB57 /* PasteboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC069271CD0090900A8CB57 /* PasteboardViewController.swift */; };
 		ADCCD5FA1AE45FAA0061674B /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCD5F91AE45FAA0061674B /* DetailTableViewController.swift */; };
 		ADDB248E1ADFEA2A00FDFBE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDB248D1ADFEA2A00FDFBE1 /* AppDelegate.swift */; };
 		ADDB24931ADFEA2A00FDFBE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADDB24911ADFEA2A00FDFBE1 /* Main.storyboard */; };
@@ -124,7 +135,61 @@
 		ADDB24981ADFEA2A00FDFBE1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADDB24961ADFEA2A00FDFBE1 /* LaunchScreen.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		01B3EF101CD032CB00110037 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADDB24801ADFEA2A00FDFBE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01B3EF0D1CD032CB00110037;
+			remoteInfo = "EnquiCMWatch Extension";
+		};
+		01B3EF1A1CD032CB00110037 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADDB24801ADFEA2A00FDFBE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01B3EF011CD032CB00110037;
+			remoteInfo = EnquiCMWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		01B3EF221CD032CC00110037 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				01B3EF0F1CD032CB00110037 /* EnquiCMWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01B3EF241CD032CC00110037 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				01B3EF1C1CD032CB00110037 /* EnquiCMWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		01B3EF021CD032CB00110037 /* EnquiCMWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnquiCMWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01B3EF051CD032CB00110037 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		01B3EF071CD032CB00110037 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01B3EF091CD032CB00110037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01B3EF0E1CD032CB00110037 /* EnquiCMWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "EnquiCMWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01B3EF131CD032CB00110037 /* MainInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInterfaceController.swift; sourceTree = "<group>"; };
+		01B3EF151CD032CB00110037 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		01B3EF171CD032CB00110037 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01B3EF191CD032CB00110037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01B3EF291CD0336A00110037 /* SectionTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionTableController.swift; sourceTree = "<group>"; };
+		01F6D2C71CD179DC008F1E10 /* DetailInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailInterfaceController.swift; sourceTree = "<group>"; };
+		01F6D2C91CD17BB7008F1E10 /* DetailTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableController.swift; sourceTree = "<group>"; };
 		AD1A83501AE2E2E5008F336F /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		AD1A83521AE2E493008F336F /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Model/Card.swift; sourceTree = "<group>"; };
 		AD1A83541AE2E606008F336F /* UITableViewCellExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtensions.swift; sourceTree = "<group>"; };
@@ -141,17 +206,6 @@
 		AD2FEC371AE14BDA00EF8B65 /* CustomSequeUnwind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSequeUnwind.swift; sourceTree = "<group>"; };
 		AD2FEC3D1AE1DCC300EF8B65 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTableViewController.swift; path = Controllers/MainTableViewController.swift; sourceTree = "<group>"; };
 		AD2FEC441AE2B7E200EF8B65 /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DatabaseManager.swift; path = Managers/DatabaseManager.swift; sourceTree = "<group>"; };
-		AD37EF921CCB1A200016F946 /* EnriqueCM-tv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EnriqueCM-tv.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD37EF941CCB1A200016F946 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AD37EF961CCB1A200016F946 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		AD37EF981CCB1A200016F946 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		AD37EF9B1CCB1A200016F946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AD37EF9D1CCB1A200016F946 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AD37EF9F1CCB1A200016F946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD37EFA81CCB1A200016F946 /* EnriqueCM_tvTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnriqueCM_tvTests.swift; sourceTree = "<group>"; };
-		AD37EFAA1CCB1A200016F946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD37EFB31CCB1A200016F946 /* EnriqueCM_tvUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnriqueCM_tvUITests.swift; sourceTree = "<group>"; };
-		AD37EFB51CCB1A200016F946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD4405941AEB47E000BADC06 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Managers/Utils.swift; sourceTree = "<group>"; };
 		AD4405961AEC23E500BADC06 /* ProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectViewController.swift; path = Controllers/ProjectViewController.swift; sourceTree = "<group>"; };
 		AD4405981AEC534500BADC06 /* ProjectCollectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectCollectionTableViewCell.swift; path = Controllers/Cells/ProjectCollectionTableViewCell.swift; sourceTree = "<group>"; };
@@ -227,19 +281,24 @@
 		AD44062A1AED8E2800BADC06 /* RunShadow-print3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "RunShadow-print3.jpeg"; sourceTree = "<group>"; };
 		AD44062B1AED8E2800BADC06 /* RunShadow-print4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "RunShadow-print4.jpeg"; sourceTree = "<group>"; };
 		AD4406301AED915500BADC06 /* enrique-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "enrique-icon.png"; sourceTree = "<group>"; };
-		AD4406321AED921100BADC06 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		AD4406341AED9B4400BADC06 /* RunShadow-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RunShadow-logo.png"; sourceTree = "<group>"; };
 		AD4406371AED9D8500BADC06 /* qualities.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = qualities.jpg; sourceTree = "<group>"; };
+		AD8A078A1CD03A5D007BCE53 /* EnquiCMWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = EnquiCMWatch.entitlements; sourceTree = "<group>"; };
+		AD8A078B1CD03BF6007BCE53 /* EnriqueCM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = EnriqueCM.entitlements; sourceTree = "<group>"; };
+		AD8A078C1CD05F67007BCE53 /* NSNotificationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSNotificationExtensions.swift; sourceTree = "<group>"; };
 		AD9389891AE6AC6900580D4A /* DetailTitleSubtitleImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailTitleSubtitleImageTableViewCell.swift; path = Controllers/Cells/DetailTitleSubtitleImageTableViewCell.swift; sourceTree = "<group>"; };
 		AD93898B1AE6AF8000580D4A /* DetailAdjustableTextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailAdjustableTextTableViewCell.swift; path = Controllers/Cells/DetailAdjustableTextTableViewCell.swift; sourceTree = "<group>"; };
 		AD93898D1AE6EE8A00580D4A /* DetailLinkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailLinkTableViewCell.swift; path = Controllers/Cells/DetailLinkTableViewCell.swift; sourceTree = "<group>"; };
 		AD93898F1AE70E4200580D4A /* DetailDateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailDateTableViewCell.swift; path = Controllers/Cells/DetailDateTableViewCell.swift; sourceTree = "<group>"; };
 		AD9389911AE70EE800580D4A /* DetailCollectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailCollectionTableViewCell.swift; path = Controllers/Cells/DetailCollectionTableViewCell.swift; sourceTree = "<group>"; };
+		ADA6D77B1CCEF7FF0081A1BA /* ShortcutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortcutManager.swift; sourceTree = "<group>"; };
 		ADB493181CCD5D470047D886 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		ADB4931A1CCD5D930047D886 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		ADB4931D1CCD78120047D886 /* InformationV2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = InformationV2.json; sourceTree = "<group>"; };
 		ADB4931F1CCD7F5F0047D886 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		ADB493211CCD86630047D886 /* InformationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationManager.swift; sourceTree = "<group>"; };
+		ADC069251CD002CA00A8CB57 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		ADC069271CD0090900A8CB57 /* PasteboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasteboardViewController.swift; sourceTree = "<group>"; };
 		ADCCD5F91AE45FAA0061674B /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailTableViewController.swift; path = Controllers/DetailTableViewController.swift; sourceTree = "<group>"; };
 		ADDB24881ADFEA2A00FDFBE1 /* EnriqueCM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnriqueCM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADDB248C1ADFEA2A00FDFBE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -252,7 +311,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AD37EF8F1CCB1A200016F946 /* Frameworks */ = {
+		01B3EF0B1CD032CB00110037 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -269,6 +328,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01B3EF031CD032CB00110037 /* EnquiCMWatch */ = {
+			isa = PBXGroup;
+			children = (
+				AD8A078A1CD03A5D007BCE53 /* EnquiCMWatch.entitlements */,
+				01B3EF041CD032CB00110037 /* Interface.storyboard */,
+				01B3EF071CD032CB00110037 /* Assets.xcassets */,
+				01B3EF091CD032CB00110037 /* Info.plist */,
+			);
+			path = EnquiCMWatch;
+			sourceTree = "<group>";
+		};
+		01B3EF121CD032CB00110037 /* EnquiCMWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				01F6D2C51CD179B5008F1E10 /* Detail */,
+				01F6D2C41CD179A7008F1E10 /* Main */,
+				01B3EF151CD032CB00110037 /* ExtensionDelegate.swift */,
+				01B3EF171CD032CB00110037 /* Assets.xcassets */,
+				01B3EF191CD032CB00110037 /* Info.plist */,
+			);
+			path = "EnquiCMWatch Extension";
+			sourceTree = "<group>";
+		};
+		01F6D2C41CD179A7008F1E10 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				01B3EF291CD0336A00110037 /* SectionTableController.swift */,
+				01B3EF131CD032CB00110037 /* MainInterfaceController.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		01F6D2C51CD179B5008F1E10 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				01F6D2C71CD179DC008F1E10 /* DetailInterfaceController.swift */,
+				01F6D2C91CD17BB7008F1E10 /* DetailTableController.swift */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
 		AD1A835D1AE33FBE008F336F /* Transitions */ = {
 			isa = PBXGroup;
 			children = (
@@ -292,6 +392,7 @@
 		AD2FEC3C1AE1DC9200EF8B65 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				ADC069271CD0090900A8CB57 /* PasteboardViewController.swift */,
 				AD2FEC3D1AE1DCC300EF8B65 /* MainTableViewController.swift */,
 				ADCCD5F91AE45FAA0061674B /* DetailTableViewController.swift */,
 				AD4405961AEC23E500BADC06 /* ProjectViewController.swift */,
@@ -306,6 +407,7 @@
 				AD2FEC441AE2B7E200EF8B65 /* DatabaseManager.swift */,
 				AD4405941AEB47E000BADC06 /* Utils.swift */,
 				ADB493211CCD86630047D886 /* InformationManager.swift */,
+				ADA6D77B1CCEF7FF0081A1BA /* ShortcutManager.swift */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -323,42 +425,11 @@
 			isa = PBXGroup;
 			children = (
 				AD2FEC2F1AE1277700EF8B65 /* BottomToUpCustomSegue.swift */,
-				AD2FEC351AE13D3F00EF8B65 /* UnwindBottonToUpCustomSegue.swift */,
 				AD2FEC311AE1335E00EF8B65 /* CustomSegue.swift */,
 				AD2FEC371AE14BDA00EF8B65 /* CustomSequeUnwind.swift */,
+				AD2FEC351AE13D3F00EF8B65 /* UnwindBottonToUpCustomSegue.swift */,
 			);
 			name = CustomSegue;
-			sourceTree = "<group>";
-		};
-		AD37EF931CCB1A200016F946 /* EnriqueCM-tv */ = {
-			isa = PBXGroup;
-			children = (
-				AD37EF941CCB1A200016F946 /* AppDelegate.swift */,
-				AD37EF961CCB1A200016F946 /* FirstViewController.swift */,
-				AD37EF981CCB1A200016F946 /* SecondViewController.swift */,
-				AD37EF9A1CCB1A200016F946 /* Main.storyboard */,
-				AD37EF9D1CCB1A200016F946 /* Assets.xcassets */,
-				AD37EF9F1CCB1A200016F946 /* Info.plist */,
-			);
-			path = "EnriqueCM-tv";
-			sourceTree = "<group>";
-		};
-		AD37EFA71CCB1A200016F946 /* EnriqueCM-tvTests */ = {
-			isa = PBXGroup;
-			children = (
-				AD37EFA81CCB1A200016F946 /* EnriqueCM_tvTests.swift */,
-				AD37EFAA1CCB1A200016F946 /* Info.plist */,
-			);
-			path = "EnriqueCM-tvTests";
-			sourceTree = "<group>";
-		};
-		AD37EFB21CCB1A200016F946 /* EnriqueCM-tvUITests */ = {
-			isa = PBXGroup;
-			children = (
-				AD37EFB31CCB1A200016F946 /* EnriqueCM_tvUITests.swift */,
-				AD37EFB51CCB1A200016F946 /* Info.plist */,
-			);
-			path = "EnriqueCM-tvUITests";
 			sourceTree = "<group>";
 		};
 		AD44059A1AED43BF00BADC06 /* Experience */ = {
@@ -498,6 +569,8 @@
 				AD1A83541AE2E606008F336F /* UITableViewCellExtensions.swift */,
 				ADB493181CCD5D470047D886 /* UIColorExtensions.swift */,
 				ADB4931A1CCD5D930047D886 /* StringExtensions.swift */,
+				ADC069251CD002CA00A8CB57 /* UIViewExtensions.swift */,
+				AD8A078C1CD05F67007BCE53 /* NSNotificationExtensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -536,7 +609,6 @@
 		ADCCD5FD1AE474B80061674B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				AD4406321AED921100BADC06 /* background.png */,
 				ADBA09241AEA816B00DC2B24 /* PersonalDetails */,
 				ADBA09251AEA817A00DC2B24 /* Education */,
 				AD44059A1AED43BF00BADC06 /* Experience */,
@@ -554,9 +626,8 @@
 			children = (
 				ADDB248A1ADFEA2A00FDFBE1 /* EnriqueCM */,
 				ADDB24A01ADFEA2A00FDFBE1 /* EnriqueCMTests */,
-				AD37EF931CCB1A200016F946 /* EnriqueCM-tv */,
-				AD37EFA71CCB1A200016F946 /* EnriqueCM-tvTests */,
-				AD37EFB21CCB1A200016F946 /* EnriqueCM-tvUITests */,
+				01B3EF031CD032CB00110037 /* EnquiCMWatch */,
+				01B3EF121CD032CB00110037 /* EnquiCMWatch Extension */,
 				ADDB24891ADFEA2A00FDFBE1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -565,7 +636,8 @@
 			isa = PBXGroup;
 			children = (
 				ADDB24881ADFEA2A00FDFBE1 /* EnriqueCM.app */,
-				AD37EF921CCB1A200016F946 /* EnriqueCM-tv.app */,
+				01B3EF021CD032CB00110037 /* EnquiCMWatch.app */,
+				01B3EF0E1CD032CB00110037 /* EnquiCMWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -573,6 +645,7 @@
 		ADDB248A1ADFEA2A00FDFBE1 /* EnriqueCM */ = {
 			isa = PBXGroup;
 			children = (
+				AD8A078B1CD03BF6007BCE53 /* EnriqueCM.entitlements */,
 				ADB4931C1CCD643B0047D886 /* Information */,
 				ADB493171CCD5D0B0047D886 /* Extensions */,
 				AD1A835D1AE33FBE008F336F /* Transitions */,
@@ -618,22 +691,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AD37EF911CCB1A200016F946 /* EnriqueCM-tv */ = {
+		01B3EF011CD032CB00110037 /* EnquiCMWatch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD37EFB61CCB1A200016F946 /* Build configuration list for PBXNativeTarget "EnriqueCM-tv" */;
+			buildConfigurationList = 01B3EF231CD032CC00110037 /* Build configuration list for PBXNativeTarget "EnquiCMWatch" */;
 			buildPhases = (
-				AD37EF8E1CCB1A200016F946 /* Sources */,
-				AD37EF8F1CCB1A200016F946 /* Frameworks */,
-				AD37EF901CCB1A200016F946 /* Resources */,
+				01B3EF001CD032CB00110037 /* Resources */,
+				01B3EF221CD032CC00110037 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01B3EF111CD032CB00110037 /* PBXTargetDependency */,
+			);
+			name = EnquiCMWatch;
+			productName = EnquiCMWatch;
+			productReference = 01B3EF021CD032CB00110037 /* EnquiCMWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		01B3EF0D1CD032CB00110037 /* EnquiCMWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01B3EF211CD032CC00110037 /* Build configuration list for PBXNativeTarget "EnquiCMWatch Extension" */;
+			buildPhases = (
+				01B3EF0A1CD032CB00110037 /* Sources */,
+				01B3EF0B1CD032CB00110037 /* Frameworks */,
+				01B3EF0C1CD032CB00110037 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "EnriqueCM-tv";
-			productName = "EnriqueCM-tv";
-			productReference = AD37EF921CCB1A200016F946 /* EnriqueCM-tv.app */;
-			productType = "com.apple.product-type.application";
+			name = "EnquiCMWatch Extension";
+			productName = "EnquiCMWatch Extension";
+			productReference = 01B3EF0E1CD032CB00110037 /* EnquiCMWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 		ADDB24871ADFEA2A00FDFBE1 /* EnriqueCM */ = {
 			isa = PBXNativeTarget;
@@ -642,10 +732,12 @@
 				ADDB24841ADFEA2A00FDFBE1 /* Sources */,
 				ADDB24851ADFEA2A00FDFBE1 /* Frameworks */,
 				ADDB24861ADFEA2A00FDFBE1 /* Resources */,
+				01B3EF241CD032CC00110037 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				01B3EF1B1CD032CB00110037 /* PBXTargetDependency */,
 			);
 			name = EnriqueCM;
 			productName = EnriqueCM;
@@ -662,12 +754,27 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Enrique Choynowski Melgarejo";
 				TargetAttributes = {
-					AD37EF911CCB1A200016F946 = {
+					01B3EF011CD032CB00110037 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 38HUSCHT3G;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					01B3EF0D1CD032CB00110037 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 38HUSCHT3G;
 					};
 					ADDB24871ADFEA2A00FDFBE1 = {
 						CreatedOnToolsVersion = 6.3;
 						DevelopmentTeam = 38HUSCHT3G;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -685,19 +792,29 @@
 			projectRoot = "";
 			targets = (
 				ADDB24871ADFEA2A00FDFBE1 /* EnriqueCM */,
-				AD37EF911CCB1A200016F946 /* EnriqueCM-tv */,
+				01B3EF011CD032CB00110037 /* EnquiCMWatch */,
+				01B3EF0D1CD032CB00110037 /* EnquiCMWatch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AD37EF901CCB1A200016F946 /* Resources */ = {
+		01B3EF001CD032CB00110037 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADB493161CCC55620047D886 /* Images.xcassets in Resources */,
-				AD37EF9E1CCB1A200016F946 /* Assets.xcassets in Resources */,
-				AD37EF9C1CCB1A200016F946 /* Main.storyboard in Resources */,
+				01B3EF081CD032CB00110037 /* Assets.xcassets in Resources */,
+				01B3EF061CD032CB00110037 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01B3EF0C1CD032CB00110037 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				012BD5491CD041740030E4FA /* Information.json in Resources */,
+				012BD54A1CD041740030E4FA /* InformationV2.json in Resources */,
+				01B3EF181CD032CB00110037 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -735,7 +852,6 @@
 				AD4405B01AED6E3B00BADC06 /* greenb-logo-landscape.png in Resources */,
 				AD4405B51AED702000BADC06 /* nowastes-logo.png in Resources */,
 				AD1A835C1AE2FA90008F336F /* Information.json in Resources */,
-				AD4406331AED921100BADC06 /* background.png in Resources */,
 				ADDB24981ADFEA2A00FDFBE1 /* LaunchScreen.xib in Resources */,
 				AD4405FB1AED868600BADC06 /* aproximar7.png in Resources */,
 				AD4405A31AED449800BADC06 /* PUCRS-logo-landscape.png in Resources */,
@@ -791,13 +907,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AD37EF8E1CCB1A200016F946 /* Sources */ = {
+		01B3EF0A1CD032CB00110037 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD37EF991CCB1A200016F946 /* SecondViewController.swift in Sources */,
-				AD37EF951CCB1A200016F946 /* AppDelegate.swift in Sources */,
-				AD37EF971CCB1A200016F946 /* FirstViewController.swift in Sources */,
+				01F6D2C81CD179DC008F1E10 /* DetailInterfaceController.swift in Sources */,
+				012BD54D1CD042CB0030E4FA /* ExtensionDelegate.swift in Sources */,
+				01F6D2CA1CD17BB7008F1E10 /* DetailTableController.swift in Sources */,
+				012BD54C1CD042CB0030E4FA /* SectionTableController.swift in Sources */,
+				012BD54B1CD042CB0030E4FA /* MainInterfaceController.swift in Sources */,
+				012BD5471CD0413E0030E4FA /* Card.swift in Sources */,
+				012BD5451CD040FC0030E4FA /* DatabaseManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -815,6 +935,7 @@
 				AD4405991AEC534500BADC06 /* ProjectCollectionTableViewCell.swift in Sources */,
 				AD2FEC3E1AE1DCC300EF8B65 /* MainTableViewController.swift in Sources */,
 				AD9389921AE70EE800580D4A /* DetailCollectionTableViewCell.swift in Sources */,
+				AD8A078D1CD05F67007BCE53 /* NSNotificationExtensions.swift in Sources */,
 				AD1A836E1AE42139008F336F /* CardHeaderTableViewCell.swift in Sources */,
 				AD1A83511AE2E2E5008F336F /* CardTableViewCell.swift in Sources */,
 				ADCCD5FA1AE45FAA0061674B /* DetailTableViewController.swift in Sources */,
@@ -824,6 +945,7 @@
 				AD1A83551AE2E606008F336F /* UITableViewCellExtensions.swift in Sources */,
 				AD93898A1AE6AC6900580D4A /* DetailTitleSubtitleImageTableViewCell.swift in Sources */,
 				AD4405971AEC23E500BADC06 /* ProjectViewController.swift in Sources */,
+				ADA6D77C1CCEF7FF0081A1BA /* ShortcutManager.swift in Sources */,
 				AD2FEC381AE14BDA00EF8B65 /* CustomSequeUnwind.swift in Sources */,
 				AD1A83651AE34240008F336F /* PresentationAnimator.swift in Sources */,
 				AD2FEC361AE13D3F00EF8B65 /* UnwindBottonToUpCustomSegue.swift in Sources */,
@@ -831,7 +953,9 @@
 				ADB493221CCD86630047D886 /* InformationManager.swift in Sources */,
 				AD1A835F1AE34001008F336F /* TransitionDelegate.swift in Sources */,
 				ADB4931B1CCD5D930047D886 /* StringExtensions.swift in Sources */,
+				ADC069261CD002CA00A8CB57 /* UIViewExtensions.swift in Sources */,
 				AD93898E1AE6EE8A00580D4A /* DetailLinkTableViewCell.swift in Sources */,
+				ADC069281CD0090900A8CB57 /* PasteboardViewController.swift in Sources */,
 				AD2FEC451AE2B7E200EF8B65 /* DatabaseManager.swift in Sources */,
 				AD1A83531AE2E493008F336F /* Card.swift in Sources */,
 			);
@@ -839,13 +963,26 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		01B3EF111CD032CB00110037 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01B3EF0D1CD032CB00110037 /* EnquiCMWatch Extension */;
+			targetProxy = 01B3EF101CD032CB00110037 /* PBXContainerItemProxy */;
+		};
+		01B3EF1B1CD032CB00110037 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01B3EF011CD032CB00110037 /* EnquiCMWatch */;
+			targetProxy = 01B3EF1A1CD032CB00110037 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
-		AD37EF9A1CCB1A200016F946 /* Main.storyboard */ = {
+		01B3EF041CD032CB00110037 /* Interface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AD37EF9B1CCB1A200016F946 /* Base */,
+				01B3EF051CD032CB00110037 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 		ADDB24911ADFEA2A00FDFBE1 /* Main.storyboard */ = {
@@ -867,36 +1004,82 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		AD37EFB71CCB1A200016F946 /* Debug */ = {
+		01B3EF1D1CD032CC00110037 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				INFOPLIST_FILE = "EnriqueCM-tv/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.choynowski.EnriqueCM-tv";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = EnquiCMWatch_Extension;
+				INFOPLIST_FILE = EnquiCMWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.choynowski.EnriqueCM.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Debug;
 		};
-		AD37EFB81CCB1A200016F946 /* Release */ = {
+		01B3EF1E1CD032CC00110037 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
-				INFOPLIST_FILE = "EnriqueCM-tv/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.choynowski.EnriqueCM-tv";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = EnquiCMWatch_Extension;
+				INFOPLIST_FILE = EnquiCMWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.choynowski.EnriqueCM.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		01B3EF1F1CD032CC00110037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "EnquiCMWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.choynowski.EnriqueCM.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		01B3EF201CD032CC00110037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "EnquiCMWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.choynowski.EnriqueCM.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Release;
 		};
@@ -937,7 +1120,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -976,7 +1159,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -988,12 +1171,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EnriqueCM/EnriqueCM.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = EnriqueCM/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.choynowski.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1002,12 +1188,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EnriqueCM/EnriqueCM.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = EnriqueCM/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.choynowski.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -1015,11 +1204,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AD37EFB61CCB1A200016F946 /* Build configuration list for PBXNativeTarget "EnriqueCM-tv" */ = {
+		01B3EF211CD032CC00110037 /* Build configuration list for PBXNativeTarget "EnquiCMWatch Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AD37EFB71CCB1A200016F946 /* Debug */,
-				AD37EFB81CCB1A200016F946 /* Release */,
+				01B3EF1F1CD032CC00110037 /* Debug */,
+				01B3EF201CD032CC00110037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01B3EF231CD032CC00110037 /* Build configuration list for PBXNativeTarget "EnquiCMWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01B3EF1D1CD032CC00110037 /* Debug */,
+				01B3EF1E1CD032CC00110037 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -14,13 +14,14 @@ private let kTableHeaderCut     : CGFloat = 80.0
 class DetailTableViewController: UITableViewController, DetailCollectionTableViewCellDelegate {
     
     private var isLoading = true
-    private var headerView      : UIView!
-    private var headerMaskLayer : CAShapeLayer!
+    private var headerView      : UIView?
+    private var headerMaskLayer : CAShapeLayer?
     private var arrayOfCardInfo: [[String: AnyObject]]? = []
     
     @IBOutlet var fullImageView : UIImageView!
     @IBOutlet var miniImageView : UIImageView!
     @IBOutlet var viewFullImageView: UIView!
+    @IBOutlet weak var buttonMiniCard: UIButton!
     
     var card        : Card? = nil
     var fullImage   : UIImage? = nil
@@ -34,8 +35,25 @@ class DetailTableViewController: UITableViewController, DetailCollectionTableVie
         tableView.estimatedRowHeight = 60
         tableView.rowHeight = UITableViewAutomaticDimension
         
+        checkIfIsVisitCard()
+        
         // TODO: Remove Timer
         NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(loadCardInfo), userInfo: nil, repeats: false)
+        
+        // Notification
+        NSNotificationCenter.defaultCenter().setObserver(self, selector: #selector(checkIfIsVisitCard), name: kVisitCardNotification, object: nil)
+    }
+    
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIApplicationDidBecomeActiveNotification, object: nil)
+    }
+    
+    func checkIfIsVisitCard() {
+        if let card = self.card where card.isVisitCard {
+            buttonMiniCard.alpha = 1.0
+        } else {
+            buttonMiniCard.alpha = 0.6
+        }
     }
     
     func loadCardInfo() {
@@ -60,20 +78,15 @@ class DetailTableViewController: UITableViewController, DetailCollectionTableVie
             self?.tableView.contentOffset = CGPoint(x: 0, y: -effectiveHeight)
             
             self?.headerMaskLayer = CAShapeLayer()
-            self?.headerMaskLayer.fillColor = UIColor.blackColor().CGColor
+            self?.headerMaskLayer?.fillColor = UIColor.blackColor().CGColor
             
-            self?.headerView.layer.mask = self?.headerMaskLayer
+            self?.headerView?.layer.mask = self?.headerMaskLayer
             
             self?.updateHeaderView()
             
             }) { finished in
                 //Nothing to do
         }
-        
-//        if self.fullImage != nil {
-//            let vc = UIActivityViewController(activityItems: [self.fullImage!], applicationActivities: [])
-//            self.presentViewController(vc, animated: true, completion: nil)
-//        }
     }
     
     func updateHeaderView() {
@@ -83,7 +96,7 @@ class DetailTableViewController: UITableViewController, DetailCollectionTableVie
             headerRect.origin.y = tableView.contentOffset.y
             headerRect.size.height = -tableView.contentOffset.y //+ kTableHeaderCut/2
         }
-        headerView.frame = headerRect
+        headerView?.frame = headerRect
         
         let path = UIBezierPath()
         path.moveToPoint(CGPoint(x: 0, y: 0))
@@ -181,7 +194,6 @@ class DetailTableViewController: UITableViewController, DetailCollectionTableVie
         }
     }
     
-    
     //MARK: - DetailCollectionTableViewCellDelegate
     
     func didSelectDetailCollectionTableViewCell(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath, type: String) {
@@ -193,22 +205,74 @@ class DetailTableViewController: UITableViewController, DetailCollectionTableVie
 //            presentViewController(projectViewController, animated: true, completion: nil)
         }
     }
-    
+
     //MARK: Actions
     
-    @IBAction func shareButtonPressed(sender: UIButton) {
-        //TODO: Share screen information
+    @IBAction func buttonUseAsVisitCardPressed(sender: UIButton) {
+        // Create the alert controller
+        let alertController = UIAlertController(title: "Use as Visit Card", message: "Do you want to use this information as visit card?", preferredStyle: .Alert)
         
-//        http://stackoverflow.com/questions/15781877/how-to-send-a-pdf-file-using-uiactivityviewcontroller
+        // Create the actions
+        let visitCardAction = UIAlertAction(title: "Use as Visit Card", style: UIAlertActionStyle.Default) { [weak self] UIAlertAction in
+
+            self?.card?.saveAsVisitCard()
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel) {
+            UIAlertAction in
+            NSLog("Cancel Pressed")
+        }
+        
+        // Add the actions
+        alertController.addAction(visitCardAction)
+        alertController.addAction(cancelAction)
+        
+        // Present the controller
+        self.presentViewController(alertController, animated: true, completion: nil)
+    }
+    
+    override func previewActionItems() -> [UIPreviewActionItem] {
+        
+        var style: UIPreviewActionStyle
+        if let card = self.card where card.isVisitCard {
+            style = .Selected
+        } else {
+            style = .Default
+        }
+        
+        let action_0 = UIPreviewAction(title: "Use as Visit Card", style: style) { (action: UIPreviewAction, vc: UIViewController) -> Void in
+            if let viewController = vc as? DetailTableViewController {
+                viewController.card?.saveAsVisitCard()
+            }
+        }
+        
+//        let action_1 = UIPreviewAction(title: "as a PDF file", style: .Default) { (action: UIPreviewAction, vc: UIViewController) -> Void in
+//            NSLog("Share Information as a PDF")
+//        }
+//        
+//        let action_2 = UIPreviewAction(title: "as an Image", style: .Default) { (action: UIPreviewAction, vc: UIViewController) -> Void in
+//            NSLog("Share Information as a Image")
+//        }
+//        
+//        let action_3 = UIPreviewActionGroup(title: "Share…", style: .Default, actions: [action_1, action_2])
+        
+        return [action_0/*, action_3*/]
     }
 }
 
 
+// SHARE PDF
 
-
-
-
-
-
-
-
+//        let filename = "TestABCD.pdf"
+//        createPdfFromView(view, saveToDocumentsWithFileName: filename)
+//
+//        if let documentDirectories = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).first {
+//            let str = documentDirectories + "/" + filename
+//
+//            let pdfData = NSData.dataWithContentsOfMappedFile(str)
+//            let url = NSURL(fileURLWithPath: str)
+//
+//            let vc = UIActivityViewController(activityItems: ["test", url], applicationActivities: [])
+//            self.presentViewController(vc, animated: true, completion: nil)
+//        }
+////        http://stackoverflow.com/questions/15781877/how-to-send-a-pdf-file-using-uiactivityviewcontroller

@@ -6,12 +6,21 @@
 //  Copyright © 2016 Enrique Choynowski Melgarejo. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class Section {
     
+    static let kSectionShortcutKey = "kSectionShortcutKey" 
     var title : String = ""
     var cards : [Card] = []
+    var isShortcut: Bool {
+        get {
+            return checkIfSectionIsShortcut(title)
+        }
+        set {
+            self.isShortcut = newValue
+        }
+    }
     
     convenience init(dictionary : NSDictionary) {
         self.init()
@@ -22,5 +31,21 @@ class Section {
                 cards.append(Card(dictionary: dict))
             }
         }
+    }
+}
+
+extension Section {
+    
+    internal func checkIfSectionIsShortcut(sectionTitle: String) -> Bool {
+        
+        if let shortcuts = UIApplication.sharedApplication().shortcutItems {
+            for shortcut in shortcuts {
+                if shortcut.localizedTitle == sectionTitle {
+                    return true
+                }
+            }
+        }
+        
+        return false
     }
 }

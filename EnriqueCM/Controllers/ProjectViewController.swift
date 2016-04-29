@@ -18,6 +18,7 @@ class ProjectViewController: UIViewController, UITableViewDataSource, UITableVie
     @IBOutlet var actionButton: UIButton!
     @IBOutlet var tableView: UITableView!
     
+    @IBOutlet weak var barButtonMiniCard: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -42,7 +43,21 @@ class ProjectViewController: UIViewController, UITableViewDataSource, UITableVie
         
         tableView.estimatedRowHeight = 44
         tableView.rowHeight = UITableViewAutomaticDimension
-    } 
+        // Notification
+        NSNotificationCenter.defaultCenter().setObserver(self, selector: #selector(checkIfIsVisitCard), name: kVisitCardNotification, object: nil)
+        
+        checkIfIsVisitCard()
+    }
+    
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIApplicationDidBecomeActiveNotification, object: nil)
+    }
+    
+    func checkIfIsVisitCard() {
+        if let card = self.card where card.isVisitCard {
+            navigationItem.rightBarButtonItem = nil
+        }
+    }
     
     @IBAction func closeProject(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: {})
@@ -109,4 +124,27 @@ class ProjectViewController: UIViewController, UITableViewDataSource, UITableVie
         print("Cliquei em: %d", indexPath.row)
     }
     
+    @IBAction func barButtonMiniCardPressed(sender: AnyObject) {
+        
+        // Create the alert controller
+        let alertController = UIAlertController(title: "Use as Visit Card", message: "Do you want to use this information as visit card?", preferredStyle: .Alert)
+        
+        // Create the actions
+        let visitCardAction = UIAlertAction(title: "Use as Visit Card", style: UIAlertActionStyle.Default) { [weak self] UIAlertAction in
+            
+            self?.card?.saveAsVisitCard()
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel) {
+            UIAlertAction in
+            NSLog("Cancel Pressed")
+        }
+        
+        // Add the actions
+        alertController.addAction(visitCardAction)
+        alertController.addAction(cancelAction)
+        
+        // Present the controller
+        self.presentViewController(alertController, animated: true, completion: nil)
+    }
 }
