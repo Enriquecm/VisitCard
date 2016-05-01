@@ -3,16 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>UIApplicationShortcutItems</key>
-    <array>
-        <dict>
-            <key>UIApplicationShortcutItemIconFile</key>
-            <string>UIApplicationShortcutIconTypeShare</string>
-            <key>UIApplicationShortcutItemTitle</key>
-            <string>Share Visit Card</string>
-            <key>UIApplicationShortcutItemType</key>
-            <string>com.choynowski.EnriqueCM.share-all</string>
-        </dict>
-    </array>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>UIApplicationShortcutIconTypeShare</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Share Visit Card</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>com.choynowski.EnriqueCM.share-all</string>
+		</dict>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
@@ -36,7 +36,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSHumanReadableCopyright</key>
-	<string>(C) 2015 Enrique Choynowski Melgarejo - All rights reserved</string>
+	<string>(C) 2016 Enrique Choynowski Melgarejo - All rights reserved</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
