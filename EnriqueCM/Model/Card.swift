@@ -57,6 +57,7 @@ class Card {
         } else {
             if cardTitle == "Enrique" {
                 saveAsVisitCard()
+                return true
             }
         }
         return false
