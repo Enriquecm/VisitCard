@@ -120,6 +120,14 @@
 		AD93898E1AE6EE8A00580D4A /* DetailLinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD93898D1AE6EE8A00580D4A /* DetailLinkTableViewCell.swift */; };
 		AD9389901AE70E4200580D4A /* DetailDateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD93898F1AE70E4200580D4A /* DetailDateTableViewCell.swift */; };
 		AD9389921AE70EE800580D4A /* DetailCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9389911AE70EE800580D4A /* DetailCollectionTableViewCell.swift */; };
+		AD9A652F1CD55DAE007C0815 /* vita_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD9A652E1CD55DAE007C0815 /* vita_image.jpg */; };
+		AD9A65311CD55E1D007C0815 /* vita_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD9A65301CD55E1D007C0815 /* vita_logo.jpg */; };
+		AD9A65331CD56313007C0815 /* estacio-main.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD9A65321CD56313007C0815 /* estacio-main.jpg */; };
+		AD9A65351CD5638C007C0815 /* estacio-logo-landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = AD9A65341CD5638C007C0815 /* estacio-logo-landscape.png */; };
+		AD9A65371CD56857007C0815 /* isobar-main.png in Resources */ = {isa = PBXBuildFile; fileRef = AD9A65361CD56857007C0815 /* isobar-main.png */; };
+		AD9A65391CD56861007C0815 /* isobar-logo-landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = AD9A65381CD56861007C0815 /* isobar-logo-landscape.png */; };
+		AD9A653C1CD56979007C0815 /* vita-print2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD9A653A1CD56979007C0815 /* vita-print2.jpg */; };
+		AD9A653D1CD56979007C0815 /* vita-print1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD9A653B1CD56979007C0815 /* vita-print1.jpg */; };
 		ADA6D77C1CCEF7FF0081A1BA /* ShortcutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6D77B1CCEF7FF0081A1BA /* ShortcutManager.swift */; };
 		ADB493191CCD5D470047D886 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB493181CCD5D470047D886 /* UIColorExtensions.swift */; };
 		ADB4931B1CCD5D930047D886 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB4931A1CCD5D930047D886 /* StringExtensions.swift */; };
@@ -291,6 +299,14 @@
 		AD93898D1AE6EE8A00580D4A /* DetailLinkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailLinkTableViewCell.swift; path = Controllers/Cells/DetailLinkTableViewCell.swift; sourceTree = "<group>"; };
 		AD93898F1AE70E4200580D4A /* DetailDateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailDateTableViewCell.swift; path = Controllers/Cells/DetailDateTableViewCell.swift; sourceTree = "<group>"; };
 		AD9389911AE70EE800580D4A /* DetailCollectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailCollectionTableViewCell.swift; path = Controllers/Cells/DetailCollectionTableViewCell.swift; sourceTree = "<group>"; };
+		AD9A652E1CD55DAE007C0815 /* vita_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vita_image.jpg; sourceTree = "<group>"; };
+		AD9A65301CD55E1D007C0815 /* vita_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vita_logo.jpg; sourceTree = "<group>"; };
+		AD9A65321CD56313007C0815 /* estacio-main.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "estacio-main.jpg"; sourceTree = "<group>"; };
+		AD9A65341CD5638C007C0815 /* estacio-logo-landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "estacio-logo-landscape.png"; sourceTree = "<group>"; };
+		AD9A65361CD56857007C0815 /* isobar-main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "isobar-main.png"; sourceTree = "<group>"; };
+		AD9A65381CD56861007C0815 /* isobar-logo-landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "isobar-logo-landscape.png"; sourceTree = "<group>"; };
+		AD9A653A1CD56979007C0815 /* vita-print2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "vita-print2.jpg"; sourceTree = "<group>"; };
+		AD9A653B1CD56979007C0815 /* vita-print1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "vita-print1.jpg"; sourceTree = "<group>"; };
 		ADA6D77B1CCEF7FF0081A1BA /* ShortcutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortcutManager.swift; sourceTree = "<group>"; };
 		ADB493181CCD5D470047D886 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		ADB4931A1CCD5D930047D886 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
@@ -435,6 +451,8 @@
 		AD44059A1AED43BF00BADC06 /* Experience */ = {
 			isa = PBXGroup;
 			children = (
+				AD9A65381CD56861007C0815 /* isobar-logo-landscape.png */,
+				AD9A65361CD56857007C0815 /* isobar-main.png */,
 				AD4405A71AED6C6900BADC06 /* sp-logo-landscape.png */,
 				AD4405A81AED6C6900BADC06 /* sp-main.png */,
 				AD4405AE1AED6E3B00BADC06 /* greenb-logo-landscape.png */,
@@ -459,6 +477,7 @@
 				AD4405BD1AED73C000BADC06 /* sikur-logo.png */,
 				AD4405C71AED74E300BADC06 /* elipse-logo.jpeg */,
 				AD4406341AED9B4400BADC06 /* RunShadow-logo.png */,
+				AD9A65301CD55E1D007C0815 /* vita_logo.jpg */,
 			);
 			name = Projects;
 			sourceTree = "<group>";
@@ -466,6 +485,7 @@
 		AD4405B61AED706300BADC06 /* Honor */ = {
 			isa = PBXGroup;
 			children = (
+				AD9A652E1CD55DAE007C0815 /* vita_image.jpg */,
 				AD4405B71AED706E00BADC06 /* torneio.jpg */,
 				AD4405DB1AED7DAA00BADC06 /* prize.jpg */,
 				AD4405DD1AED7F6B00BADC06 /* prize-image1.jpg */,
@@ -537,6 +557,8 @@
 				AD4406291AED8E2800BADC06 /* RunShadow-print2.jpeg */,
 				AD44062A1AED8E2800BADC06 /* RunShadow-print3.jpeg */,
 				AD44062B1AED8E2800BADC06 /* RunShadow-print4.jpeg */,
+				AD9A653B1CD56979007C0815 /* vita-print1.jpg */,
+				AD9A653A1CD56979007C0815 /* vita-print2.jpg */,
 			);
 			name = Screenshots;
 			sourceTree = "<group>";
@@ -602,6 +624,8 @@
 				AD44059E1AED449800BADC06 /* PUCRS-main.jpg */,
 				AD44059F1AED449800BADC06 /* ULBRA-logo-landscape.png */,
 				AD4405A01AED449800BADC06 /* ULBRA-main.jpg */,
+				AD9A65321CD56313007C0815 /* estacio-main.jpg */,
+				AD9A65341CD5638C007C0815 /* estacio-logo-landscape.png */,
 			);
 			name = Education;
 			sourceTree = "<group>";
@@ -769,7 +793,6 @@
 					};
 					ADDB24871ADFEA2A00FDFBE1 = {
 						CreatedOnToolsVersion = 6.3;
-						DevelopmentTeam = 38HUSCHT3G;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -822,6 +845,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD9A65371CD56857007C0815 /* isobar-main.png in Resources */,
 				AD4406061AED869D00BADC06 /* nowastes-print2.jpeg in Resources */,
 				AD4405C81AED74E300BADC06 /* elipse-logo.jpeg in Resources */,
 				AD4405E61AED865F00BADC06 /* sp-print2.jpeg in Resources */,
@@ -847,6 +871,7 @@
 				AD4406251AED8A0700BADC06 /* elipse-print3.jpeg in Resources */,
 				AD4405F51AED868600BADC06 /* aproximar1.png in Resources */,
 				AD4405E91AED865F00BADC06 /* sp-print5.jpeg in Resources */,
+				AD9A65391CD56861007C0815 /* isobar-logo-landscape.png in Resources */,
 				AD4406151AED879300BADC06 /* gogobirdie-print5.jpeg in Resources */,
 				AD4405AA1AED6C6900BADC06 /* sp-main.png in Resources */,
 				AD4405B01AED6E3B00BADC06 /* greenb-logo-landscape.png in Resources */,
@@ -858,15 +883,19 @@
 				AD4405FF1AED868600BADC06 /* aproximar11.png in Resources */,
 				AD4405F81AED868600BADC06 /* aproximar4.png in Resources */,
 				AD4405D51AED775400BADC06 /* spa.png in Resources */,
+				AD9A65311CD55E1D007C0815 /* vita_logo.jpg in Resources */,
 				AD4405B31AED6F0400BADC06 /* aproximar-logo.png in Resources */,
 				AD44061D1AED888D00BADC06 /* Sikur-print4.jpeg in Resources */,
+				AD9A65331CD56313007C0815 /* estacio-main.jpg in Resources */,
 				AD4405E71AED865F00BADC06 /* sp-print3.jpeg in Resources */,
 				AD4405A51AED449800BADC06 /* ULBRA-logo-landscape.png in Resources */,
+				AD9A652F1CD55DAE007C0815 /* vita_image.jpg in Resources */,
 				ADDB24951ADFEA2A00FDFBE1 /* Images.xcassets in Resources */,
 				AD44060B1AED86D600BADC06 /* nowastes-print4.jpeg in Resources */,
 				AD4405C61AED746900BADC06 /* elipse-main.png in Resources */,
 				AD4406231AED8A0700BADC06 /* elipse-print1.jpeg in Resources */,
 				AD4405BE1AED73C000BADC06 /* sikur-logo.png in Resources */,
+				AD9A65351CD5638C007C0815 /* estacio-logo-landscape.png in Resources */,
 				AD4406111AED879300BADC06 /* gogobirdie-print1.jpeg in Resources */,
 				AD4405D31AED775400BADC06 /* mysql.png in Resources */,
 				AD4405DA1AED795700BADC06 /* volunteers.png in Resources */,
@@ -874,6 +903,7 @@
 				AD4405A21AED449800BADC06 /* CTBM-main.jpg in Resources */,
 				AD4405FE1AED868600BADC06 /* aproximar10.png in Resources */,
 				AD4406311AED915500BADC06 /* enrique-icon.png in Resources */,
+				AD9A653D1CD56979007C0815 /* vita-print1.jpg in Resources */,
 				AD4405A11AED449800BADC06 /* CTBM-logo-landscape.png in Resources */,
 				AD4405A61AED449800BADC06 /* ULBRA-main.jpg in Resources */,
 				AD4405C01AED73EF00BADC06 /* ciberbras-main.jpg in Resources */,
@@ -886,6 +916,7 @@
 				AD44062D1AED8E2800BADC06 /* RunShadow-print2.jpeg in Resources */,
 				AD4405FC1AED868600BADC06 /* aproximar8.png in Resources */,
 				AD4405E51AED865F00BADC06 /* sp-print1.jpeg in Resources */,
+				AD9A653C1CD56979007C0815 /* vita-print2.jpg in Resources */,
 				AD4405F91AED868600BADC06 /* aproximar5.png in Resources */,
 				AD4405BA1AED71E600BADC06 /* bepid-main.png in Resources */,
 				AD4405F61AED868600BADC06 /* aproximar2.png in Resources */,

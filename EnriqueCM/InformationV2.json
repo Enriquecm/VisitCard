@@ -6,7 +6,7 @@
                                 "title"           : "Enrique",
                                 "subtitle"        : "Enrique Choynowski Melgarejo",
                                 "image"           : "ImageProfile",
-                                "about"           : "Bachelor's at Control and Automation Engineering from Pontifícia Universidade Católica do Rio Grande do Sul (2013), developed research projects in software development and wireless networking analysis. Currently coursing postgraduation in mobile development.\n\nWith experience in developing applications for iOS, Node.js, Windows 8 and Windows Phone.\n\nHas joined BEPiD(Brazilian Education Program for iOS Developers) offered by Instituto Eldorado and PUCRS in partnership with Apple.\nLooking for obtain as much experience as possible in the subjects above, as well as mastering the subjects learned during graduation, focusing on researches and innovation projects.",
+                                "about"           : "Bachelor's at Control and Automation Engineering from Pontifícia Universidade Católica do Rio Grande do Sul (2013), developed research projects in software development and wireless networking analysis. Currently coursing postgraduation in mobile development.\n\nWith experience in developing applications for iOS, Node.js, Windows 8 and Windows Phone.\n\nTook part of BEPiD(Brazilian Education Program for iOS Developers) offered by Instituto Eldorado and PUCRS in partnership with Apple.\nLooking for obtain as much experience as possible in the subjects above, as well as mastering the subjects learned during graduation, focusing on researches and innovation projects.",
                                 "type"            : "personal",
                                 "info"            : [{
                                                      "type": "title",
@@ -34,7 +34,7 @@
                                                      "type": "adjustable-text",
                                                      "info": {
                                                      "title"     : "About",
-                                                     "text"      : "Bachelor's at Control and Automation Engineering from Pontifícia Universidade Católica do Rio Grande do Sul (2013), developed research projects in software development and wireless networking analysis. Currently undergraduate at Internet System at Universidade Luterana do Brasil.\n\nWith experience in developing applications for iOS,Windows 8 and Windows Phone.\n\nHas joined BEPiD(Brazilian Education Program for iOS Developers) offered by Instituto Eldorado and PUCRS in partnership with Apple.\nLooking for obtain as much experience as possible in the subjects above, as well as mastering the subjects learned during graduation, focusing on researches and innovation projects."
+                                                     "text"      : "Bachelor's at Control and Automation Engineering from Pontifícia Universidade Católica do Rio Grande do Sul (2013), developed research projects in software development and wireless networking analysis. Currently coursing postgraduation in mobile development.\n\nWith experience in developing applications for iOS, Node.js, Windows 8 and Windows Phone.\n\nTook part of BEPiD(Brazilian Education Program for iOS Developers) offered by Instituto Eldorado and PUCRS in partnership with Apple.\nLooking for obtain as much experience as possible in the subjects above, as well as mastering the subjects learned during graduation, focusing on researches and innovation projects."
                                                      }
                                                      },
                                                      {
@@ -57,46 +57,46 @@
                      "title" : "education",
                      "items" : [{
                                 "id"              : 1,
-                                "title"           : "ULBRA",
-                                "subtitle"        : "Universidade Luterana do Brasil",
-                                "image"           : "ULBRA-main.jpg",
-                                "about"           : "Currently, at the second year of graduation on Internet Systems at Universidade Luterana do Brasil. As the needed to deal with the digital engines for development and management of websites, I could see an enormous potential for website's problem's solutions. By the end of the graduation, im expecting acquire the knowledge needed for developing solutions, interfaces and applications directed for web.",
+                                "title"           : "Estácio de Sá",
+                                "subtitle"        : "Estácio de Sá",
+                                "image"           : "estacio-main.jpg",
+                                "about"           : "Currently, at the first year of postgraduation on Mobile Development at Estácio de Sá. As the needed to deal with the digital engines for development and management of mobile applications, I could see an enormous potential for applying my knowledge and improve my techniques. By the end, I am expecting acquire the knowledge needed for develop, design and prototype solutions, interfaces and applications for different mobile platforms.",
                                 "type"            : "detail",
                                 "info"            : [{
                                                      "type": "title",
                                                      "info": {
-                                                     "title"     : "ULBRA",
+                                                     "title"     : "Estácio de Sá",
                                                      "subtitle"  : "Universidade Luterana do Brasil",
-                                                     "image"     : "ULBRA-logo-landscape.png"
+                                                     "image"     : "estacio-logo-landscape.png"
                                                      }
                                                      },
                                                      {
                                                      "type": "adjustable-text",
                                                      "info": {
                                                      "title"     : "About",
-                                                     "text"      : "Currently, at the second year of graduation on Internet Systems at Universidade Luterana do Brasil. As the needed to deal with the digital engines for development and management of websites, I could see an enormous potential for website's problem's solutions. By the end of the graduation, im expecting acquire the knowledge needed for developing solutions, interfaces and applications directed for web."
+                                                     "text"      : "Currently, at the first year of postgraduation on Mobile Development at Estácio de Sá. As the needed to deal with the digital engines for development and management of mobile applications, I could see an enormous potential for applying my knowledge and improve my techniques. By the end, I am expecting acquire the knowledge needed for develop, design and prototype solutions, interfaces and applications for different mobile platforms."
                                                      }
                                                      },
                                                      {
                                                      "type": "title",
                                                      "info": {
-                                                     "title"     : "Undergraduate",
-                                                     "subtitle"  : "Internet Systems",
+                                                     "title"     : "Postgraduate",
+                                                     "subtitle"  : "Mobile Development",
                                                      "image"     : ""
                                                      }
                                                      },
                                                      {
                                                      "type": "date",
                                                      "info": {
-                                                     "title"     : "Current Graduation:",
-                                                     "date"      : "Second year"
+                                                     "title"     : "Current:",
+                                                     "date"      : "First year"
                                                      }
                                                      },
                                                      {
                                                      "type": "link",
                                                      "info": {
                                                      "title"     : "University page:",
-                                                     "link"      : "http://ulbra.br"
+                                                     "link"      : "http://pos.estacio.br/?estado=RS"
                                                      }
                                                      }]
                                 },
@@ -195,54 +195,42 @@
                      "title" : "experience",
                      "items" : [{
                                 "id"              : 1,
-                                "title"           : "Superplayer",
-                                "subtitle"        : "Lead iOS Engineer",
-                                "image"           : "sp-main.png",
-                                "about"           : "Superplayer is a great way to listen to music. You hear your favorite songs in playlists Free made for every moment of your life just a click away.",
+                                "title"           : "Isobar",
+                                "subtitle"        : "Senior iOS Engineer",
+                                "image"           : "isobar-main.png",
+                                "about"           : "Development and improvement of applications for iPhone, iPad and Apple Watch.",
                                 "type"            : "detail",
                                 "info"            : [{
                                                      "type": "title",
                                                      "info": {
-                                                     "title"     : "Superplayer",
-                                                     "subtitle"  : "Lead iOS Engineer",
-                                                     "image"     : "sp-logo-landscape.png"
+                                                     "title"     : "Isobar",
+                                                     "subtitle"  : "Senior iOS Engineer",
+                                                     "image"     : "isobar-logo-landscape.png"
                                                      }
                                                      },
                                                      {
                                                      "type": "date",
                                                      "info": {
                                                      "title"     : "Time Period:",
-                                                     "date"      : "March 2015 - Present (2 months)"
+                                                     "date"      : "October 2015 - Present (7 months)"
                                                      }
                                                      },
                                                      {
                                                      "type": "adjustable-text",
                                                      "info": {
                                                      "title"     : "About",
-                                                     "text"      : "Superplayer is a service that provides online music streaming. Superplayer belongs to 3BR Tech company. The service provides custom radio stations and playlists created by specialists, organized by genre, activities or mood.\n\nDuring two months, I already improved my agile methodology, scrum and how to deal with an application that has millions of users."
-                                                     }
-                                                     },
-                                                     {
-                                                     "type": "project",
-                                                     "info": {
-                                                     "title"     : "Projects",
-                                                     "items"     :[{
-                                                                   "id"        : 1000,
-                                                                   "name"      : "Superplayer",
-                                                                   "image"     : "sp-logo.jpeg"
-                                                                   }]
+                                                     "text"      : "Isobar is a trading division of Dentsu Aegis Netword and the Porto Alegre office is responsible for the development of some projects, such as McDonald’s, Enterprise, Rio 2016 (for the Olympics 2016 in Brazil), among others.\nWe practice the agile methodology scrum, so every day we have a daily meeting with all Project participants. We also work by tasks, being them related to fixes or new implementations. In addition to the sprint scope of tasks, I am generally the responsible of issues related to internalization and unit testing.\nEverything that is developed must be approved by the team, going through everyone's validation by Pull Requests. We also keep record of our progress and development with tools that measure the time and costs of coding."
                                                      }
                                                      },
                                                      {
                                                      "type": "link",
                                                      "info": {
                                                      "title"     : "Company page:",
-                                                     "link"      : "http://superplayer.fm"
+                                                     "link"      : "http://www.isobar.com"
                                                      }
                                                      }]
                                 },
                                 {
-                                "id"              : 2,
                                 "title"           : "GreenB",
                                 "subtitle"        : "CEO / Backend developer / iOS developer",
                                 "image"           : "greenb-main.png",
@@ -260,7 +248,7 @@
                                                      "type": "date",
                                                      "info": {
                                                      "title"     : "Time Period:",
-                                                     "date"      : "August 2014 - Present (9 months)"
+                                                     "date"      : "August 2014 - Present"
                                                      }
                                                      },
                                                      {
@@ -306,11 +294,57 @@
                                                      }]
                                 },
                                 {
-                                "id"              : 3,
+                                "title"           : "Superplayer",
+                                "subtitle"        : "Lead iOS Engineer",
+                                "image"           : "sp-main.png",
+                                "about"           : "Superplayer is a great way to listen to music. You hear your favorite songs in playlists Free made for every moment of your life just a click away.",
+                                "type"            : "detail",
+                                "info"            : [{
+                                                     "type": "title",
+                                                     "info": {
+                                                     "title"     : "Superplayer",
+                                                     "subtitle"  : "Lead iOS Engineer",
+                                                     "image"     : "sp-logo-landscape.png"
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "date",
+                                                     "info": {
+                                                     "title"     : "Time Period:",
+                                                     "date"      : "March 2015 - September 2015"
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "adjustable-text",
+                                                     "info": {
+                                                     "title"     : "About",
+                                                     "text"      : "Superplayer is a service that provides online music streaming. Superplayer belongs to 3BR Tech company. The service provides custom radio stations and playlists created by specialists, organized by genre, activities or mood.\n\nDuring two months, I already improved my agile methodology, scrum and how to deal with an application that has millions of users."
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "project",
+                                                     "info": {
+                                                     "title"     : "Projects",
+                                                     "items"     :[{
+                                                                   "id"        : 1000,
+                                                                   "name"      : "Superplayer",
+                                                                   "image"     : "sp-logo.jpeg"
+                                                                   }]
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "link",
+                                                     "info": {
+                                                     "title"     : "Company page:",
+                                                     "link"      : "http://superplayer.fm"
+                                                     }
+                                                     }]
+                                },
+                                {
                                 "title"           : "BEPiD",
                                 "subtitle"        : "Brazilian Education Program for iOS Development",
                                 "image"           : "bepid-main.png",
-                                "about"           : "This one year program aims to form iOS developers in order to create apps for the brazilian AppStore. My group and I were selected to continue our main project in the BEPiD's second edition. In this company I worked as iOS developer, developing applications, databases and web-services. All activities were performed using agile methods like Scrum and CBL.",
+                                "about"           : "This program aims to form iOS developers in order to create apps for the brazilian AppStore. My group and I were selected to continue our main project in the BEPiD's second edition. In this company I worked as iOS developer, developing applications, databases and web-services. All activities were performed using agile methods like Scrum and CBL.",
                                 "type"            : "detail",
                                 "info"            : [{
                                                      "type": "title",
@@ -324,7 +358,7 @@
                                                      "type": "date",
                                                      "info": {
                                                      "title"     : "Time Period:",
-                                                     "date"      : "November 2013 - Present (1 year 6 months)"
+                                                     "date"      : "November 2013 - November 2015"
                                                      }
                                                      },
                                                      {
@@ -364,7 +398,6 @@
                                                      }]
                                 },
                                 {
-                                "id"              : 4,
                                 "title"           : "Ciberbras",
                                 "subtitle"        : "Mobile Application Developer",
                                 "image"           : "ciberbras-main.jpg",
@@ -412,7 +445,6 @@
                                                      }]
                                 },
                                 {
-                                "id"              : 5,
                                 "title"           : "Elipse Software",
                                 "subtitle"        : "Software Developer",
                                 "image"           : "elipse-main.png",
@@ -463,7 +495,21 @@
                      {
                      "title" : "projects",
                      "items" : [{
-                                "id"              : 6,
+                                "title"           : "Vita",
+                                "subtitle"        : "iOS Application",
+                                "image"           : "vita_logo.jpg",
+                                "about"           : "Vita is an app that combine the use of cars and public transportation to help ease traffic in São Paulo city. It provides guidelines for users (drivers, cyclists, hitchhikers, taxi and public transportation system users) so they can choose the best available routes in real time.\n\nThe Sao Paulo Mobility Challenge had a record of 200 participants.",
+                                "type"            : "project",
+                                "info"            : [{
+                                                     "title"           : "Vita",
+                                                     "subtitle"        : "Enrique Choynowski Melgarejo",
+                                                     "action"          : "Site",
+                                                     "link"            : "http://devpost.com/software/vita",
+                                                     "text"            : "Vita is an app that combine the use of cars and public transportation to help ease traffic in São Paulo city. It provides guidelines for users (drivers, cyclists, hitchhikers, taxi and public transportation system users) so they can choose the best available routes in real time.\n\nThe Sao Paulo Mobility Challenge had a record of 200 participants.",
+                                                     "media"           : ["vita-print1.jpg", "vita-print2.jpg"]
+                                                     }]
+                                },
+								{
                                 "title"           : "Superplayer",
                                 "subtitle"        : "iOS Application",
                                 "image"           : "sp-logo.jpeg",
@@ -480,7 +526,6 @@
                                                      }]
                                 },
                                 {
-                                "id"              : 7,
                                 "title"           : "Aproximar",
                                 "subtitle"        : "iOS Application",
                                 "image"           : "aproximar-logo.png",
@@ -497,7 +542,6 @@
                                                      }]
                                 },
                                 {
-                                "id"              : 8,
                                 "title"           : "NoWastes",
                                 "subtitle"        : "iOS Application",
                                 "image"           : "nowastes-logo.png",
@@ -514,7 +558,6 @@
                                                      }]
                                 },
                                 {
-                                "id"              : 9,
                                 "title"           : "GoGo Birdie!",
                                 "subtitle"        : "iOS Application",
                                 "image"           : "gogobirdie-logo.jpg",
@@ -531,7 +574,6 @@
                                                      }]
                                 },
                                 {
-                                "id"              : 10,
                                 "title"           : "Sikur",
                                 "subtitle"        : "Xamarin Application",
                                 "image"           : "sikur-logo.png",
@@ -548,7 +590,6 @@
                                                      }]
                                 },
                                 {
-                                "id"              : 12,
                                 "title"           : "Elipse Mobile",
                                 "subtitle"        : "iOS Application",
                                 "image"           : "elipse-logo.jpeg",
@@ -565,7 +606,6 @@
                                                      }]
                                 },
                                 {
-                                "id"              : 13,
                                 "title"           : "Run Shadow",
                                 "subtitle"        : "iOS Application",
                                 "image"           : "RunShadow-logo.png",
@@ -585,7 +625,6 @@
                      {
                      "title" : "skills",
                      "items" : [{
-                                "id"              : 14,
                                 "title"           : "Backend Developer",
                                 "subtitle"        : "Developer",
                                 "image"           : "backend-dev-main.jpg",
@@ -594,53 +633,52 @@
                                 "info"            : [{
                                                      "type": "adjustable-text",
                                                      "info": {
-                                                     "title"     : "About",
-                                                     "text"      : "Development of an API in Node.js on Amazon Web Service.\n\nI really enjoy developing backend applications for my apps, making easier to share data on the application."
-                                                     }
+	                                                     "title"     : "About",
+	                                                     "text"      : "Development of an API in Node.js on Amazon Web Service.\n\nI really enjoy developing backend applications for my apps, making easier to share data on the application."
+	                                                     }
                                                      },
                                                      {
                                                      "type": "title",
                                                      "info": { 
-                                                     "title"     : "",
-                                                     "subtitle"  : "Amazon Web Services",
-                                                     "image"     : "aws.png"
-                                                     }
+	                                                     "title"     : "",
+	                                                     "subtitle"  : "Amazon Web Services",
+	                                                     "image"     : "aws.png"
+	                                                     }
                                                      },
                                                      {
                                                      "type": "title",
                                                      "info": { 
-                                                     "title"     : "",
-                                                     "subtitle"  : "Node.js",
-                                                     "image"     : "node.png"
-                                                     }
+	                                                     "title"     : "",
+	                                                     "subtitle"  : "Node.js",
+	                                                     "image"     : "node.png"
+	                                                     }
                                                      },
                                                      {
                                                      "type": "title",
                                                      "info": { 
-                                                     "title"     : "",
-                                                     "subtitle"  : "JavaScript",
-                                                     "image"     : "js.png"
-                                                     }
+	                                                     "title"     : "",
+	                                                     "subtitle"  : "JavaScript",
+	                                                     "image"     : "js.png"
+	                                                     }
                                                      },
                                                      {
                                                      "type": "title",
                                                      "info": { 
-                                                     "title"     : "",
-                                                     "subtitle"  : "MySQL",
-                                                     "image"     : "mysql.png"
-                                                     }
+	                                                     "title"     : "",
+	                                                     "subtitle"  : "MySQL",
+	                                                     "image"     : "mysql.png"
+	                                                     }
                                                      },
                                                      {
                                                      "type": "title",
                                                      "info": { 
-                                                     "title"     : "",
-                                                     "subtitle"  : "Single Page Application",
-                                                     "image"     : "spa.png"
-                                                     }
+	                                                     "title"     : "",
+	                                                     "subtitle"  : "Single Page Application",
+	                                                     "image"     : "spa.png"
+	                                                     }
                                                      }]
                                 },
                                 {
-                                "id"              : 15,
                                 "title"           : "Development Systems with Windows 8",
                                 "subtitle"        : "Complementary Course",
                                 "image"           : "code-main.jpeg",
@@ -673,7 +711,6 @@
                      {
                      "title" : "qualities",
                      "items" : [{
-                                "id"              : 16,
                                 "title"           : "My Qualities",
                                 "subtitle"        : ":)",
                                 "image"           : "qualities.jpg",
@@ -775,7 +812,6 @@
                      {
                      "title" : "volunteering",
                      "items" : [{
-                                "id"              : 17,
                                 "title"           : "Volunteer at Gerdau's Olympics",
                                 "subtitle"        : "Volunteer",
                                 "image"           : "volunteers.png",
@@ -793,7 +829,52 @@
                      {
                      "title" : "honororawards",
                      "items" : [{
-                                "id"              : 18,
+                                "title"           : "3rd Place – São Paulo Mobility Challenge",
+                                "subtitle"        : "Challenge",
+                                "image"           : "vita_image.jpg",
+                               "about"           : "Vita is an app that combine the use of cars and public transportation to help ease traffic in São Paulo city. It provides guidelines for users (drivers, cyclists, hitchhikers, taxi and public transportation system users) so they can choose the best available routes in real time.\n\nThe Sao Paulo Mobility Challenge had a record of 200 participants.",
+                                "type"            : "detail",
+                                "info"            : [{
+                                                     "type": "title",
+                                                     "info": { 
+                                                     "title"     : "Tournament",
+                                                     "subtitle"  : "3rd Place – São Paulo Mobility Challenge",
+                                                     "image"     : ""
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "date",
+                                                     "info": { 
+                                                     "title"     : "Date:",
+                                                     "date"      : "October 22th 2015"
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "adjustable-text",
+                                                     "info": {
+                                                     "title"     : "About",
+                                                     "text"      : "Vita is an app that combine the use of cars and public transportation to help ease traffic in São Paulo city. It provides guidelines for users (drivers, cyclists, hitchhikers, taxi and public transportation system users) so they can choose the best available routes in real time.\n\nThe Sao Paulo Mobility Challenge had a record of 200 participants."
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "link",
+                                                     "info": {
+                                                     "title"     : "Tournament page:",
+                                                     "link"      : "http://saopaulo-national.devpost.com/submissions/39536-vital"
+                                                     }
+                                                     },
+                                                     {
+                                                     "type": "project",
+                                                     "info": {
+                                                     "title"     : "Projects",
+                                                     "items"     :[{
+                                                                   "name"      : "Vita",
+                                                                   "image"     : "vita_logo.jpg"
+                                                                   }] 
+                                                     }
+                                                     }]
+                                },
+                                {
                                 "title"           : "3rd Place - 8º Torneio Empreendedor PUCRS",
                                 "subtitle"        : "Entrepreneurship Tournament",
                                 "image"           : "torneio.jpg",
@@ -841,7 +922,6 @@
                                                      }]
                                 },
                                 {
-                                "id"              : 19,
                                 "title"           : "Prize Marcelino Champagnat PUCRS 2013/2",
                                 "subtitle"        : "The friend of the class",
                                 "image"           : "prize.jpg",

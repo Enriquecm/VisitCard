@@ -7,7 +7,7 @@
         <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
     </dependencies>
     <scenes>
-        <!--iResume-->
+        <!--Information-->
         <scene sceneID="bgk-NM-twp">
             <objects>
                 <tableViewController storyboardIdentifier="mainTableViewController" id="dLW-9z-mmF" customClass="MainTableViewController" customModule="EnriqueCM" customModuleProvider="target" sceneMemberID="viewController">
@@ -214,7 +214,7 @@
                             <outlet property="delegate" destination="dLW-9z-mmF" id="G9U-NP-TXp"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="iResume" id="nVN-eA-ZRO">
+                    <navigationItem key="navigationItem" title="Information" id="nVN-eA-ZRO">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="9WT-yS-EPz">
                             <connections>
                                 <action selector="barButtonCancelPressed:" destination="dLW-9z-mmF" id="J5l-iQ-5VQ"/>
@@ -344,7 +344,7 @@
                                 <rect key="frame" x="0.0" y="422" width="600" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uEf-hl-uJw" id="bIc-0d-6el">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="70"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="69.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="im2-yC-Md9">
@@ -822,7 +822,7 @@
                                     </view>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="WxL-TF-ySk">
                                         <rect key="frame" x="8" y="125" width="554" height="223"/>
-                                        <mutableString key="text">Control and Automation Engineering from Pontifícia Universidade Católica do Rio Grande do Sul (2013), developed research projects in software development and wireless networking analysis. Currently coursing postgraduation in mobile development.\n\nWith experience in developing applications for iOS, Node.js, Windows 8 and Windows Phone.\n\nHas joined BEPiD(Brazilian Education Program for iOS Developers) offered by Instituto Eldorado and PUCRS in partnership with Apple.\nLooking for obtain as much experience as possible in the subjects above, as well as mastering the subjects learned during graduation, focusing on researches and innovation projects.</mutableString>
+                                        <string key="text">Control and Automation Engineering from Pontifícia Universidade Católica do Rio Grande do Sul (2013), developed research projects in software development and wireless networking analysis. Currently coursing postgraduation in mobile development.\n\nWith experience in developing applications for iOS, Node.js, Windows 8 and Windows Phone.\n\nHas joined BEPiD(Brazilian Education Program for iOS Developers) offered by Instituto Eldorado and PUCRS in partnership with Apple.\nLooking for obtain as much experience as possible in the subjects above, as well as mastering the subjects learned during graduation, focusing on researches and innovation projects.</string>
                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -1072,7 +1072,7 @@
                                         <rect key="frame" x="0.0" y="343" width="568" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3bc-l2-dr7" id="gKK-YB-tYl">
-                                            <rect key="frame" x="0.0" y="0.0" width="568" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="568" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AR3-75-3Ly">
